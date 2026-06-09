@@ -10,13 +10,14 @@
 <body>
 
 <nav class="navbar"><div class="navbar-inner">
-  <a href="index.html" class="nav-logo">GameCenter</a>
+  <a href="index.html" class="nav-logo"><svg width="56" height="36" viewBox="0 0 56 36" fill="none"><circle cx="14" cy="12" r="11" fill="#60A5FA"/><text x="14" y="16" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">X</text><circle cx="36" cy="12" r="11" fill="#FBBF24"/><text x="36" y="16" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">Y</text><circle cx="18" cy="25" r="11" fill="#4ADE80"/><text x="18" y="29" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">A</text><circle cx="40" cy="24" r="11" fill="#F87171"/><text x="40" y="28" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">B</text></svg> Game<span class="logo-accent">Center</span></a>
   <div class="nav-links"><a href="index.html">Discover</a><a href="index.html#trending">Trending</a><a href="index.html#categories">Categories</a></div>
 </div></nav>
 
 <main class="container">
   <div style="padding-top:16px;font-size:12px;color:var(--text-tertiary);"><a href="index.html">Discover</a> &rsaquo; <a href="game.html" id="bl">Detail</a> &rsaquo; <span id="bt" style="color:var(--text-primary);">Playing</span></div>
   <div class="play-layout"><div class="play-main" id="pm"></div><div class="play-sidebar" id="ps"></div></div>
+  <div class="play-rec-section"><h2 class="play-rec-title">🎮 More Games You Might Like</h2><div class="play-rec-row" id="prr"></div></div>
 </main>
 
 <footer class="footer"><div class="footer-inner"><div class="footer-brand">GameCenter</div>
@@ -34,9 +35,11 @@ function rm(){return'<div class="game-window loading" id="gw"><div class="gp"><s
 function rss(){var f=getFeatured().filter(function(x){return x.id!==game.id;}).slice(0,5),r=getRelated(game,5),p=getPopular(8).filter(function(x){return x.id!==game.id;}).slice(0,5);return'<div class="sidebar-block"><h3>&#10024; Picks</h3>'+f.map(si).join('')+'</div><div class="sidebar-block"><h3>&#127918; Similar</h3>'+r.map(si).join('')+'</div><div class="sidebar-block"><h3>&#128293; Trending</h3>'+p.map(si).join('')+'</div>';}
 function sg(){var w=document.getElementById('gw');w.classList.remove('loading');w.classList.add('ready');if(game.embedUrl){document.getElementById('gi').src=game.embedUrl;}else{var d='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>*{margin:0;padding:0}body{background:linear-gradient(135deg,'+game.coverColor+','+game.coverColor2+');display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;flex-direction:column;gap:16px;}.e{font-size:72px;}.t{font-size:24px;font-weight:700;color:#fff;}.s{font-size:13px;color:rgba(255,255,255,0.6);}</style></head><body><div class="e">'+game.coverEmoji+'</div><div class="t">'+game.title+'</div><div class="s">Loading...</div></body></html>';document.getElementById('gi').src=URL.createObjectURL(new Blob([d],{type:'text/html'}));}}
 function tfs(){var e=document.getElementById('gw');if(document.fullscreenElement)document.exitFullscreen();else e.requestFullscreen().catch(function(){});}
+function gc(g){return'<div class="game-card" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="game-card-img" style="height:140px">'+fl(g,"28px")+im(g,g.bannerUrl||g.iconUrl)+'<span class="game-card-rating">★ '+g.rating+'</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-meta"><span>'+g.players+'</span></div></div></div>';}
+function rr(){var r=getRelated(game,8);if(r.length<8){var p=getPopular(12).filter(function(x){return x.id!==game.id&&!r.find(function(y){return y.id===x.id;});});r=r.concat(p).slice(0,8);}return r.map(gc).join("")||"";}
 function share(){if(navigator.share)navigator.share({title:game.title,text:'Play '+game.title+' online!',url:window.location.href}).catch(function(){});else navigator.clipboard.writeText(window.location.href).then(function(){alert('Link copied!');});}
 
-document.addEventListener('DOMContentLoaded',async function(){await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;document.title='Play '+game.title+' - GameCenter';document.getElementById('bl').href='game.html?id='+game.id;document.getElementById('bt').textContent=game.title;document.getElementById('pm').innerHTML=rm();document.getElementById('ps').innerHTML=rss();});
+document.addEventListener('DOMContentLoaded',async function(){await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;document.title='Play '+game.title+' - GameCenter';document.getElementById('bl').href='game.html?id='+game.id;document.getElementById('bt').textContent=game.title;document.getElementById('pm').innerHTML=rm();document.getElementById('ps').innerHTML=rss();document.getElementById('prr').innerHTML=rr();});
 </script>
 </body>
 </html>

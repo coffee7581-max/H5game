@@ -42,7 +42,7 @@ function genReviews(g){
   rev.sort((a,b)=>b.date.localeCompare(a.date));var avg=rev.reduce(function(s,r){return s+r.rating;},0)/rev.length;g.rating=Math.round(avg*10)/10;return rev;
 }
 
-function genLeaderboard(g,count=15){const r=m32(g.id*6271+11),used=new Set(),b=[];for(let i=0;i<count;i++){let n;do{n=WORLD_NAMES[Math.floor(r()*WORLD_NAMES.length)];}while(used.has(n)&&used.size<WORLD_NAMES.length);used.add(n);b.push({rank:i+1,name:n,avatar:n.charAt(0),avatarColor:`hsl(${hs(n)%360},55%,50%)`,score:(Math.floor(r()*900000)+50000).toLocaleString(),medal:i===0?'🥇':i===1?'🥈':i===2?'🥉':''});}return b;}
+function genLeaderboard(g,count=15){const r=m32(g.id*6271+11),used=new Set(),b=[];let score=Math.floor(r()*80)+220;for(let i=0;i<count;i++){let n;do{n=WORLD_NAMES[Math.floor(r()*WORLD_NAMES.length)];}while(used.has(n)&&used.size<WORLD_NAMES.length);used.add(n);b.push({rank:i+1,name:n,avatar:n.charAt(0),avatarColor:`hsl(${hs(n)%360},55%,50%)`,avatarUrl:`https://api.dicebear.com/9.x/avataaars/svg?seed=${encodeURIComponent(n)}`,level:Math.ceil(r()*10)+1,score:score.toLocaleString(),medal:i===0?'gold':i===1?'silver':i===2?'bronze':''});score-=Math.floor(r()*25)+5;if(score<1)score=1;}return b;}
 
 function getCat(types){if(!types?.length)return'casual';for(const t of types){const n=TYPE_ID_TO_NAME[t];if(n)return n;}return'casual';}
 function getTypeNames(types){if(!types?.length)return['casual'];const ns=[];for(const t of types){const n=TYPE_ID_TO_NAME[t];if(n&&!ns.includes(n))ns.push(n);}return ns.length?ns:['casual'];}
@@ -74,7 +74,7 @@ async function loadGames(){
   GAMES.forEach(g=>{g.features.featured=fIds.has(g.id);g.features.new=nIds.has(g.id);g.features.hot=hIds.has(g.id);g.autoDesc=genDesc(g);g.reviews=genReviews(g);if(g.isComp)g.leaderboard=genLeaderboard(g);});
   const cg={};GAMES.forEach(g=>{if(!cg[g.category])cg[g.category]=[];cg[g.category].push(g);});
   const ts=Date.now()%1000000;ALL_DISPLAY_GAMES=[];
-  for(const[cat,games]of Object.entries(cg)){let cnt=games.length>=60?Math.ceil(games.length/3):Math.ceil(games.length/2);const r=m32(hs(cat)+ts);ALL_DISPLAY_GAMES.push(...sh(games,r).slice(0,cnt));}
+  for(const[cat,games]of Object.entries(cg)){let cnt=games.length>=60?Math.ceil(games.length/3):Math.ceil(games.length/2);ALL_DISPLAY_GAMES.push(...[...games].sort(()=>Math.random()-0.5).slice(0,cnt));}
   DISPLAY_GAMES=ALL_DISPLAY_GAMES.slice(0,displayedCount);
   const cs=new Set(ALL_DISPLAY_GAMES.map(g=>g.category));
   CATEGORIES=[{id:'all',name:'All Games',e:'🎯'}];
@@ -89,11 +89,11 @@ function getGameById(id){return DISPLAY_GAMES.find(g=>g.id===parseInt(id))||ALL_
 function getGameBySlug(slug){return GAMES.find(g=>g.slug===slug);}
 function getDGByCat(cat){return cat==='all'?DISPLAY_GAMES:DISPLAY_GAMES.filter(g=>g.category===cat);}
 function getAllByCat(cat){return cat==='all'?ALL_DISPLAY_GAMES:ALL_DISPLAY_GAMES.filter(g=>g.category===cat);}
-function getFeatured(){return ALL_DISPLAY_GAMES.filter(g=>g.features.featured);}
-function getHot(){return ALL_DISPLAY_GAMES.filter(g=>g.features.hot);}
-function getNew(){return ALL_DISPLAY_GAMES.filter(g=>g.features.new);}
-function getRelated(game,c=5){return ALL_DISPLAY_GAMES.filter(g=>g.id!==game.id&&g.category===game.category).sort((a,b)=>b.likeCount-a.likeCount).slice(0,c);}
-function getPopular(c=6){return[...ALL_DISPLAY_GAMES].sort((a,b)=>b.likeCount-a.likeCount).slice(0,c);}
+function getFeatured(){return ALL_DISPLAY_GAMES.filter(g=>g.features.featured).sort(()=>Math.random()-0.5);}
+function getHot(){return ALL_DISPLAY_GAMES.filter(g=>g.features.hot).sort(()=>Math.random()-0.5);}
+function getNew(){return ALL_DISPLAY_GAMES.filter(g=>g.features.new).sort(()=>Math.random()-0.5);}
+function getRelated(game,c=5){var pool=ALL_DISPLAY_GAMES.filter(g=>g.id!==game.id&&g.category===game.category).sort((a,b)=>b.likeCount-a.likeCount).slice(0,c*4);return pool.sort(()=>Math.random()-0.5).slice(0,c);}
+function getPopular(c=6){var pool=[...ALL_DISPLAY_GAMES].sort((a,b)=>b.likeCount-a.likeCount).slice(0,c*4);return pool.sort(()=>Math.random()-0.5).slice(0,c);}
 function getRandom(c=6,ex=null){const p=ALL_DISPLAY_GAMES.filter(g=>g.id!==ex);return sh(p,m32(Date.now()%100000+1)).slice(0,c);}
 function getRecommended(game,c=6){if(!game.recommends?.length)return getRandom(c,game.id);const rs=game.recommends.map(s=>getGameBySlug(s)).filter(Boolean);if(rs.length<c){const m=getRandom(c-rs.length,game.id);return[...rs,...m.filter(g=>!rs.find(r=>r.id===g.id))];}return rs.slice(0,c);}
 function stars(r){const x=Math.round(r);return'★'.repeat(x)+'☆'.repeat(5-x);}

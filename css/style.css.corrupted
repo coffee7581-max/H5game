@@ -186,6 +186,8 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 
 /* Podium */
 /* ===== Leaderboard V2 ===== */
+
+/* Header */
 .lb-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
 .lb-title-wrap{display:flex;align-items:center;gap:8px}
 .lb-title-icon{display:flex;align-items:flex-end;gap:2px}
@@ -196,36 +198,42 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 .lb-title{font-size:16px;font-weight:700;color:var(--text)}
 .lb-live-hint{font-size:11px;color:var(--text3);font-weight:500}
 
-/* Podium */
+/* ===== Podium Card ===== */
 .lb-podium{display:flex;align-items:flex-end;justify-content:center;gap:0;margin-bottom:18px;padding:8px 4px 0}
-.lb-pod{flex:1;display:flex;flex-direction:column;align-items:center;position:relative;max-width:120px;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.lb-pod{flex:1;display:flex;flex-direction:column;align-items:center;position:relative;max-width:120px}
 .lb-pod.lb-pod-rank1{margin-bottom:-4px}
-.lb-pod.lb-pod-rank1 .lb-pod-card{height:180px}
-.lb-pod.lb-pod-rank2 .lb-pod-card{height:135px}
-.lb-pod.lb-pod-rank3 .lb-pod-card{height:110px}
+
+/* Crown icon above avatar */
 .lb-pod-crown{position:absolute;top:-14px;z-index:3;font-size:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.15));transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
 .lb-pod-rank1 .lb-pod-crown{top:-18px;font-size:26px}
-.lb-pod-card{position:relative;width:100%;display:flex;flex-direction:column;align-items:center;padding:18px 8px 0;border-radius:14px 14px 0 0;overflow:visible;transition:box-shadow .3s,filter .3s}
+
+/* Card background with swallowtail bottom */
+.lb-pod-card{position:relative;width:100%;display:flex;flex-direction:column;align-items:center;padding:28px 8px 0;border-radius:14px 14px 0 0;overflow:visible;transition:box-shadow .3s,filter .3s}
 .lb-pod-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:28px;clip-path:polygon(50% 100%,0 0,100% 0)}
+
+/* Rank 1 (gold) card */
 .lb-pod-rank1 .lb-pod-card{background:linear-gradient(180deg,#FEF3C7 0%,#FDE68A 60%,#FCD34D 100%)}
 .lb-pod-rank1 .lb-pod-card::after{background:linear-gradient(180deg,#FCD34D,#F59E0B)}
+
+/* Rank 2 (silver/blue) card */
 .lb-pod-rank2 .lb-pod-card{background:linear-gradient(180deg,#EFF6FF 0%,#DBEAFE 60%,#BFDBFE 100%)}
 .lb-pod-rank2 .lb-pod-card::after{background:linear-gradient(180deg,#BFDBFE,#93C5FD)}
+
+/* Rank 3 (bronze/orange) card */
 .lb-pod-rank3 .lb-pod-card{background:linear-gradient(180deg,#FFF7ED 0%,#FFEDD5 60%,#FED7AA 100%)}
 .lb-pod-rank3 .lb-pod-card::after{background:linear-gradient(180deg,#FED7AA,#FB923C)}
 
-/* Avatar */
+/* Avatar with colored border and shadow base */
 .lb-pod-avatar-wrap{position:relative;margin-bottom:6px;z-index:2}
 .lb-pod-avatar-shadow{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:54px;height:10px;border-radius:50%;opacity:.3}
 .lb-pod-rank1 .lb-pod-avatar-shadow{background:#F59E0B}
 .lb-pod-rank2 .lb-pod-avatar-shadow{background:#93C5FD}
 .lb-pod-rank3 .lb-pod-avatar-shadow{background:#FB923C}
-.lb-pod-avatar{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#fff;border:2.5px solid;flex-shrink:0;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
 .lb-pod-rank1 .lb-pod-avatar{border-color:#F59E0B}
 .lb-pod-rank2 .lb-pod-avatar{border-color:#93C5FD}
 .lb-pod-rank3 .lb-pod-avatar{border-color:#FB923C}
 
-/* Rank badge */
+/* Rank badge with laurel */
 .lb-pod-rank-badge{display:flex;align-items:center;justify-content:center;gap:1px;margin-bottom:4px;z-index:2}
 .lb-pod-laurel{font-size:8px;color:#B45309}
 .lb-pod-rank2 .lb-pod-laurel{color:#6B7280}
@@ -233,38 +241,74 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 .lb-pod-rank-num{font-size:9px;font-weight:900;color:#B45309;margin:0 2px}
 .lb-pod-rank2 .lb-pod-rank-num{color:#4B5563}
 .lb-pod-rank3 .lb-pod-rank-num{color:#C2410C}
-.lb-pod-name{font-size:9px;font-weight:500;color:#6B7280;max-width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;margin-bottom:3px;z-index:2}
-.lb-pod-score{font-size:12px;font-weight:600;color:#374151;z-index:2}
+
+/* Player name */
+
+/* Score */
 .lb-pod-rank2 .lb-pod-score{color:#1E3A5F}
 .lb-pod-rank3 .lb-pod-score{color:#7C2D12}
 
-/* List */
+/* ===== List Section (Ranks 4-6) ===== */
 .lb-list-section{display:flex;flex-direction:column;gap:8px}
-.lb-list-card{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:#F5F5F5;transition:transform .2s,box-shadow .2s,background .2s}
-.lb-list-card:hover{transform:translateX(4px);box-shadow:0 2px 12px rgba(0,0,0,.06);background:#EEF2FF}
-.lb-list-rank{font-size:18px;font-weight:700;font-style:italic;color:#B0B0B0;width:28px;text-align:center;flex-shrink:0;transition:color .2s,transform .2s}
-.lb-list-card:hover .lb-list-rank{color:var(--brand2);transform:scale(1.1)}
-.lb-list-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;flex-shrink:0;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
-.lb-list-card:hover .lb-list-avatar{transform:scale(1.15)}
+.lb-list-rank{font-size:18px;font-weight:700;font-style:italic;color:#B0B0B0;width:28px;text-align:center;flex-shrink:0}
 .lb-list-avatar.is-placeholder{background:#3B82F6;font-size:16px;font-weight:400}
-.lb-list-name{flex:1;font-size:11px;font-weight:500;color:#6B7280;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lb-list-score{font-size:12px;font-weight:600;color:#374151;margin-left:auto;flex-shrink:0;text-align:right}
 
-/* Hover effects */
+/* Leaderboard size adjustments */
+/* ===== Data Rain (Matrix-style falling blocks) ===== */
+.lb-pod-avatar{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#fff;border:2.5px solid;flex-shrink:0;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.data-rain{position:relative;height:360px;overflow:hidden}
+.lb-pod-name{font-size:9px;font-weight:500;color:#6B7280;max-width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;margin-bottom:3px;z-index:2}
+.data-rain::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:5;background:linear-gradient(180deg,var(--bg) 0%,transparent 10%,transparent 85%,var(--bg) 100%)}
+.lb-pod-score{font-size:12px;font-weight:600;color:#374151;z-index:2}
+.rain-block{position:absolute;width:130px;padding:8px 10px;border-radius:10px;background:rgba(30,28,48,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(168,139,250,.06);display:flex;flex-direction:column;align-items:center;gap:5px;animation:rain-drop var(--rd,12s) linear var(--rdd,0s) infinite;cursor:pointer;transition:border-color .3s,box-shadow .3s,background .3s;z-index:1}
+.lb-pod-rank2 .lb-pod-score{color:#1E3A5F}
+.rain-block:hover{border-color:rgba(168,139,250,.3);box-shadow:0 0 16px rgba(168,139,250,.2);background:rgba(40,36,60,.7);z-index:10}
+.lb-pod-rank3 .lb-pod-score{color:#7C2D12}
+.rain-block .rb-icon{width:48px;height:48px;border-radius:10px;overflow:hidden;flex-shrink:0;background:rgba(255,255,255,.03);position:relative}
+
+.rain-block .rb-icon img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}
+.lb-list-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;flex-shrink:0;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.rain-block .rb-emoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:24px;z-index:0}
+.lb-list-name{flex:1;font-size:11px;font-weight:500;color:#6B7280;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rain-block .rb-user{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--text2)}
+.lb-list-score{font-size:12px;font-weight:600;color:#374151;margin-left:auto;flex-shrink:0;text-align:right}
+.rain-block .rb-avatar{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;flex-shrink:0}
+
+.rain-block .rb-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70px}
+/* Podium heights: 1 : 3/4 : 1/3 */
+.rain-block .rb-game{font-size:9px;color:var(--brand2);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px;text-align:center}
+.lb-pod.lb-pod-rank1 .lb-pod-card{height:180px}
+.rain-block .rb-time{font-size:8px;color:var(--text3)}
+.lb-pod.lb-pod-rank2 .lb-pod-card{height:135px}
+@keyframes rain-drop{
+.lb-pod.lb-pod-rank3 .lb-pod-card{height:110px}
+  0%{transform:translateY(-160px);opacity:0}
+.lb-pod{transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+  8%{opacity:1}
+.lb-pod-crown{transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+  88%{opacity:1}
+.lb-pod-card{transition:box-shadow .3s,filter .3s}
+  100%{transform:translateY(380px);opacity:0}
+
+}
+/* Hover micro-interactions */
+@media(max-width:900px){.data-rain{height:300px}.rain-block{width:110px}.rain-block .rb-icon{width:40px;height:40px}}
 .lb-pod:hover{transform:translateY(-6px)}
+@media(max-width:640px){
 .lb-pod-rank1:hover .lb-pod-card{box-shadow:0 8px 32px rgba(245,158,11,.35)}
+  .data-rain{height:260px}.rain-block{width:96px;padding:6px 8px}.rain-block .rb-icon{width:36px;height:36px}}
 .lb-pod-rank2:hover .lb-pod-card{box-shadow:0 8px 32px rgba(147,197,253,.35)}
+
 .lb-pod-rank3:hover .lb-pod-card{box-shadow:0 8px 32px rgba(251,146,60,.3)}
+/* ===== Enhanced Leaderboard ===== */
 .lb-pod:hover .lb-pod-card{filter:brightness(1.08)}
+.leaderboard-block{animation:lbFadeIn .4s ease-out}
 .lb-pod:hover .lb-pod-avatar{transform:scale(1.12) rotate(-3deg)}
 .lb-pod:hover .lb-pod-crown{transform:translateY(-6px) scale(1.2)}
-
-
-/* Leaderboard in main content */
-.leaderboard-section{margin-bottom:32px;padding:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:16px}
-.leaderboard-section .lb-podium{justify-content:center;gap:12px}
-.leaderboard-section .lb-pod{max-width:140px}
-.leaderboard-section .lb-list-section{max-width:480px;margin:0 auto}
+.lb-list-card{transition:transform .2s,box-shadow .2s,background .2s}
+.lb-list-card:hover{transform:translateX(4px);box-shadow:0 2px 12px rgba(0,0,0,.06);background:#EEF2FF}
+.lb-list-card:hover .lb-list-avatar{transform:scale(1.15)}
+.lb-list-card:hover .lb-list-rank{color:var(--brand2);transform:scale(1.1)}
 
 /* Sidebar */
 .sidebar-block{margin-bottom:24px}
@@ -311,6 +355,8 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 .play-bar-actions{display:flex;gap:8px}
 .btn-sm{background:rgba(255,255,255,0.05);color:var(--text2);border:1px solid var(--border);padding:6px 14px;border-radius:8px;font-size:12px;cursor:pointer;transition:all .2s}
 .btn-sm:hover{border-color:var(--brand2);color:var(--brand2)}
+
+/* Play Recommendations */
 .play-rec-section{margin-top:32px}
 .play-rec-title{font-size:18px;font-weight:700;margin-bottom:14px}
 .play-rec-row{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
@@ -318,11 +364,7 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 .play-rec-row::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:2px}
 .play-rec-row .game-card{min-width:170px;max-width:185px;scroll-snap-align:start;flex-shrink:0}
 
-/* Keyframes */
-@keyframes lbFadeIn{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
-@keyframes lbPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
-
-/* Mobile */
+/* ===== Mobile ===== */
 @media(max-width:640px){
   .footer-inner{flex-direction:column;text-align:center}
   .detail-layout{grid-template-columns:1fr}
@@ -354,26 +396,6 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
   .play-sidebar .sidebar-thumb{width:36px;height:36px}
   .play-sidebar .sidebar-info h4{font-size:11px}
 }
-/* ===== Data Rain (Matrix-style falling blocks) ===== */
-.data-rain{position:relative;height:360px;overflow:hidden}
-.data-rain::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:5;background:linear-gradient(180deg,var(--bg) 0%,transparent 10%,transparent 85%,var(--bg) 100%)}
-.rain-block{position:absolute;width:130px;padding:8px 10px;border-radius:10px;background:rgba(30,28,48,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(168,139,250,.06);display:flex;flex-direction:column;align-items:center;gap:5px;animation:rain-drop var(--rd,12s) linear var(--rdd,0s) infinite;cursor:pointer;transition:border-color .3s,box-shadow .3s,background .3s;z-index:1}
-.rain-block:hover{border-color:rgba(168,139,250,.3);box-shadow:0 0 16px rgba(168,139,250,.2);background:rgba(40,36,60,.7);z-index:10}
-.rain-block .rb-icon{width:48px;height:48px;border-radius:10px;overflow:hidden;flex-shrink:0;background:rgba(255,255,255,.03);position:relative}
-.rain-block .rb-icon img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}
-.rain-block .rb-emoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:24px;z-index:0}
-.rain-block .rb-user{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--text2)}
-.rain-block .rb-avatar{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;flex-shrink:0}
-.rain-block .rb-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70px}
-.rain-block .rb-game{font-size:9px;color:var(--brand2);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px;text-align:center}
-.rain-block .rb-time{font-size:8px;color:var(--text3)}
-@keyframes rain-drop{
-  0%{transform:translateY(-160px);opacity:0}
-  8%{opacity:1}
-  88%{opacity:1}
-  100%{transform:translateY(380px);opacity:0}
-}
-@media(max-width:900px){.data-rain{height:300px}.rain-block{width:110px}.rain-block .rb-icon{width:40px;height:40px}}
-@media(max-width:640px){
-  .data-rain{height:260px}.rain-block{width:96px;padding:6px 8px}.rain-block .rb-icon{width:36px;height:36px}}
 
+@keyframes lbFadeIn{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes lbPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}

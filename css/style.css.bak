@@ -26,9 +26,8 @@
   --nav-h:60px;
 }
 
-html{scroll-behavior:smooth;overflow-x:clip;max-width:100%;position:relative}
-body{overflow-x:clip;position:relative;width:100%;max-width:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;font-size:14px;line-height:1.55;color:var(--text);background:var(--bg);min-height:100vh;-webkit-font-smoothing:antialiased}
-main{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;font-size:14px;line-height:1.55;color:var(--text);background:var(--bg);min-height:100vh;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 
 /* ---- Glass Nav ---- */
@@ -186,6 +185,8 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 
 /* Podium */
 /* ===== Leaderboard V2 ===== */
+
+/* Header */
 .lb-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
 .lb-title-wrap{display:flex;align-items:center;gap:8px}
 .lb-title-icon{display:flex;align-items:flex-end;gap:2px}
@@ -196,36 +197,46 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 .lb-title{font-size:16px;font-weight:700;color:var(--text)}
 .lb-live-hint{font-size:11px;color:var(--text3);font-weight:500}
 
-/* Podium */
+/* ===== Podium Card ===== */
 .lb-podium{display:flex;align-items:flex-end;justify-content:center;gap:0;margin-bottom:18px;padding:8px 4px 0}
-.lb-pod{flex:1;display:flex;flex-direction:column;align-items:center;position:relative;max-width:120px;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.lb-pod{flex:1;display:flex;flex-direction:column;align-items:center;position:relative;max-width:120px}
 .lb-pod.lb-pod-rank1{margin-bottom:-4px}
-.lb-pod.lb-pod-rank1 .lb-pod-card{height:180px}
-.lb-pod.lb-pod-rank2 .lb-pod-card{height:135px}
-.lb-pod.lb-pod-rank3 .lb-pod-card{height:110px}
-.lb-pod-crown{position:absolute;top:-14px;z-index:3;font-size:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.15));transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.lb-pod.lb-pod-rank1 .lb-pod-card{padding-bottom:46px}
+.lb-pod.lb-pod-rank2 .lb-pod-card{padding-bottom:38px}
+.lb-pod.lb-pod-rank3 .lb-pod-card{padding-bottom:32px}
+
+/* Crown icon above avatar */
+.lb-pod-crown{position:absolute;top:-14px;z-index:3;font-size:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.15))}
 .lb-pod-rank1 .lb-pod-crown{top:-18px;font-size:26px}
-.lb-pod-card{position:relative;width:100%;display:flex;flex-direction:column;align-items:center;padding:18px 8px 0;border-radius:14px 14px 0 0;overflow:visible;transition:box-shadow .3s,filter .3s}
+
+/* Card background with swallowtail bottom */
+.lb-pod-card{position:relative;width:100%;display:flex;flex-direction:column;align-items:center;padding:28px 8px 0;border-radius:14px 14px 0 0;overflow:visible}
 .lb-pod-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:28px;clip-path:polygon(50% 100%,0 0,100% 0)}
+
+/* Rank 1 (gold) card */
 .lb-pod-rank1 .lb-pod-card{background:linear-gradient(180deg,#FEF3C7 0%,#FDE68A 60%,#FCD34D 100%)}
 .lb-pod-rank1 .lb-pod-card::after{background:linear-gradient(180deg,#FCD34D,#F59E0B)}
+
+/* Rank 2 (silver/blue) card */
 .lb-pod-rank2 .lb-pod-card{background:linear-gradient(180deg,#EFF6FF 0%,#DBEAFE 60%,#BFDBFE 100%)}
 .lb-pod-rank2 .lb-pod-card::after{background:linear-gradient(180deg,#BFDBFE,#93C5FD)}
+
+/* Rank 3 (bronze/orange) card */
 .lb-pod-rank3 .lb-pod-card{background:linear-gradient(180deg,#FFF7ED 0%,#FFEDD5 60%,#FED7AA 100%)}
 .lb-pod-rank3 .lb-pod-card::after{background:linear-gradient(180deg,#FED7AA,#FB923C)}
 
-/* Avatar */
+/* Avatar with colored border and shadow base */
 .lb-pod-avatar-wrap{position:relative;margin-bottom:6px;z-index:2}
-.lb-pod-avatar-shadow{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:54px;height:10px;border-radius:50%;opacity:.3}
+.lb-pod-avatar-shadow{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:46px;height:10px;border-radius:50%;opacity:.3}
 .lb-pod-rank1 .lb-pod-avatar-shadow{background:#F59E0B}
 .lb-pod-rank2 .lb-pod-avatar-shadow{background:#93C5FD}
 .lb-pod-rank3 .lb-pod-avatar-shadow{background:#FB923C}
-.lb-pod-avatar{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#fff;border:2.5px solid;flex-shrink:0;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
+.lb-pod-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:#fff;border:2.5px solid;flex-shrink:0}
 .lb-pod-rank1 .lb-pod-avatar{border-color:#F59E0B}
 .lb-pod-rank2 .lb-pod-avatar{border-color:#93C5FD}
 .lb-pod-rank3 .lb-pod-avatar{border-color:#FB923C}
 
-/* Rank badge */
+/* Rank badge with laurel */
 .lb-pod-rank-badge{display:flex;align-items:center;justify-content:center;gap:1px;margin-bottom:4px;z-index:2}
 .lb-pod-laurel{font-size:8px;color:#B45309}
 .lb-pod-rank2 .lb-pod-laurel{color:#6B7280}
@@ -233,126 +244,38 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 .lb-pod-rank-num{font-size:9px;font-weight:900;color:#B45309;margin:0 2px}
 .lb-pod-rank2 .lb-pod-rank-num{color:#4B5563}
 .lb-pod-rank3 .lb-pod-rank-num{color:#C2410C}
-.lb-pod-name{font-size:9px;font-weight:500;color:#6B7280;max-width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;margin-bottom:3px;z-index:2}
-.lb-pod-score{font-size:12px;font-weight:600;color:#374151;z-index:2}
+
+/* Player name */
+.lb-pod-name{font-size:11px;font-weight:700;color:#1F2937;max-width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;margin-bottom:3px;z-index:2}
+
+/* Score */
+.lb-pod-score{font-size:16px;font-weight:800;color:#111827;z-index:2}
 .lb-pod-rank2 .lb-pod-score{color:#1E3A5F}
 .lb-pod-rank3 .lb-pod-score{color:#7C2D12}
 
-/* List */
+/* ===== List Section (Ranks 4-6) ===== */
 .lb-list-section{display:flex;flex-direction:column;gap:8px}
-.lb-list-card{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:#F5F5F5;transition:transform .2s,box-shadow .2s,background .2s}
-.lb-list-card:hover{transform:translateX(4px);box-shadow:0 2px 12px rgba(0,0,0,.06);background:#EEF2FF}
-.lb-list-rank{font-size:18px;font-weight:700;font-style:italic;color:#B0B0B0;width:28px;text-align:center;flex-shrink:0;transition:color .2s,transform .2s}
-.lb-list-card:hover .lb-list-rank{color:var(--brand2);transform:scale(1.1)}
-.lb-list-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;flex-shrink:0;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1)}
-.lb-list-card:hover .lb-list-avatar{transform:scale(1.15)}
+.lb-list-card{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:#F5F5F5;transition:background .15s}
+.lb-list-card:hover{background:#EEF2FF}
+.lb-list-rank{font-size:18px;font-weight:700;font-style:italic;color:#B0B0B0;width:28px;text-align:center;flex-shrink:0}
+.lb-list-avatar{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0;overflow:hidden}
 .lb-list-avatar.is-placeholder{background:#3B82F6;font-size:16px;font-weight:400}
-.lb-list-name{flex:1;font-size:11px;font-weight:500;color:#6B7280;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lb-list-score{font-size:12px;font-weight:600;color:#374151;margin-left:auto;flex-shrink:0;text-align:right}
+.lb-list-name{flex:1;font-size:13px;font-weight:600;color:#1F2937;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lb-list-score{font-size:14px;font-weight:700;color:#1F2937;margin-left:auto;flex-shrink:0;text-align:right}
 
-/* Hover effects */
-.lb-pod:hover{transform:translateY(-6px)}
-.lb-pod-rank1:hover .lb-pod-card{box-shadow:0 8px 32px rgba(245,158,11,.35)}
-.lb-pod-rank2:hover .lb-pod-card{box-shadow:0 8px 32px rgba(147,197,253,.35)}
-.lb-pod-rank3:hover .lb-pod-card{box-shadow:0 8px 32px rgba(251,146,60,.3)}
-.lb-pod:hover .lb-pod-card{filter:brightness(1.08)}
-.lb-pod:hover .lb-pod-avatar{transform:scale(1.12) rotate(-3deg)}
-.lb-pod:hover .lb-pod-crown{transform:translateY(-6px) scale(1.2)}
-
-
-/* Leaderboard in main content */
-.leaderboard-section{margin-bottom:32px;padding:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:16px}
-.leaderboard-section .lb-podium{justify-content:center;gap:12px}
-.leaderboard-section .lb-pod{max-width:140px}
-.leaderboard-section .lb-list-section{max-width:480px;margin:0 auto}
-
-/* Sidebar */
-.sidebar-block{margin-bottom:24px}
-.sidebar-block h3{font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text)}
-.sidebar-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;cursor:pointer;transition:background .15s}
-.sidebar-item:hover{background:rgba(255,255,255,0.04)}
-.sidebar-thumb{width:44px;height:44px;border-radius:8px;overflow:hidden;flex-shrink:0;background:rgba(255,255,255,0.05)}
-.sidebar-thumb img{width:100%;height:100%;object-fit:cover}
-.sidebar-info{flex:1;min-width:0}
-.sidebar-info h4{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0 0 4px;color:var(--text)}
-.sidebar-meta{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--text3)}
-.s-stars{color:var(--amber)}
-
-/* Footer */
-.footer{margin-top:60px;padding:32px 20px;border-top:1px solid var(--border);background:rgba(0,0,0,0.1)}
-.footer-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.footer-brand{font-size:14px;font-weight:700;color:var(--text)}
-.footer-links{display:flex;gap:20px}
-.footer-links a{font-size:12px;color:var(--text3);text-decoration:none;transition:color .2s}
-.footer-links a:hover{color:var(--brand2)}
-.footer-copy{font-size:11px;color:var(--text3)}
-
-/* Play Page */
-.play-layout{display:grid;grid-template-columns:1fr 340px;gap:24px;padding-top:20px}
-.play-main{min-width:0}
-.play-sidebar{min-width:0}
-.game-window{position:relative;background:rgba(0,0,0,0.3);border-radius:16px;overflow:hidden;min-height:480px;display:flex;align-items:center;justify-content:center}
-.game-window.loading .giframe{display:none}
-.game-window.loading .gctrl{display:none}
-.game-window.ready .gp{display:none}
-.gp{display:flex;flex-direction:column;align-items:center;gap:12px;padding:40px}
-.gp-icon{font-size:72px}
-.gp-title{font-size:24px;font-weight:700;color:#fff}
-.gp-start{background:linear-gradient(135deg,var(--brand2),var(--pink));color:#fff;border:none;padding:14px 40px;border-radius:28px;font-size:16px;font-weight:800;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 24px rgba(168,139,250,.35)}
-.gp-start:hover{transform:scale(1.05);box-shadow:0 6px 32px rgba(168,139,250,.5)}
-.giframe{position:absolute;inset:0}
-.giframe iframe{width:100%;height:100%;border:none}
-.gctrl{position:absolute;bottom:12px;right:12px;z-index:10}
-.btn-ctrl{background:rgba(0,0,0,0.5);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:6px 14px;border-radius:8px;font-size:12px;cursor:pointer;transition:background .2s}
-.btn-ctrl:hover{background:rgba(255,255,255,0.15)}
-.play-bar{display:flex;align-items:center;justify-content:space-between;padding:12px 0;margin-top:16px;border-top:1px solid var(--border);flex-wrap:wrap;gap:8px}
-.play-bar-left h2{font-size:18px;font-weight:700;margin:0 0 4px}
-.play-bar-rating{font-size:13px;color:var(--amber)}
-.play-bar-actions{display:flex;gap:8px}
-.btn-sm{background:rgba(255,255,255,0.05);color:var(--text2);border:1px solid var(--border);padding:6px 14px;border-radius:8px;font-size:12px;cursor:pointer;transition:all .2s}
-.btn-sm:hover{border-color:var(--brand2);color:var(--brand2)}
-.play-rec-section{margin-top:32px}
-.play-rec-title{font-size:18px;font-weight:700;margin-bottom:14px}
-.play-rec-row{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
-.play-rec-row::-webkit-scrollbar{height:4px}
-.play-rec-row::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:2px}
-.play-rec-row .game-card{min-width:170px;max-width:185px;scroll-snap-align:start;flex-shrink:0}
-
-/* Keyframes */
-@keyframes lbFadeIn{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
-@keyframes lbPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
-
-/* Mobile */
 @media(max-width:640px){
-  .footer-inner{flex-direction:column;text-align:center}
-  .detail-layout{grid-template-columns:1fr}
-  .sidebar-item{padding:8px 10px}
   .lb-pod{max-width:100px}
-  .lb-pod-avatar{width:44px;height:44px;font-size:16px}
+  .lb-pod-avatar{width:36px;height:36px;font-size:14px}
   .lb-pod-crown{font-size:18px;top:-12px}
   .lb-pod-rank1 .lb-pod-crown{font-size:22px;top:-14px}
-  .lb-pod-name{font-size:8px;max-width:70px}
-  .lb-pod-score{font-size:11px}
-  .lb-pod-card{height:150px}
+  .lb-pod-name{font-size:10px;max-width:70px}
+  .lb-pod-score{font-size:14px}
+  .lb-pod-card{padding:24px 6px 0}
   .lb-list-card{padding:8px 10px;gap:8px}
   .lb-list-rank{font-size:16px;width:24px}
-  .lb-list-avatar{width:34px;height:34px;font-size:12px}
-  .lb-list-name{font-size:10px}
-  .lb-list-score{font-size:11px}
-  .play-layout{grid-template-columns:1fr}
-  .game-window{min-height:300px}
-  .gp-icon{font-size:48px}
-  .gp-title{font-size:18px}
-  .gp-start{padding:12px 32px;font-size:14px}
-  .play-rec-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;overflow-x:visible}
-  .play-rec-row .game-card{min-width:0;max-width:none}
-  .play-rec-row::-webkit-scrollbar{display:none}
-  .play-rec-title{font-size:16px}
-  .play-sidebar .sidebar-block{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .play-sidebar .sidebar-block h3{grid-column:1/-1}
-  .play-sidebar .sidebar-item{padding:6px 6px}
-  .play-sidebar .sidebar-thumb{width:36px;height:36px}
-  .play-sidebar .sidebar-info h4{font-size:11px}
+  .lb-list-avatar{width:30px;height:30px;font-size:10px}
+  .lb-list-name{font-size:11px}
+  .lb-list-score{font-size:12px}
 }
 /* ===== Data Rain (Matrix-style falling blocks) ===== */
 .data-rain{position:relative;height:360px;overflow:hidden}
@@ -377,3 +300,59 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 @media(max-width:640px){
   .data-rain{height:260px}.rain-block{width:96px;padding:6px 8px}.rain-block .rb-icon{width:36px;height:36px}}
 
+/* ===== Enhanced Leaderboard ===== */
+.leaderboard-block{animation:lbFadeIn .4s ease-out}
+.lb-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.lb-header h3{font-size:15px;font-weight:700;display:flex;align-items:center;gap:6px}
+.lb-live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22C55E;margin-right:4px;animation:lbPulse 1.5s ease-in-out infinite}
+.lb-players-count{font-size:11px;color:var(--text3);font-weight:500}
+.lb-podium{display:flex;align-items:flex-end;justify-content:center;gap:10px;margin-bottom:18px;padding-top:4px}
+.lb-pod{text-align:center;max-width:95px;flex:1}
+.lb-pod-bar{border-radius:10px 10px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:10px 4px;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.lb-pod-bar:hover{transform:translateY(-4px) scale(1.02)}
+.lb-pod-gold .lb-pod-bar{height:110px;background:linear-gradient(180deg,#FDE68A,#F59E0B);box-shadow:0 4px 20px rgba(245,158,11,.3)}
+.lb-pod-silver .lb-pod-bar{height:88px;background:linear-gradient(180deg,#E2E8F0,#94A3B8);box-shadow:0 4px 16px rgba(148,163,184,.2)}
+.lb-pod-bronze .lb-pod-bar{height:66px;background:linear-gradient(180deg,#FED7AA,#EA580C);box-shadow:0 4px 16px rgba(234,88,12,.2)}
+.lb-pod-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;margin-bottom:3px;border:2px solid rgba(255,255,255,0.4);transition:transform .2s}
+.lb-pod-avatar:hover{transform:scale(1.1)}
+.lb-pod-name{font-size:10px;color:#fff;font-weight:700;max-width:70px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lb-pod-score{font-size:9px;color:rgba(255,255,255,0.75)}
+.lb-pod-medal{display:flex;flex-direction:column;align-items:center;gap:2px;margin-bottom:4px}
+
+/* List items with progress bar */
+.lb-list-item{display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:8px;margin-bottom:3px;transition:background .2s,transform .15s;position:relative}
+.lb-list-item:hover{background:rgba(255,255,255,0.04);transform:translateX(2px)}
+.lb-list-item.is-you{background:rgba(168,139,250,.1);border:1px solid rgba(168,139,250,.2)}
+.lb-list-item .lb-rank{font-size:12px;font-weight:700;width:24px;text-align:center;color:var(--text3);flex-shrink:0}
+.lb-list-item .lb-rank.top-1{color:#F59E0B}.lb-list-item .lb-rank.top-2{color:#94A3B8}.lb-list-item .lb-rank.top-3{color:#EA580C}
+.lb-list-item .lb-small-avatar{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;color:#fff;flex-shrink:0;border:2px solid transparent;transition:border-color .2s}
+.lb-list-item:hover .lb-small-avatar{border-color:rgba(255,255,255,.15)}
+.lb-list-item .lb-small-name{flex:1;font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lb-list-item .lb-small-score-wrap{text-align:right;flex-shrink:0;min-width:55px}
+.lb-list-item .lb-small-score{font-size:12px;font-weight:700;color:var(--text)}
+.lb-list-item .lb-score-bar{position:absolute;left:0;bottom:0;height:2px;border-radius:0 0 8px 8px;background:linear-gradient(90deg,var(--brand2),var(--pink));opacity:.3;transition:width .8s cubic-bezier(.22,1,.36,1)}
+.lb-list-item .lb-you-badge{display:inline-block;font-size:8px;font-weight:800;background:var(--brand2);color:#fff;padding:1px 5px;border-radius:6px;margin-left:4px;letter-spacing:.3px;vertical-align:middle}
+.lb-list-item .lb-level{font-size:9px;color:var(--text3);font-weight:600;margin-right:4px;flex-shrink:0;min-width:20px;text-align:center}
+
+.btn-view-more{width:100%;background:rgba(255,255,255,0.03);border:1px solid var(--border);color:var(--brand2);padding:8px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;margin-top:2px}
+.btn-view-more:hover{background:rgba(168,139,250,.08);border-color:rgba(168,139,250,.3)}
+
+@keyframes lbFadeIn{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes lbPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+
+@media(max-width:640px){
+  .lb-pod-bar{height:90px!important}.lb-pod-silver .lb-pod-bar{height:72px!important}.lb-pod-bronze .lb-pod-bar{height:54px!important}
+  .lb-pod-avatar{width:30px;height:30px;font-size:12px}
+  .lb-pod-name{font-size:9px;max-width:56px}
+  .lb-pod-score{font-size:8px}
+  .lb-list-item{padding:6px 8px;gap:6px}
+  .lb-list-item .lb-rank{width:20px;font-size:11px}
+  .lb-list-item .lb-small-avatar{width:24px;height:24px;font-size:9px}
+  .lb-list-item .lb-small-name{font-size:11px}
+  .lb-list-item .lb-small-score{font-size:11px}
+  .lb-list-item .lb-level{font-size:8px;min-width:16px}
+  .lb-players-count{font-size:10px}
+  .lb-header h3{font-size:14px}
+}
+
+/* remove old duplicate lb-more-list .lb-item (replaced by .lb-list-item) */
