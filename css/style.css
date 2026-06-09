@@ -377,3 +377,11 @@ a{color:inherit;text-decoration:none}ul{list-style:none}img{max-width:100%}
 @media(max-width:640px){
   .data-rain{height:260px}.rain-block{width:96px;padding:6px 8px}.rain-block .rb-icon{width:36px;height:36px}}
 
+
+/* Leaderboard responsive: desktop=sidebar, mobile=inline */
+.lb-desktop-wrap{display:block}
+.lb-mobile-wrap{display:none}
+@media(max-width:640px){
+  .lb-desktop-wrap{display:none}
+  .lb-mobile-wrap{display:block}
+}
