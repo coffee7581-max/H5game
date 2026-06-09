@@ -477,7 +477,7 @@ function getGameById(id){return DISPLAY_GAMES.find(g=>g.id===parseInt(id))||ALL_
 function getGameBySlug(slug){return GAMES.find(g=>g.slug===slug);}
 function getDGByCat(cat){return cat==='all'?DISPLAY_GAMES:DISPLAY_GAMES.filter(g=>g.category===cat);}
 function getAllByCat(cat){return cat==='all'?ALL_DISPLAY_GAMES:ALL_DISPLAY_GAMES.filter(g=>g.category===cat);}
-function getFeatured(){return ALL_DISPLAY_GAMES.filter(g=>g.features.featured).sort(()=>Math.random()-0.5);}
+function getFeatured(c=10){var pool=[...ALL_DISPLAY_GAMES].sort(()=>Math.random()-0.5);return pool.slice(0,c);}
 function getHot(){return ALL_DISPLAY_GAMES.filter(g=>g.features.hot).sort(()=>Math.random()-0.5);}
 function getNew(){return ALL_DISPLAY_GAMES.filter(g=>g.features.new).sort(()=>Math.random()-0.5);}
 function getRelated(game,c=5){var pool=ALL_DISPLAY_GAMES.filter(g=>g.id!==game.id&&g.category===game.category).sort((a,b)=>b.likeCount-a.likeCount).slice(0,c*4);return pool.sort(()=>Math.random()-0.5).slice(0,c);}
