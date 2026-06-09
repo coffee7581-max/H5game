@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Play Game - GameCenter</title>
+<meta name="description" content="Play free HTML5 games online instantly. No download required.">
+<meta name="keywords" content="play online games,free games,browser games">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar"><div class="navbar-inner">
+  <a href="index.html" class="nav-logo">GameCenter</a>
+  <div class="nav-links"><a href="index.html">Discover</a><a href="index.html#trending">Trending</a><a href="index.html#categories">Categories</a></div>
+</div></nav>
+
+<main class="container">
+  <div style="padding-top:16px;font-size:12px;color:var(--text-tertiary);"><a href="index.html">Discover</a> &rsaquo; <a href="game.html" id="bl">Detail</a> &rsaquo; <span id="bt" style="color:var(--text-primary);">Playing</span></div>
+  <div class="play-layout"><div class="play-main" id="pm"></div><div class="play-sidebar" id="ps"></div></div>
+</main>
+
+<footer class="footer"><div class="footer-inner"><div class="footer-brand">GameCenter</div>
+<div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></div>
+<div class="footer-copy">&copy; 2024 GameCenter.</div></div></footer>
+
+<script src="js/data.js"></script>
+<script>
+var gId=parseInt(params.get('id'))||1,game=null;
+function fl(g,sz){return'<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:'+sz+';background:linear-gradient(135deg,'+g.coverColor+','+g.coverColor2+');">'+g.coverEmoji+'</div>';}
+function im(g,u){return u?'<img src="'+u+'" loading="lazy" onerror="this.style.display=\'none\'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">':'';}
+function si(g){return'<div class="sidebar-item" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="sidebar-thumb" style="position:relative;">'+fl(g,'16px')+im(g,g.iconUrl)+'</div><div class="sidebar-info"><h4>'+g.title+'</h4><div class="sidebar-meta"><span class="s-stars">'+g.rating+' &star;</span><span>'+g.players+'</span></div></div></div>';}
+
+function rm(){return'<div class="game-window loading" id="gw"><div class="gp"><span class="gp-icon">'+game.coverEmoji+'</span><span class="gp-title">'+game.title+'</span><span style="font-size:13px;opacity:.6;">Click to start playing</span><button class="gp-start" onclick="sg()">&#9654; Play Now</button></div><div class="giframe"><iframe id="gi" src="" allow="autoplay;camera;microphone;fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></div><div class="gctrl"><button class="btn-ctrl" onclick="tfs()">&#9974; Fullscreen</button></div></div><div class="play-bar"><div class="play-bar-left"><h2>'+game.title+'</h2><div class="play-bar-rating">'+starsHtml(game.rating)+' '+game.rating+'</div></div><div class="play-bar-actions"><button class="btn-sm" onclick="share()">&#128279; Share</button><button class="btn-sm" onclick="location.href=\'game.html?id='+game.id+'\'">&#128196; Details</button></div></div>';}
+function rss(){var f=getFeatured().filter(function(x){return x.id!==game.id;}).slice(0,5),r=getRelated(game,5),p=getPopular(8).filter(function(x){return x.id!==game.id;}).slice(0,5);return'<div class="sidebar-block"><h3>&#10024; Picks</h3>'+f.map(si).join('')+'</div><div class="sidebar-block"><h3>&#127918; Similar</h3>'+r.map(si).join('')+'</div><div class="sidebar-block"><h3>&#128293; Trending</h3>'+p.map(si).join('')+'</div>';}
+function sg(){var w=document.getElementById('gw');w.classList.remove('loading');w.classList.add('ready');if(game.embedUrl){document.getElementById('gi').src=game.embedUrl;}else{var d='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>*{margin:0;padding:0}body{background:linear-gradient(135deg,'+game.coverColor+','+game.coverColor2+');display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;flex-direction:column;gap:16px;}.e{font-size:72px;}.t{font-size:24px;font-weight:700;color:#fff;}.s{font-size:13px;color:rgba(255,255,255,0.6);}</style></head><body><div class="e">'+game.coverEmoji+'</div><div class="t">'+game.title+'</div><div class="s">Loading...</div></body></html>';document.getElementById('gi').src=URL.createObjectURL(new Blob([d],{type:'text/html'}));}}
+function tfs(){var e=document.getElementById('gw');if(document.fullscreenElement)document.exitFullscreen();else e.requestFullscreen().catch(function(){});}
+function share(){if(navigator.share)navigator.share({title:game.title,text:'Play '+game.title+' online!',url:window.location.href}).catch(function(){});else navigator.clipboard.writeText(window.location.href).then(function(){alert('Link copied!');});}
+
+document.addEventListener('DOMContentLoaded',async function(){await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;document.title='Play '+game.title+' - GameCenter';document.getElementById('bl').href='game.html?id='+game.id;document.getElementById('bt').textContent=game.title;document.getElementById('pm').innerHTML=rm();document.getElementById('ps').innerHTML=rss();});
+</script>
+</body>
+</html>

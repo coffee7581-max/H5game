@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>history.scrollRestoration="manual";document.documentElement.style.overflow="hidden";document.documentElement.style.scrollBehavior="auto";window.scrollTo(0,0);if(location.hash)location.hash="";</script><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GameCenter — Play Free Online Games | Social Gaming Community</title>
+<meta name="description" content="Join millions of players on GameCenter. Play 600+ free HTML5 games with friends, earn achievements, and climb leaderboards.">
+<meta name="keywords" content="free online games,HTML5 games,browser games,social gaming">
+<link rel="canonical" href="https://www.weplaygamestogether.com/">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Masonry all-games */
+  .masonry{columns:4 180px;column-gap:14px}
+  .masonry .game-card{break-inside:avoid;margin-bottom:14px;display:inline-block;width:100%}
+  .masonry .game-card:hover{transform:translateY(-3px) scale(1.02);z-index:5}
+@media(max-width:900px){.img-only{display:none}}@media(max-width:640px){.masonry{columns:2 160px}}
+</style>
+</head>
+<body>
+<nav class="navbar"><div class="navbar-inner">
+  <a href="index.html" class="nav-logo">GameCenter</a>
+  <div class="nav-search"><input type="text" placeholder="Search games..." id="si"></div>
+</div></nav>
+
+<main>
+<section class="hero"><div class="hero-content container">
+  <h1><span>Play. Compete. Connect.</span></h1>
+  <p>600+ free HTML5 games. Challenge friends, earn achievements, and join the community.</p>
+  <div class="bento-stats" id="hs"></div>
+</div></section>
+
+<div class="container">
+  <section class="section" style="padding-top:20px;">
+    <div class="section-header"><h2 class="section-title">✨ Editor's Picks</h2></div>
+    <div class="bento-grid" id="bg"></div>
+  </section>
+
+  <section class="section" id="trending" style="padding-top:16px;">
+    <div class="section-header"><h2 class="section-title">🔥 Trending Now</h2><a href="javascript:void(0)" onclick="showSection('hot')" class="section-more">View all →</a></div>
+    <div class="trend-row" id="tr"></div>
+  </section>
+
+  <section class="section" id="categories" style="padding-top:16px;">
+    <div class="section-header"><h2 class="section-title">Browse Categories</h2></div>
+    <div class="cat-row cat-row-1" id="cl1"></div><div class="cat-row cat-row-2" id="cl2"></div>
+  </section>
+
+  <section class="section" style="padding-top:16px;">
+    <div class="section-header"><h2 class="section-title">🎮 Live Activity</h2></div>
+    <div class="data-rain" id="af"></div>
+  </section>
+
+  <section class="section" style="padding-top:16px;">
+    <div class="section-header"><h2 class="section-title">🆕 Just Added</h2><a href="javascript:void(0)" onclick="showSection('new')" class="section-more">View all →</a></div>
+    <div class="new-list" id="ng"></div>
+  </section>
+
+  <section class="section" id="all">
+    <div class="section-header"><h2 class="section-title">🎯 All Games <span style="font-size:13px;color:var(--text3);font-weight:400;" id="gc"></span></h2></div>
+    <div class="masonry" id="ag"></div>
+    <div class="load-wrap" id="lw" style="display:none"><button class="btn-load" id="bl" onclick="lm()">Show More Games</button></div>
+  </section>
+</div>
+</main>
+
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-brand">GameCenter</div>
+  <div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></div>
+  <div class="footer-copy">&copy; 2024 GameCenter. Built for gamers.</div>
+</div></footer>
+
+<script src="js/data.js"></script>
+<script>
+var ready=!1,cur='all';
+
+function fl(g,sz){return'<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:'+sz+';background:linear-gradient(135deg,'+g.coverColor+','+g.coverColor2+');">'+g.coverEmoji+'</div>';}
+function ig(g,u){return u?'<img src="'+u+'" loading="lazy" onerror="this.style.display=\'none\'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">':'';}
+function bento(g,big){return'<div class="bento-card'+(big?' big':'')+'" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="bc-img">'+fl(g,big?'56px':'36px')+ig(g,g.bannerUrl||g.iconUrl)+'</div><div class="bc-overlay"><h3>'+g.title+'</h3><div class="bc-meta"><span>'+g.catLabel+'</span><span>'+g.players+' plays</span></div></div><span class="bc-rating">★ '+g.rating+'</span><span class="bc-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">▶ Play</span></div>';}
+function card(g){
+  var b='';if(g.features.new)b='<span class="game-card-badge">NEW</span>';else if(g.features.hot)b='<span class="game-card-badge" style="background:var(--amber);">HOT</span>';
+  var imgH=[95,105,115,130,145,160,175],h=imgH[Math.floor(m32(g.id*7+13)()*imgH.length)];
+  var tilt=Math.random()<0.18?(Math.random()<0.5?'transform:rotate(-0.4deg);':'transform:rotate(0.35deg);'):'';
+  return'<div class="game-card" style="'+tilt+'" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="game-card-img" style="height:'+h+'px">'+fl(g,h>140?'38px':'28px')+ig(g,g.bannerUrl||g.iconUrl)+b+'<span class="game-card-rating">★ '+g.rating+'</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-tags">'+g.tags.slice(0,2).join(' · ')+'</div><div class="game-meta"><span>'+g.players+'</span><button class="game-card-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">Play</button></div></div></div>';
+}
+function nit(g){return'<div class="new-item" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="new-thumb">'+fl(g,'20px')+ig(g,g.iconUrl)+'</div><div class="new-info"><h4>'+g.title+'</h4><div class="nm"><span style="color:var(--amber);">'+g.rating+' ★</span><span>'+g.catLabel+'</span><span>'+g.players+'</span></div></div></div>';}
+
+function rCats(){var cats=CATEGORIES||[]; var colors=['#A78BFA','#F472B6','#FBBF24','#38BDF8','#34D399','#FB923C','#E879F9','#60A5FA','#4ADE80','#F87171','#A3E635','#C084FC']; var r1=[],r2=[]; cats.forEach(function(c,i){var n=c.name||c.id||'?',clr=colors[i%colors.length]; var chip='<span class="cat-chip'+(i===0?' active':'')+'" onclick="fc(\''+c.id+'\',this)"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="'+clr+'" opacity=".85"/></svg>'+n+'</span>'; if(i%2===0)r1.push(chip);else r2.push(chip);}); document.getElementById('cl1').innerHTML=r1.join(''); document.getElementById('cl2').innerHTML=r2.join('');}
+function fc(id,el){cur=id;document.querySelectorAll('.cat-chip').forEach(function(p){p.classList.remove('active');});if(el)el.classList.add('active');displayedCount=60;DISPLAY_GAMES=getAllByCat(id).slice(0,displayedCount);rg();document.getElementById('all').scrollIntoView({behavior:'smooth'});}
+function rg(){document.getElementById('ag').innerHTML=DISPLAY_GAMES.map(card).join('')||'<p style="color:var(--text2);grid-column:1/-1;text-align:center;padding:40px;">No games found.</p>';document.getElementById('gc').textContent='('+DISPLAY_GAMES.length+' games)';ul();}
+function ul(){var p=getAllByCat(cur),w=document.getElementById('lw');if(DISPLAY_GAMES.length<p.length){w.style.display='block';document.getElementById('bl').disabled=!1}else w.style.display='none'}
+function lm(){var p=getAllByCat(cur),prev=DISPLAY_GAMES.length;displayedCount+=40;DISPLAY_GAMES=p.slice(0,displayedCount);var a=DISPLAY_GAMES.length-prev;if(a>0){document.getElementById('ag').innerHTML+=DISPLAY_GAMES.slice(prev).map(card).join('');document.getElementById('gc').textContent='('+DISPLAY_GAMES.length+' games)'}ul()}
+function showSection(type){
+  if(!ready)return;
+  var games=type==='hot'?getHot():type==='new'?getNew():ALL_DISPLAY_GAMES;
+  DISPLAY_GAMES=games.slice(0,60);displayedCount=60;
+  rg();
+  document.getElementById('all').scrollIntoView({behavior:'smooth'});
+}
+function srch(q){if(!ready)return;q=q.toLowerCase().trim();if(!q){rg();return}var p=getAllByCat(cur),r=p.filter(function(g){return g.title.toLowerCase().includes(q)||g.tags.some(function(t){return t.toLowerCase().includes(q);})||g.catLabel.toLowerCase().includes(q)});document.getElementById('ag').innerHTML=r.length?r.map(card).join(''):'<p style="color:var(--text2);grid-column:1/-1;padding:40px;">No results</p>';document.getElementById('gc').textContent='('+r.length+' results)';document.getElementById('lw').style.display='none'}
+
+function genRainItem(){
+  var rng=m32(Math.floor(Date.now()/1000)+Date.now()%77731+7),actions=['played','scored #1 in','cleared','is playing','discovered','mastered'],pool=ALL_DISPLAY_GAMES;
+  var g=pool[Math.floor(rng()*pool.length)],n=WORLD_NAMES[Math.floor(rng()*WORLD_NAMES.length)],act=actions[Math.floor(rng()*actions.length)],h=hs(n)%360;
+  return {name:n,avatar:n.charAt(0),color:'hsl('+h+',50%,45%)',action:act,game:g};
+}
+
+function initDataRain(){
+  var el=document.getElementById('af'),count=window.innerWidth<640?20:window.innerWidth<900?28:35,w=el.clientWidth,bw=140;
+  // Fine-grained slots every 40px for organic scatter
+  var slotW=40,nSlots=Math.floor(w/slotW),taken=[];
+  for(var i=0;i<count;i++){
+    // Pick a random slot, retry if too close to another block
+    var si,left,bestLeft=0,bestGap=0;
+    for(var attempt=0;attempt<20;attempt++){
+      si=Math.floor(Math.random()*(nSlots-3));
+      left=si*slotW+Math.random()*bw*0.6;
+      var minGap=999;
+      for(var k=0;k<taken.length;k++){var d=Math.abs(left-taken[k]);if(d<minGap)minGap=d;}
+      if(minGap>bestGap){bestGap=minGap;bestLeft=left;}
+      if(minGap>=bw*0.6)break;
+    }
+    left=bestGap>0?bestLeft:Math.random()*(w-bw);
+    taken.push(left);if(taken.length>8)taken.shift();
+    var dur=10+Math.random()*14,delay=Math.random()*dur;
+    var a=genRainItem(),g=a.game;
+    var iconHtml=g.iconUrl?'<img src="'+g.iconUrl+'" loading="lazy" onerror="this.style.display=\'none\'">':'';
+    var block=document.createElement('div');
+    block.className='rain-block';
+    block.style.cssText='--rd:'+dur+'s;--rdd:-'+delay+'s;left:'+left+'px';
+    block.setAttribute('onclick',"location.href='play.html?id="+g.id+"'");
+    block.innerHTML='<div class="rb-icon"><div class="rb-emoji">'+g.coverEmoji+'</div>'+iconHtml+'</div><div class="rb-game">'+g.title+'</div><div class="rb-user"><div class="rb-avatar" style="background:'+a.color+';">'+a.avatar+'</div><span class="rb-name">'+a.name+'</span></div><div class="rb-time">'+a.action+'</div>';
+    // Refresh content on each loop
+    block.addEventListener('animationiteration',function(){
+      var na=genRainItem(),ng=na.game;
+      var emoji=this.querySelector('.rb-emoji');if(emoji)emoji.textContent=ng.coverEmoji;
+      var img=this.querySelector('.rb-icon img');if(img){img.src=ng.iconUrl;img.style.display='';img.onerror=function(){this.style.display='none';};}else if(ng.iconUrl){var ni=document.createElement('img');ni.src=ng.iconUrl;ni.onerror=function(){this.style.display='none';};this.querySelector('.rb-icon').appendChild(ni);}
+      var gtitle=this.querySelector('.rb-game');if(gtitle)gtitle.textContent=ng.title;
+      var av=this.querySelector('.rb-avatar');if(av){av.style.background=na.color;av.textContent=na.avatar;}
+      var nm=this.querySelector('.rb-name');if(nm)nm.textContent=na.name;
+      var tm=this.querySelector('.rb-time');if(tm)tm.textContent=na.action;
+      this.setAttribute('onclick',"location.href='play.html?id="+ng.id+"'");
+    });
+    el.appendChild(block);
+  }
+}
+
+document.addEventListener('DOMContentLoaded',async function(){
+  await loadGames();ready=!0;
+  document.getElementById('hs').innerHTML='<div class="bento-stat"><div class="sn">'+ALL_DISPLAY_GAMES.length+'+</div><div class="sl">Free Games</div></div><div class="bento-stat"><div class="sn">2M+</div><div class="sl">Players</div></div><div class="bento-stat"><div class="sn">'+CATEGORIES.length+'+</div><div class="sl">Categories</div></div><div class="bento-stat"><div class="sn">Instant</div><div class="sl">No Download</div></div>';
+  rCats();
+
+  // Shuffle featured for variety
+  var feat=getFeatured(),rng2=m32(Date.now()%7777+91);
+  for(var i=feat.length-1;i>0;i--){var j=Math.floor(rng2()*(i+1));var tmp=feat[i];feat[i]=feat[j];feat[j]=tmp;}
+  document.getElementById('bg').innerHTML=bento(feat[0],!0)+feat.slice(1,5).map(function(g){return bento(g,!1);}).join('');
+
+  document.getElementById('tr').innerHTML=getHot().map(card).join('');
+  initDataRain();
+  document.getElementById('ng').innerHTML=getNew().map(nit).join('');
+  rg();
+  document.getElementById('si').addEventListener('input',function(){srch(this.value);});
+  document.documentElement.style.overflow="";
+  document.documentElement.style.scrollBehavior="";
+  window.scrollTo(0,0);
+  setTimeout(function(){window.scrollTo(0,0);},50);
+});
+</script>
+</body>
+</html>

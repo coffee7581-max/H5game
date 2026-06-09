@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Game Detail - GameCenter</title>
+<meta name="description" content="Read reviews, see leaderboards, and start playing free online games instantly.">
+<meta name="keywords" content="game reviews,online games,leaderboard,player reviews">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar"><div class="navbar-inner">
+  <a href="index.html" class="nav-logo">GameCenter</a>
+  <div class="nav-links"><a href="index.html">Discover</a><a href="index.html#trending">Trending</a><a href="index.html#categories">Categories</a></div>
+  <div class="nav-search"><input type="text" placeholder="Search..."></div>
+</div></nav>
+
+<main class="container">
+  <div style="padding-top:16px;font-size:12px;color:var(--text-tertiary);"><a href="index.html">Discover</a> &rsaquo; <span id="bc"></span> &rsaquo; <span id="bt" style="color:var(--text-primary);"></span></div>
+  <div class="detail-layout"><div class="detail-main" id="dm"></div><div class="detail-sidebar" id="ds"></div></div>
+</main>
+
+<footer class="footer"><div class="footer-inner"><div class="footer-brand">GameCenter</div>
+<div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></div>
+<div class="footer-copy">&copy; 2024 GameCenter.</div></div></footer>
+
+<script src="js/data.js"></script>
+<script>
+var gId=parseInt(params.get('id'))||1,game=null,ur=0;
+
+function im(g,u,sz){return u?'<img src="'+u+'" alt="'+g.title+'" loading="lazy" onerror="this.style.display=\'none\'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">':'';}
+function fl(g,sz){return'<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:'+sz+';background:linear-gradient(135deg,'+g.coverColor+','+g.coverColor2+');">'+g.coverEmoji+'</div>';}
+function cov(g){return'<div class="detail-cover" style="position:relative;">'+fl(g,'48px')+im(g,g.bannerUrl||g.iconUrl,'')+'</div>';}
+function rc(g){return'<div class="game-card" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="game-card-img"><div class="card-media">'+fl(g,'32px')+im(g,g.bannerUrl||g.iconUrl,'')+'</div><span class="game-card-rating">'+g.rating+'</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-tags">'+g.tags.slice(0,2).join(' \u00b7 ')+'</div><div class="game-meta"><span class="players">'+g.players+'</span><button class="game-card-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">Play</button></div></div></div>';}
+function si(g){return'<div class="sidebar-item" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="sidebar-thumb" style="position:relative;">'+fl(g,'16px')+im(g,g.iconUrl,'')+'</div><div class="sidebar-info"><h4>'+g.title+'</h4><div class="sidebar-meta"><span class="s-stars">'+g.rating+' &star;</span><span>'+g.players+'</span></div></div></div>';}
+function hl(n){document.querySelectorAll('#sr .star').forEach(function(s,i){s.classList.toggle('active',i<n);});}
+
+function rm(){
+  var g=game,rel=getRelated(g,6),rec=getRecommended(g,4);
+  return'<div class="detail-header"><div class="detail-cover-wrap">'+cov(g)+'</div><div class="detail-info"><h1>'+g.title+'</h1><div class="detail-tags">'+g.tags.map(function(t){return'<span>'+t+'</span>';}).join('')+'</div><div class="detail-star-row">'+starsHtml(g.rating)+'<span class="detail-score">'+(g.reviews.length?(g.reviews.reduce(function(s,r){return s+r.rating;},0)/g.reviews.length).toFixed(1):g.rating)+'</span><span style="font-size:12px;color:var(--text-tertiary);margin-left:4px;">('+g.reviews.length+' reviews)</span></div><div class="detail-meta"><span>&#128101; <strong>'+g.players+'</strong> plays</span><span>&#128193; <strong>'+g.catLabel+'</strong></span>'+(g.mode&&g.mode.length?'<span>&#128241; <strong>'+g.mode.join('/')+'</strong></span>':'')+'</div><div class="detail-desc">'+(g.autoDesc||g.desc||'An exciting '+g.catLabel+' game.')+'</div><div class="detail-actions"><button class="btn-play" onclick="location.href=\'play.html?id='+g.id+'\'">&#9654; Play Now</button></div></div></div>'+
+  '<section class="section"><div class="section-header"><h2 class="section-title">Rate &amp; Review</h2></div><div class="review-form"><h4>Your Rating</h4><div class="star-rating" id="sr"><span class="star" data-v="1">&#9733;</span><span class="star" data-v="2">&#9733;</span><span class="star" data-v="3">&#9733;</span><span class="star" data-v="4">&#9733;</span><span class="star" data-v="5">&#9733;</span></div><textarea id="rt" placeholder="Share your experience..."></textarea><div class="form-row"><span class="form-label" id="rl">Click stars to rate</span><button class="btn-submit" onclick="sr()">Submit Review</button></div></div></section>'+
+  '<section class="section"><div class="section-header"><h2 class="section-title">Player Reviews <span style="font-size:12px;color:var(--text-tertiary);font-weight:400;">('+g.reviews.length+')</span></h2></div><div class="review-list review-collapsed" id="rvl"></div>'+(g.reviews.length>3?'<button class="btn-more" id="bsm" onclick="tr()">Show All '+g.reviews.length+' Reviews</button>':'')+'</section>'+
+  '<section class="section"><div class="section-header"><h2 class="section-title">Similar Games</h2></div><div class="game-grid">'+rel.map(rc).join('')+'</div></section>'+
+  (rec.length?'<section class="section"><div class="section-header"><h2 class="section-title">You Might Also Like</h2></div><div class="game-grid">'+rec.map(rc).join('')+'</div></section>':'');
+}
+
+function rs(){
+  var g=game,lb='';
+  if(g.leaderboard&&g.leaderboard.length){
+    var t3=g.leaderboard.slice(0,3),pod='';
+    t3.forEach(function(p,i){var pos=i===0?2:i===1?0:2;pod='<div class="lb-pod"><div class="lb-pod-bar"><div class="lb-pod-medal">'+p.medal+'</div><div class="lb-pod-avatar" style="background:'+p.avatarColor+';">'+p.avatar+'</div><div class="lb-pod-name">'+p.name+'</div><div class="lb-pod-score">'+p.score+'</div></div></div>'+pod;});
+    var l46=g.leaderboard.slice(3,6).map(function(p){return'<div class="lb-item"><span class="lb-rank">#'+p.rank+'</span><div class="lb-small-avatar" style="background:'+p.avatarColor+';">'+p.avatar+'</div><span class="lb-small-name">'+p.name+'</span><span class="lb-small-score">'+p.score+'</span></div>';}).join('');
+    var mid='lbm_'+g.id,rest=g.leaderboard.slice(6,15).map(function(p){return'<div class="lb-item"><span class="lb-rank">#'+p.rank+'</span><div class="lb-small-avatar" style="background:'+p.avatarColor+';">'+p.avatar+'</div><span class="lb-small-name">'+p.name+'</span><span class="lb-small-score">'+p.score+'</span></div>';}).join('');
+    lb='<div class="sidebar-block leaderboard-block"><h3>&#127942; Leaderboard</h3><div class="lb-podium">'+pod+'</div><div class="lb-more-list">'+l46+'</div>'+(g.leaderboard.length>6?'<div id="'+mid+'" style="display:none;">'+rest+'</div><button class="btn-view-more" onclick="tlb(\''+mid+'\',this)">View All 15 Players</button>':'')+'</div>';
+  }
+  var pop=getPopular(8).filter(function(x){return x.id!==g.id;}).slice(0,5),rnd=getRandom(5,g.id);
+  return lb+'<div class="sidebar-block"><h3>&#128293; Most Played</h3>'+pop.map(si).join('')+'</div><div class="sidebar-block"><h3>&#127922; Discover</h3>'+rnd.map(si).join('')+'</div>';
+}
+
+function rv(){document.getElementById('rvl').innerHTML=game.reviews.map(function(r){return'<div class="review-item"><div class="review-header"><div class="review-avatar" style="background:hsl('+(hs(r.user)%360)+',50%,45%);">'+r.avatar+'</div><span class="review-user">'+r.user+'</span><span class="review-stars">'+stars(r.rating)+'</span><span class="review-date">'+r.date+'</span></div><p class="review-text">'+r.text+'</p></div>';}).join('');}
+function tr(){var l=document.getElementById('rvl'),b=document.getElementById('bsm');if(l.classList.contains('review-collapsed')){l.classList.remove('review-collapsed');l.classList.add('review-expanded');b.textContent='Show Less';}else{l.classList.add('review-collapsed');l.classList.remove('review-expanded');b.textContent='Show All '+game.reviews.length+' Reviews';}}
+function tlb(id,btn){var e=document.getElementById(id);if(e.style.display==='none'){e.style.display='block';btn.textContent='Show Less';}else{e.style.display='none';btn.textContent='View All 15 Players';}}
+function sr(){var t=document.getElementById('rt').value.trim();if(!t){alert('Please write a review.');return;}if(ur===0){alert('Please rate first.');return;}game.reviews.unshift({user:'You',avatar:'Y',rating:ur,date:new Date().toISOString().split('T')[0],text:t});rv();document.getElementById('rt').value='';ur=0;hl(0);document.getElementById('rl').textContent='Click stars to rate';var b=document.getElementById('bsm');if(!b&&game.reviews.length>3){var l=document.getElementById('rvl'),nb=document.createElement('button');nb.id='bsm';nb.className='btn-more';nb.textContent='Show All '+game.reviews.length+' Reviews';nb.onclick=tr;l.parentNode.insertBefore(nb,l.nextSibling);}}
+
+document.addEventListener('DOMContentLoaded',async function(){
+  await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;
+  document.title=game.title+' - GameCenter';document.getElementById('bc').textContent=game.catLabel;document.getElementById('bt').textContent=game.title;
+  document.getElementById('dm').innerHTML=rm();document.getElementById('ds').innerHTML=rs();rv();
+  document.querySelectorAll('#sr .star').forEach(function(s){s.addEventListener('mouseenter',function(){hl(parseInt(s.dataset.v));});s.addEventListener('click',function(){ur=parseInt(s.dataset.v);hl(ur);document.getElementById('rl').textContent='Your rating: '+ur+' stars';});});
+  document.getElementById('sr').addEventListener('mouseleave',function(){hl(ur);});
+});
+</script>
+</body>
+</html>
