@@ -15,7 +15,7 @@
 </div></nav>
 
 <main class="container">
-  <div style="padding-top:16px;font-size:12px;color:var(--text-tertiary);"><a href="index.html">Discover</a> &rsaquo; <span id="bc"></span> &rsaquo; <span id="bt" style="color:var(--text-primary);"></span></div>
+  <div style="padding-top:16px;font-size:12px;color:var(--text-tertiary);"><a href="index.html">Discover</a> &rsaquo; <a href="index.html" id="bc"></a> &rsaquo; <span id="bt" style="color:var(--text-primary);"></span></div>
   <div class="detail-layout"><div class="detail-main" id="dm"></div><div class="detail-sidebar" id="ds"></div></div>
 </main>
 
@@ -84,7 +84,7 @@ function fillGameGridRows(selector){
 
 document.addEventListener('DOMContentLoaded',async function(){
   await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;
-  document.title=game.title+' - WePlay';document.getElementById('bc').textContent=game.catLabel;document.getElementById('bt').textContent=game.title;
+  document.title=game.title+' - WePlay';document.getElementById('bc').textContent=game.catLabel;document.getElementById('bc').href='index.html?cat='+encodeURIComponent(game.category)+'#all';document.getElementById('bt').textContent=game.title;
   document.getElementById('dm').innerHTML=rm();document.getElementById('ds').innerHTML=rs();rv();fillGameGridRows('.detail-main .game-grid');
   document.querySelectorAll('#sr .star').forEach(function(s){s.addEventListener('mouseenter',function(){hl(parseInt(s.dataset.v));});s.addEventListener('click',function(){ur=parseInt(s.dataset.v);hl(ur);document.getElementById('rl').textContent='Your rating: '+ur+' stars';});});
   document.getElementById('sr').addEventListener('mouseleave',function(){hl(ur);});

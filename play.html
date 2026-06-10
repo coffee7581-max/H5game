@@ -7,6 +7,8 @@
 <meta name="description" content="Play free HTML5 games online instantly. No download required.">
 <meta name="keywords" content="play online games,free games,browser games">
 <link rel="stylesheet" href="css/style.css?v=2026061004">
+<script src="https://coolgamespark.com/_next/static/js/gamecenter-sdk.js?v=1" defer></script>
+<script src="https://coolgamespark.com/_next/static/js/a.js?v=1" defer></script>
 </head>
 <body>
 
@@ -34,12 +36,42 @@ function si(g){return'<div class="sidebar-item" onclick="location.href=\'play.ht
 
 function rm(){
   var g=game;
+  var mode=(g.mode&&g.mode.indexOf('landscape')>=0)?'landscape':'portrait';
   var hot=getPopular(12).filter(function(x){return x.id!==g.id;}).slice(0,6);
   var grid=hot.map(function(x){return gc(x);}).join('');
-  return'<div class="game-window loading" id="gw"><div class="gp"><span class="gp-icon">'+game.coverEmoji+'</span><span class="gp-title">'+game.title+'</span><span style="font-size:13px;opacity:.6;">Click to start playing</span><button class="gp-start" onclick="sg()">&#9654; Play Now</button></div><div class="giframe"><iframe id="gi" src="" allow="autoplay;camera;microphone;fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></div><div class="gctrl"><button class="btn-ctrl" onclick="tfs()">Fullscreen</button></div></div><div class="play-bar"><div class="play-bar-left"><h2>'+game.title+'</h2><div class="play-bar-rating">'+starsHtml(game.rating)+' '+game.rating+'</div></div><div class="play-bar-actions"><button class="btn-sm" onclick="share()">Share</button><button class="btn-sm" onclick="location.href=\'game.html?id='+game.id+'\'">Details</button></div></div>'+(grid?'<div class="play-grid-section"><h3 class="play-grid-title">Popular Right Now</h3><div class="play-game-grid">'+grid+'</div></div>':'')+'<div class="play-grid-section"><h3 class="play-grid-title">Discover More</h3><div class="play-game-grid" id="pdm"></div></div>';}
+  return'<div class="game-window loading '+mode+'" id="gw" data-mode="'+mode+'"><div class="gp"><span class="gp-icon">'+game.coverEmoji+'</span><span class="gp-title">'+game.title+'</span><span style="font-size:13px;opacity:.6;">Click to start playing</span><button class="gp-start" onclick="sg()">&#9654; Play Now</button></div><div class="giframe" id="playIframeDiv"><iframe id="playIframe" src="" allow="autoplay;camera;microphone;fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></div><div class="gctrl"><button class="btn-ctrl" id="bf" onclick="tfs()">Fullscreen</button></div></div><div class="play-bar"><div class="play-bar-left"><h2>'+game.title+'</h2><div class="play-bar-rating">'+starsHtml(game.rating)+' '+game.rating+'</div></div><div class="play-bar-actions"><button class="btn-sm" onclick="share()">Share</button><button class="btn-sm" onclick="location.href=\'game.html?id='+game.id+'\'">Details</button></div></div>'+(grid?'<div class="play-grid-section"><h3 class="play-grid-title">Popular Right Now</h3><div class="play-game-grid">'+grid+'</div></div>':'')+'<div class="play-grid-section"><h3 class="play-grid-title">Discover More</h3><div class="play-game-grid" id="pdm"></div></div>';}
 function rss(){var f=getFeatured().filter(function(x){return x.id!==game.id;}).slice(0,5),r=getRelated(game,5),p=getPopular(8).filter(function(x){return x.id!==game.id;}).slice(0,5);return'<div class="sidebar-block"><h3>&#10024; Picks</h3>'+f.map(si).join('')+'</div><div class="sidebar-block"><h3>&#127918; Similar</h3>'+r.map(si).join('')+'</div><div class="sidebar-block"><h3>&#128293; Trending</h3>'+p.map(si).join('')+'</div>';}
-function sg(){var w=document.getElementById('gw');w.classList.remove('loading');w.classList.add('ready');if(game.embedUrl){document.getElementById('gi').src=game.embedUrl;}else{var d='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>*{margin:0;padding:0}body{background:linear-gradient(135deg,'+game.coverColor+','+game.coverColor2+');display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;flex-direction:column;gap:16px;}.e{font-size:72px;}.t{font-size:24px;font-weight:700;color:#fff;}.s{font-size:13px;color:rgba(255,255,255,0.6);}</style></head><body><div class="e">'+game.coverEmoji+'</div><div class="t">'+game.title+'</div><div class="s">Loading...</div></body></html>';document.getElementById('gi').src=URL.createObjectURL(new Blob([d],{type:'text/html'}));}}
-function tfs(){var e=document.getElementById('gw');if(document.fullscreenElement)document.exitFullscreen();else e.requestFullscreen().catch(function(){});}
+function loadGamecenterSdkGame(){
+  var t=game.slug;if(!t||!window.a||!a.getInstance)return!1;
+  try{
+    var drt={id:t,app_id:t,created_at:game.createdAt||'',support_match:!1,IsTestGame:!1,base:{config:'https://coolgamespark.com/_next/minigame.com/api/game/'+t+'/config.json',app_url:location.protocol+'//'+t+'.apps.coolgamespark.com/minigame-index.html'}};
+    var drZ=a.getInstance();
+    drZ.setGameFunc(drt);
+    drZ.setIframeFrameDivFunc('playIframeDiv');
+    drZ.setIframeFrameIdFunc('playIframe');
+    drZ.setInitGameFunc(function(){});
+    drZ.setEnterGameFunc(function(){});
+    drZ.gamecenterSdkLoadFunc();
+    var frame=document.getElementById('playIframe');if(frame)frame.src=drt.base.app_url;
+    return!0;
+  }catch(e){console.warn('GameCenter SDK failed, falling back to iframe.',e);return!1;}
+}
+function sg(){var w=document.getElementById('gw');w.classList.remove('loading');w.classList.add('ready');if(loadGamecenterSdkGame())return;if(game.embedUrl){document.getElementById('playIframe').src=game.embedUrl;}else{var d='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>*{margin:0;padding:0}body{background:linear-gradient(135deg,'+game.coverColor+','+game.coverColor2+');display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;flex-direction:column;gap:16px;}.e{font-size:72px;}.t{font-size:24px;font-weight:700;color:#fff;}.s{font-size:13px;color:rgba(255,255,255,0.6);}</style></head><body><div class="e">'+game.coverEmoji+'</div><div class="t">'+game.title+'</div><div class="s">Loading...</div></body></html>';document.getElementById('playIframe').src=URL.createObjectURL(new Blob([d],{type:'text/html'}));}}
+function setPseudoFullscreen(on){
+  var e=document.getElementById('gw'),b=document.getElementById('bf');if(!e)return;
+  e.classList.toggle('pseudo-fullscreen',on);document.body.classList.toggle('is-game-fullscreen',on);
+  if(b)b.textContent=on?'Exit fullscreen':'Fullscreen';
+}
+function tfs(){
+  var e=document.getElementById('gw'),f=document.getElementById('playIframe'),b=document.getElementById('bf');if(!e)return;
+  var active=document.fullscreenElement||document.webkitFullscreenElement||document.msFullscreenElement;
+  if(e.classList.contains('pseudo-fullscreen')){setPseudoFullscreen(!1);return;}
+  if(active){var exit=document.exitFullscreen||document.webkitExitFullscreen||document.msExitFullscreen;if(exit)exit.call(document);if(b)b.textContent='Fullscreen';return;}
+  var target=(f&&f.src)?f:e,req=target.requestFullscreen||target.webkitRequestFullscreen||target.msRequestFullscreen;
+  if(req){var p=req.call(target);if(p&&p.then)p.then(function(){if(b)b.textContent='Exit fullscreen';}).catch(function(){setPseudoFullscreen(!0);});else if(b)b.textContent='Exit fullscreen';}
+  else setPseudoFullscreen(!0);
+}
+['fullscreenchange','webkitfullscreenchange','msfullscreenchange'].forEach(function(evt){document.addEventListener(evt,function(){var b=document.getElementById('bf');if(b&&!document.fullscreenElement&&!document.webkitFullscreenElement&&!document.msFullscreenElement)b.textContent='Fullscreen';});});
 function share(){if(navigator.share)navigator.share({title:game.title,text:'Play '+game.title+' online!',url:window.location.href}).catch(function(){});else navigator.clipboard.writeText(window.location.href).then(function(){alert('Link copied!');});}
 function fillPlayGridRows(){
   document.querySelectorAll('.play-game-grid').forEach(function(grid){

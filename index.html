@@ -85,8 +85,14 @@ function card(g){
 }
 function nit(g){return'<div class="new-item" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="new-thumb">'+fl(g,'20px')+ig(g,g.iconUrl)+'</div><div class="new-info"><h4>'+g.title+'</h4><div class="nm"><span style="color:var(--amber);">'+g.rating+' ★</span><span>'+g.catLabel+'</span><span>'+g.players+'</span></div></div></div>';}
 
-function rCats(){var cats=CATEGORIES||[]; var colors=['#A78BFA','#F472B6','#FBBF24','#38BDF8','#34D399','#FB923C','#E879F9','#60A5FA','#4ADE80','#F87171','#A3E635','#C084FC']; var r1=[],r2=[]; cats.forEach(function(c,i){var n=c.name||c.id||'?',clr=colors[i%colors.length]; var chip='<span class="cat-chip'+(i===0?' active':'')+'" onclick="filterCategory(\''+c.id+'\',this)"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="'+clr+'" opacity=".85"/></svg>'+n+'</span>'; if(i%2===0)r1.push(chip);else r2.push(chip);}); document.getElementById('cl1').innerHTML=r1.join(''); document.getElementById('cl2').innerHTML=r2.join('');}
+function rCats(){var cats=CATEGORIES||[]; var colors=['#A78BFA','#F472B6','#FBBF24','#38BDF8','#34D399','#FB923C','#E879F9','#60A5FA','#4ADE80','#F87171','#A3E635','#C084FC']; var r1=[],r2=[]; cats.forEach(function(c,i){var n=c.name||c.id||'?',clr=colors[i%colors.length]; var chip='<span class="cat-chip'+(i===0?' active':'')+'" data-cat="'+c.id+'" onclick="filterCategory(\''+c.id+'\',this)"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="'+clr+'" opacity=".85"/></svg>'+n+'</span>'; if(i%2===0)r1.push(chip);else r2.push(chip);}); document.getElementById('cl1').innerHTML=r1.join(''); document.getElementById('cl2').innerHTML=r2.join('');}
 function filterCategory(id,el){cur=id;document.querySelectorAll('.cat-chip').forEach(function(p){p.classList.remove('active');});if(el)el.classList.add('active');displayedCount=60;DISPLAY_GAMES=getAllByCat(id).slice(0,displayedCount);rg();document.getElementById("stl").textContent=el?el.textContent.trim():'All Games';document.getElementById("all").scrollIntoView({behavior:'smooth'});}
+function applyInitialCategory(){
+  var cat=params.get('cat');if(!cat||cat==='all')return;
+  var chips=document.querySelectorAll('.cat-chip'),target=null;
+  chips.forEach(function(chip){if(chip.getAttribute('data-cat')===cat)target=chip;});
+  if(target)filterCategory(cat,target);
+}
 function rg(){document.getElementById('ag').innerHTML=DISPLAY_GAMES.map(card).join('')||'<p style="color:var(--text2);grid-column:1/-1;text-align:center;padding:40px;">No games found.</p>';document.getElementById('gc').textContent='('+DISPLAY_GAMES.length+' games)';ul();}
 function ul(){var p=getAllByCat(cur),w=document.getElementById('lw');if(DISPLAY_GAMES.length<p.length){w.style.display='block';document.getElementById('bl').disabled=!1}else w.style.display='none'}
 function lm(){var p=getAllByCat(cur),prev=DISPLAY_GAMES.length;displayedCount+=40;DISPLAY_GAMES=p.slice(0,displayedCount);var a=DISPLAY_GAMES.length-prev;if(a>0){document.getElementById('ag').innerHTML+=DISPLAY_GAMES.slice(prev).map(card).join('');document.getElementById('gc').textContent='('+DISPLAY_GAMES.length+' games)'}ul()}
@@ -171,6 +177,7 @@ document.addEventListener("DOMContentLoaded",async function(){
   initDataRain();
   document.getElementById('ng').innerHTML=getNew().map(nit).join('');
   rg();
+  applyInitialCategory();
   document.getElementById('si').addEventListener('input',function(){srch(this.value);});
   document.documentElement.style.overflow="";
   document.documentElement.style.scrollBehavior="";
