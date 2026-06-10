@@ -6,12 +6,12 @@
 <title>Play Game - WePlay</title>
 <meta name="description" content="Play free HTML5 games online instantly. No download required.">
 <meta name="keywords" content="play online games,free games,browser games">
-<link rel="stylesheet" href="css/style.css?v=2026061003">
+<link rel="stylesheet" href="css/style.css?v=2026061004">
 </head>
 <body>
 
 <nav class="navbar"><div class="navbar-inner">
-  <a href="index.html" class="nav-logo"><svg width="56" height="36" viewBox="0 0 56 36" fill="none"><circle cx="15" cy="18" r="7" fill="#60A5FA"/><text x="15" y="21" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">X</text><circle cx="28" cy="9" r="7" fill="#FBBF24"/><text x="28" y="12" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">Y</text><circle cx="41" cy="18" r="7" fill="#F87171"/><text x="41" y="21" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">B</text><circle cx="28" cy="27" r="7" fill="#4ADE80"/><text x="28" y="30" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">A</text></svg> We<span class="logo-accent">Play</span></a>
+  <a href="index.html" class="nav-logo"><svg class="logo-buttons" width="44" height="44" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="12" r="10" fill="#F8C04A"/><text x="32" y="16" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">Y</text><circle cx="52" cy="32" r="10" fill="#E0714C"/><text x="52" y="36" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">B</text><circle cx="32" cy="52" r="10" fill="#54D38B"/><text x="32" y="56" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">A</text><circle cx="12" cy="32" r="10" fill="#69C9C1"/><text x="12" y="36" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">X</text></svg> We<span class="logo-accent">Play</span></a>
   
 </div></nav>
 
@@ -29,7 +29,7 @@
 var gId=parseInt(params.get('id'))||1,game=null;
 function fl(g,sz){return'<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:'+sz+';background:linear-gradient(135deg,'+g.coverColor+','+g.coverColor2+');">'+g.coverEmoji+'</div>';}
 function im(g,u){return u?'<img src="'+u+'" loading="lazy" onerror="this.style.display=\'none\'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">':'';}
-function gc(g){return'<div class="game-card" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="game-card-img">'+fl(g,'28px')+im(g,g.bannerUrl||g.iconUrl)+'<span class="game-card-rating">'+g.rating+' &star;</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-tags">'+g.tags.slice(0,2).join(' · ')+'</div><div class="game-meta"><span>'+g.players+'</span><button class="game-card-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">Play</button></div></div></div>';}
+function gc(g){return'<div class="game-card" data-game-id="'+g.id+'" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="game-card-img">'+fl(g,'28px')+im(g,g.bannerUrl||g.iconUrl)+'<span class="game-card-rating">'+g.rating+' &star;</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-tags">'+g.tags.slice(0,2).join(' · ')+'</div><div class="game-meta"><span>'+g.players+'</span><button class="game-card-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">Play</button></div></div></div>';}
 function si(g){return'<div class="sidebar-item" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="sidebar-thumb" style="position:relative;">'+fl(g,'16px')+im(g,g.iconUrl)+'</div><div class="sidebar-info"><h4>'+g.title+'</h4><div class="sidebar-meta"><span class="s-stars">'+g.rating+' &star;</span><span>'+g.players+'</span></div></div></div>';}
 
 function rm(){
@@ -41,8 +41,18 @@ function rss(){var f=getFeatured().filter(function(x){return x.id!==game.id;}).s
 function sg(){var w=document.getElementById('gw');w.classList.remove('loading');w.classList.add('ready');if(game.embedUrl){document.getElementById('gi').src=game.embedUrl;}else{var d='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>*{margin:0;padding:0}body{background:linear-gradient(135deg,'+game.coverColor+','+game.coverColor2+');display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;flex-direction:column;gap:16px;}.e{font-size:72px;}.t{font-size:24px;font-weight:700;color:#fff;}.s{font-size:13px;color:rgba(255,255,255,0.6);}</style></head><body><div class="e">'+game.coverEmoji+'</div><div class="t">'+game.title+'</div><div class="s">Loading...</div></body></html>';document.getElementById('gi').src=URL.createObjectURL(new Blob([d],{type:'text/html'}));}}
 function tfs(){var e=document.getElementById('gw');if(document.fullscreenElement)document.exitFullscreen();else e.requestFullscreen().catch(function(){});}
 function share(){if(navigator.share)navigator.share({title:game.title,text:'Play '+game.title+' online!',url:window.location.href}).catch(function(){});else navigator.clipboard.writeText(window.location.href).then(function(){alert('Link copied!');});}
+function fillPlayGridRows(){
+  document.querySelectorAll('.play-game-grid').forEach(function(grid){
+    var cols=(getComputedStyle(grid).gridTemplateColumns||'').split(' ').filter(Boolean).length||1;
+    var cards=grid.querySelectorAll('.game-card'),need=(cols-(cards.length%cols))%cols;
+    if(!need)return;
+    var used={};cards.forEach(function(c){var id=parseInt(c.getAttribute('data-game-id'));if(id)used[id]=1;});
+    var pool=ALL_DISPLAY_GAMES.filter(function(x){return x.id!==game.id&&!used[x.id];});
+    grid.insertAdjacentHTML('beforeend',sh(pool,m32(Date.now()%100000+cols+cards.length)).slice(0,need).map(gc).join(''));
+  });
+}
 
-document.addEventListener('DOMContentLoaded',async function(){await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;document.title='Play '+game.title+' - WePlay';document.getElementById('bl').href='game.html?id='+game.id;document.getElementById('bt').textContent=game.title;document.getElementById('pm').innerHTML=rm();document.getElementById('ps').innerHTML=rss();var dm=document.getElementById('pdm');if(dm)dm.innerHTML=getRandom(6,game.id).map(gc).join('');});
+document.addEventListener('DOMContentLoaded',async function(){await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;document.title='Play '+game.title+' - WePlay';document.getElementById('bl').href='game.html?id='+game.id;document.getElementById('bt').textContent=game.title;document.getElementById('pm').innerHTML=rm();document.getElementById('ps').innerHTML=rss();var dm=document.getElementById('pdm');if(dm)dm.innerHTML=getRandom(6,game.id).map(gc).join('');fillPlayGridRows();});
 </script>
 <button class="btn-top" id="btop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <script>

@@ -6,14 +6,12 @@
 <title>Game Detail - WePlay</title>
 <meta name="description" content="Read reviews, see leaderboards, and start playing free online games instantly.">
 <meta name="keywords" content="game reviews,online games,leaderboard,player reviews">
-<link rel="stylesheet" href="css/style.css?v=2026061003">
+<link rel="stylesheet" href="css/style.css?v=2026061004">
 </head>
 <body>
 
 <nav class="navbar"><div class="navbar-inner">
-  <a href="index.html" class="nav-logo"><svg width="56" height="36" viewBox="0 0 56 36" fill="none"><circle cx="15" cy="18" r="7" fill="#60A5FA"/><text x="15" y="21" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">X</text><circle cx="28" cy="9" r="7" fill="#FBBF24"/><text x="28" y="12" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">Y</text><circle cx="41" cy="18" r="7" fill="#F87171"/><text x="41" y="21" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">B</text><circle cx="28" cy="27" r="7" fill="#4ADE80"/><text x="28" y="30" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">A</text></svg> We<span class="logo-accent">Play</span></a>
-  
-  <div class="nav-search"><input type="text" placeholder="Search..."></div>
+  <a href="index.html" class="nav-logo"><svg class="logo-buttons" width="44" height="44" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="12" r="10" fill="#F8C04A"/><text x="32" y="16" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">Y</text><circle cx="52" cy="32" r="10" fill="#E0714C"/><text x="52" y="36" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">B</text><circle cx="32" cy="52" r="10" fill="#54D38B"/><text x="32" y="56" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">A</text><circle cx="12" cy="32" r="10" fill="#69C9C1"/><text x="12" y="36" text-anchor="middle" font-size="11" font-weight="800" fill="#102016">X</text></svg> We<span class="logo-accent">Play</span></a>
 </div></nav>
 
 <main class="container">
@@ -32,7 +30,7 @@ var gId=parseInt(params.get('id'))||1,game=null,ur=0;
 function im(g,u,sz){return u?'<img src="'+u+'" alt="'+g.title+'" loading="lazy" onerror="this.style.display=\'none\'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">':'';}
 function fl(g,sz){return'<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:'+sz+';background:linear-gradient(135deg,'+g.coverColor+','+g.coverColor2+');">'+g.coverEmoji+'</div>';}
 function cov(g){return'<div class="detail-cover" style="position:relative;">'+fl(g,'48px')+im(g,g.bannerUrl||g.iconUrl,'')+'</div>';}
-function rc(g){return'<div class="game-card" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="game-card-img"><div class="card-media">'+fl(g,'32px')+im(g,g.bannerUrl||g.iconUrl,'')+'</div><span class="game-card-rating">'+g.rating+'</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-tags">'+g.tags.slice(0,2).join(' \u00b7 ')+'</div><div class="game-meta"><span class="players">'+g.players+'</span><button class="game-card-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">Play</button></div></div></div>';}
+function rc(g){return'<div class="game-card" data-game-id="'+g.id+'" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="game-card-img"><div class="card-media">'+fl(g,'32px')+im(g,g.bannerUrl||g.iconUrl,'')+'</div><span class="game-card-rating">'+g.rating+'</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-tags">'+g.tags.slice(0,2).join(' \u00b7 ')+'</div><div class="game-meta"><span class="players">'+g.players+'</span><button class="game-card-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">Play</button></div></div></div>';}
 function si(g){return'<div class="sidebar-item" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="sidebar-thumb" style="position:relative;">'+fl(g,'16px')+im(g,g.iconUrl,'')+'</div><div class="sidebar-info"><h4>'+g.title+'</h4><div class="sidebar-meta"><span class="s-stars">'+g.rating+' &star;</span><span>'+g.players+'</span></div></div></div>';}
 function hl(n){document.querySelectorAll('#sr .star').forEach(function(s,i){s.classList.toggle('active',i<n);});}
 
@@ -73,11 +71,21 @@ function rv(){document.getElementById('rvl').innerHTML=game.reviews.map(function
 function tr(){var l=document.getElementById('rvl'),b=document.getElementById('bsm');if(l.classList.contains('review-collapsed')){l.classList.remove('review-collapsed');l.classList.add('review-expanded');b.textContent='Show Less';}else{l.classList.add('review-collapsed');l.classList.remove('review-expanded');b.textContent='Show All '+game.reviews.length+' Reviews';}}
 function tlb(id,btn){var e=document.getElementById(id);if(e.style.display==='none'){e.style.display='block';btn.textContent='Show Less';}else{e.style.display='none';btn.textContent='View All 15 Players';}}
 function sr(){var t=document.getElementById('rt').value.trim();if(!t){alert('Please write a review.');return;}if(ur===0){alert('Please rate first.');return;}game.reviews.unshift({user:'You',avatar:'Y',rating:ur,date:new Date().toISOString().split('T')[0],text:t});rv();document.getElementById('rt').value='';ur=0;hl(0);document.getElementById('rl').textContent='Click stars to rate';var b=document.getElementById('bsm');if(!b&&game.reviews.length>3){var l=document.getElementById('rvl'),nb=document.createElement('button');nb.id='bsm';nb.className='btn-more';nb.textContent='Show All '+game.reviews.length+' Reviews';nb.onclick=tr;l.parentNode.insertBefore(nb,l.nextSibling);}}
+function fillGameGridRows(selector){
+  document.querySelectorAll(selector).forEach(function(grid){
+    var cols=(getComputedStyle(grid).gridTemplateColumns||'').split(' ').filter(Boolean).length||1;
+    var cards=grid.querySelectorAll('.game-card'),need=(cols-(cards.length%cols))%cols;
+    if(!need)return;
+    var used={};cards.forEach(function(c){var id=parseInt(c.getAttribute('data-game-id'));if(id)used[id]=1;});
+    var pool=ALL_DISPLAY_GAMES.filter(function(x){return x.id!==game.id&&!used[x.id];});
+    grid.insertAdjacentHTML('beforeend',sh(pool,m32(Date.now()%100000+cols+cards.length)).slice(0,need).map(rc).join(''));
+  });
+}
 
 document.addEventListener('DOMContentLoaded',async function(){
   await loadGames();game=getGameById(gId)||DISPLAY_GAMES[0]||GAMES[0];if(!game)return;
   document.title=game.title+' - WePlay';document.getElementById('bc').textContent=game.catLabel;document.getElementById('bt').textContent=game.title;
-  document.getElementById('dm').innerHTML=rm();document.getElementById('ds').innerHTML=rs();rv();
+  document.getElementById('dm').innerHTML=rm();document.getElementById('ds').innerHTML=rs();rv();fillGameGridRows('.detail-main .game-grid');
   document.querySelectorAll('#sr .star').forEach(function(s){s.addEventListener('mouseenter',function(){hl(parseInt(s.dataset.v));});s.addEventListener('click',function(){ur=parseInt(s.dataset.v);hl(ur);document.getElementById('rl').textContent='Your rating: '+ur+' stars';});});
   document.getElementById('sr').addEventListener('mouseleave',function(){hl(ur);});
 });
