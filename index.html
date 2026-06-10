@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23111827%22/><text x=%2250%22 y=%2265%22 text-anchor=%22middle%22 font-size=%2250%22>🎮</text></svg>">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script>history.scrollRestoration="manual";document.documentElement.style.overflow="hidden";document.documentElement.style.scrollBehavior="auto";window.scrollTo(0,0);if(location.hash)location.hash="";</script><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>WePlay — Play Free Online Games | Social Gaming Community</title>
+<title>WePlay | Play Free Online Games | Social Gaming Community</title>
 <meta name="description" content="Join millions of players on WePlay. Play 600+ free HTML5 games with friends, earn achievements, and climb leaderboards.">
 <meta name="keywords" content="free online games,HTML5 games,browser games,social gaming">
 <link rel="canonical" href="https://www.weplaygamestogether.com/">
-<link rel="stylesheet" href="css/style.css?v=2026061002">
+<link rel="stylesheet" href="css/style.css?v=2026061003">
 <style>
   /* Masonry all-games */
   .masonry{columns:4 180px;column-gap:14px}
@@ -19,19 +19,7 @@
 </head>
 <body>
 <nav class="navbar"><div class="navbar-inner">
-  <a href="index.html" class="nav-logo">
-<svg width="56" height="36" viewBox="0 0 56 36" fill="none">
-  <circle cx="14" cy="12" r="11" fill="#60A5FA"/>
-  <text x="14" y="16" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">X</text>
-  <circle cx="36" cy="12" r="11" fill="#FBBF24"/>
-  <text x="36" y="16" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">Y</text>
-  <circle cx="18" cy="25" r="11" fill="#4ADE80"/>
-  <text x="18" y="29" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">A</text>
-  <circle cx="40" cy="24" r="11" fill="#F87171"/>
-  <text x="40" y="28" text-anchor="middle" font-size="12" font-weight="800" fill="#0a0a1a">B</text>
-</svg>
-We<span class="logo-accent">Play</span>
-</a>
+  <a href="index.html" class="nav-logo"><svg width="56" height="36" viewBox="0 0 56 36" fill="none"><circle cx="15" cy="18" r="7" fill="#60A5FA"/><text x="15" y="21" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">X</text><circle cx="28" cy="9" r="7" fill="#FBBF24"/><text x="28" y="12" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">Y</text><circle cx="41" cy="18" r="7" fill="#F87171"/><text x="41" y="21" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">B</text><circle cx="28" cy="27" r="7" fill="#4ADE80"/><text x="28" y="30" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0a1a">A</text></svg> We<span class="logo-accent">Play</span></a>
   <div class="nav-search"><input type="text" placeholder="Search games..." id="si"></div>
 </div></nav>
 
@@ -44,12 +32,12 @@ We<span class="logo-accent">Play</span>
 
 <div class="container">
   <section class="section" style="padding-top:20px;">
-    <div class="section-header"><h2 class="section-title">✨ Editor's Picks</h2></div>
+    <div class="section-header"><h2 class="section-title">Editor's Picks</h2></div>
     <div class="bento-grid" id="bg"></div>
   </section>
 
   <section class="section" id="trending" style="padding-top:16px;">
-    <div class="section-header"><h2 class="section-title">🔥 Trending Now</h2><a href="javascript:void(0)" onclick="showSection('hot')" class="section-more">View all →</a></div>
+    <div class="section-header"><h2 class="section-title">Trending Now</h2><a href="javascript:void(0)" onclick="showSection('hot')" class="section-more">View all →</a></div>
     <div class="trend-row" id="tr"></div>
   </section>
 
@@ -59,17 +47,17 @@ We<span class="logo-accent">Play</span>
   </section>
 
   <section class="section" style="padding-top:16px;">
-    <div class="section-header"><h2 class="section-title">🎮 Live Activity</h2></div>
+    <div class="section-header"><h2 class="section-title">Live Activity</h2></div>
     <div class="data-rain" id="af"></div>
   </section>
 
   <section class="section" style="padding-top:16px;">
-    <div class="section-header"><h2 class="section-title">🆕 Just Added</h2><a href="javascript:void(0)" onclick="showSection('new')" class="section-more">View all →</a></div>
+    <div class="section-header"><h2 class="section-title">Just Added</h2><a href="javascript:void(0)" onclick="showSection('new')" class="section-more">View all →</a></div>
     <div class="new-list" id="ng"></div>
   </section>
 
   <section class="section" id="all">
-    <div class="section-header"><h2 class="section-title">🎯 All Games <span style="font-size:13px;color:var(--text3);font-weight:400;" id="gc"></span></h2></div>
+    <div class="section-header"><h2 class="section-title"><span id="stl">All Games</span> <span style="font-size:13px;color:var(--text3);font-weight:400;" id="gc"></span></h2></div>
     <div class="masonry" id="ag"></div>
     <div class="load-wrap" id="lw" style="display:none"><button class="btn-load" id="bl" onclick="lm()">Show More Games</button></div>
   </section>
@@ -82,7 +70,7 @@ We<span class="logo-accent">Play</span>
   <div class="footer-copy">&copy; 2024 WePlay. Built for gamers.</div>
 </div></footer>
 
-<script src="js/data.js?v=2026061002"></script>
+<script src="js/data.js"></script>
 <script>
 var ready=!1,cur='all';
 
@@ -97,8 +85,8 @@ function card(g){
 }
 function nit(g){return'<div class="new-item" onclick="location.href=\'game.html?id='+g.id+'\'"><div class="new-thumb">'+fl(g,'20px')+ig(g,g.iconUrl)+'</div><div class="new-info"><h4>'+g.title+'</h4><div class="nm"><span style="color:var(--amber);">'+g.rating+' ★</span><span>'+g.catLabel+'</span><span>'+g.players+'</span></div></div></div>';}
 
-function rCats(){var cats=CATEGORIES||[]; var colors=['#A78BFA','#F472B6','#FBBF24','#38BDF8','#34D399','#FB923C','#E879F9','#60A5FA','#4ADE80','#F87171','#A3E635','#C084FC']; var r1=[],r2=[]; cats.forEach(function(c,i){var n=c.name||c.id||'?',clr=colors[i%colors.length]; var chip='<span class="cat-chip'+(i===0?' active':'')+'" onclick="fc(\''+c.id+'\',this)"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="'+clr+'" opacity=".85"/></svg>'+n+'</span>'; if(i%2===0)r1.push(chip);else r2.push(chip);}); document.getElementById('cl1').innerHTML=r1.join(''); document.getElementById('cl2').innerHTML=r2.join('');}
-function fc(id,el){cur=id;document.querySelectorAll('.cat-chip').forEach(function(p){p.classList.remove('active');});if(el)el.classList.add('active');displayedCount=60;DISPLAY_GAMES=getAllByCat(id).slice(0,displayedCount);rg();document.getElementById('all').scrollIntoView({behavior:'smooth'});}
+function rCats(){var cats=CATEGORIES||[]; var colors=['#A78BFA','#F472B6','#FBBF24','#38BDF8','#34D399','#FB923C','#E879F9','#60A5FA','#4ADE80','#F87171','#A3E635','#C084FC']; var r1=[],r2=[]; cats.forEach(function(c,i){var n=c.name||c.id||'?',clr=colors[i%colors.length]; var chip='<span class="cat-chip'+(i===0?' active':'')+'" onclick="filterCategory(\''+c.id+'\',this)"><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="'+clr+'" opacity=".85"/></svg>'+n+'</span>'; if(i%2===0)r1.push(chip);else r2.push(chip);}); document.getElementById('cl1').innerHTML=r1.join(''); document.getElementById('cl2').innerHTML=r2.join('');}
+function filterCategory(id,el){cur=id;document.querySelectorAll('.cat-chip').forEach(function(p){p.classList.remove('active');});if(el)el.classList.add('active');displayedCount=60;DISPLAY_GAMES=getAllByCat(id).slice(0,displayedCount);rg();document.getElementById("stl").textContent=el?el.textContent.trim():'All Games';document.getElementById("all").scrollIntoView({behavior:'smooth'});}
 function rg(){document.getElementById('ag').innerHTML=DISPLAY_GAMES.map(card).join('')||'<p style="color:var(--text2);grid-column:1/-1;text-align:center;padding:40px;">No games found.</p>';document.getElementById('gc').textContent='('+DISPLAY_GAMES.length+' games)';ul();}
 function ul(){var p=getAllByCat(cur),w=document.getElementById('lw');if(DISPLAY_GAMES.length<p.length){w.style.display='block';document.getElementById('bl').disabled=!1}else w.style.display='none'}
 function lm(){var p=getAllByCat(cur),prev=DISPLAY_GAMES.length;displayedCount+=40;DISPLAY_GAMES=p.slice(0,displayedCount);var a=DISPLAY_GAMES.length-prev;if(a>0){document.getElementById('ag').innerHTML+=DISPLAY_GAMES.slice(prev).map(card).join('');document.getElementById('gc').textContent='('+DISPLAY_GAMES.length+' games)'}ul()}
@@ -109,10 +97,22 @@ function showSection(type){
   rg();
   document.getElementById('all').scrollIntoView({behavior:'smooth'});
 }
-function srch(q){if(!ready)return;q=q.toLowerCase().trim();if(!q){rg();return}var p=getAllByCat(cur),r=p.filter(function(g){return g.title.toLowerCase().includes(q)||g.tags.some(function(t){return t.toLowerCase().includes(q);})||g.catLabel.toLowerCase().includes(q)});document.getElementById('ag').innerHTML=r.length?r.map(card).join(''):'<p style="color:var(--text2);grid-column:1/-1;padding:40px;">No results</p>';document.getElementById('gc').textContent='('+r.length+' results)';document.getElementById('lw').style.display='none'}
+function srch(q){
+  if(!ready)return;
+  q=q.toLowerCase().trim();
+  if(!q){rg();document.getElementById('stl').textContent='All Games';return}
+  document.getElementById('all').scrollIntoView({behavior:'smooth'});
+  var all=ALL_DISPLAY_GAMES,r=all.filter(function(g){
+    return g.title.toLowerCase().indexOf(q)>=0||g.catLabel.toLowerCase().indexOf(q)>=0||(g.tags||[]).some(function(t){return t.toLowerCase().indexOf(q)>=0;});
+  });
+  document.getElementById('ag').innerHTML=r.length?r.map(card).join(''):'<p style="color:var(--text2);grid-column:1/-1;padding:40px;text-align:center">No games found</p>';
+  document.getElementById('stl').textContent='Results ('+r.length+')';
+  document.getElementById('lw').style.display='none';
+}
 
+var rainSeed=Date.now()%1000000,rainSeq=0;
 function genRainItem(){
-  var rng=m32(Math.floor(Date.now()/1000)+Date.now()%77731+7),actions=['played','scored #1 in','cleared','is playing','discovered','mastered'],pool=ALL_DISPLAY_GAMES;
+  var rng=m32(rainSeed+(++rainSeq*7919)),actions=['played','scored #1 in','cleared','is playing','discovered','mastered'],pool=ALL_DISPLAY_GAMES;
   var g=pool[Math.floor(rng()*pool.length)],n=WORLD_NAMES[Math.floor(rng()*WORLD_NAMES.length)],act=actions[Math.floor(rng()*actions.length)],h=hs(n)%360;
   return {name:n,avatar:n.charAt(0),color:'hsl('+h+',50%,45%)',action:act,game:g};
 }
@@ -157,7 +157,7 @@ function initDataRain(){
   }
 }
 
-document.addEventListener('DOMContentLoaded',async function(){
+document.addEventListener("DOMContentLoaded",async function(){
   await loadGames();ready=!0;
   document.getElementById('hs').innerHTML='<div class="bento-stat"><div class="sn">'+ALL_DISPLAY_GAMES.length+'+</div><div class="sl">Free Games</div></div><div class="bento-stat"><div class="sn">2M+</div><div class="sl">Players</div></div><div class="bento-stat"><div class="sn">'+CATEGORIES.length+'+</div><div class="sl">Categories</div></div><div class="bento-stat"><div class="sn">Instant</div><div class="sl">No Download</div></div>';
   rCats();
@@ -178,5 +178,14 @@ document.addEventListener('DOMContentLoaded',async function(){
   setTimeout(function(){window.scrollTo(0,0);},50);
 });
 </script>
+<button class="btn-top" id="btop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+window.addEventListener('scroll',function(){
+  var s=window.scrollY;
+  var n=document.querySelector('.navbar');if(n)n.classList.toggle('scrolled',s>80);
+  var b=document.getElementById('btop');if(b)b.classList.toggle('visible',s>400);
+});
+</script>
+
 </body>
 </html>
