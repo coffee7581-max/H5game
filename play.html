@@ -46,7 +46,8 @@ function loadFallbackGame(){var f=getPlayFrame();if(!f)return;if(game.embedUrl){
 function loadGamecenterSdkGame(){
   var t=game.slug||((game.embedUrl||'').match(/^https?:\/\/([^\.]+)/)||[])[1]||'';if(!t||typeof a==='undefined'||!a.getInstance)return!1;
   try{
-    var drt={id:t,app_id:t,created_at:game.createdAt||'',support_match:!1,IsTestGame:!1,base:{config:'https://coolgamespark.com/_next/minigame.com/api/game/'+t+'/config.json',app_url:game.embedUrl||('https://'+t+'.apps.coolgamespark.com/minigame-index.html')}};
+    var configUrl='mock/minigame.com/api/game/_default/config.json';
+    var drt={id:t,app_id:t,created_at:game.createdAt||'',support_match:!1,IsTestGame:!1,base:{config:configUrl,app_url:game.embedUrl||('https://'+t+'.apps.coolgamespark.com/minigame-index.html')}};
     var drZ=a.getInstance(),fallbackTimer=setTimeout(function(){var f=getPlayFrame();if(f&&!f.getAttribute('src'))loadFallbackGame();},2500);
     if(drZ.setIframeFrameDivFunc)drZ.setIframeFrameDivFunc('playIframeDiv');
     if(drZ.setIframeFrameIdFunc)drZ.setIframeFrameIdFunc('playIframe');
