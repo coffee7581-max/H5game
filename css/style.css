@@ -217,13 +217,39 @@ body.is-game-fullscreen{overflow:hidden}
 .play-bar-rating{display:flex;align-items:center;gap:4px;color:var(--amber);font-size:13px}
 .play-bar-actions{display:flex;gap:8px}.btn-sm{background:rgba(255,255,255,0.04);color:var(--text2);border:1px solid var(--border);padding:6px 14px;border-radius:14px;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s}.btn-sm:hover{border-color:var(--brand2);color:var(--brand2)}
 
+/* Editorial content */
+.editorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.editorial-card,.category-spotlight,.guide-panel{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:18px}
+.editorial-card h3,.category-spotlight h3,.guide-panel h3{font-size:18px;line-height:1.28;color:var(--text);margin-bottom:10px;text-wrap:balance}
+.editorial-card p,.category-spotlight p,.guide-panel p,.guide-note p,.guide-note li,.spotlight-note,.spotlight-empty{font-size:13px;line-height:1.7;color:var(--text2);text-wrap:pretty}
+.editorial-eyebrow{font-size:11px;font-weight:700;color:var(--brand);margin-bottom:10px}
+.editorial-link{margin-top:14px;background:transparent;border:1px solid var(--border);color:var(--text);min-height:40px;padding:0 14px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer;transition:all .2s}
+.editorial-link:hover{border-color:var(--brand);color:var(--brand)}
+.category-spotlight{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.9fr);gap:18px}
+.spotlight-note{margin-top:10px}
+.spotlight-tips{margin-top:12px;padding-left:18px;color:var(--text2)}
+.spotlight-tips li+li{margin-top:8px}
+.spotlight-list{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.05);border-radius:12px;padding:14px}
+.spotlight-list-title{font-size:12px;font-weight:700;color:var(--text);margin-bottom:10px}
+.spotlight-game{display:flex;flex-direction:column;gap:3px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.spotlight-game:last-child{border-bottom:none;padding-bottom:0}
+.spotlight-game-title{font-size:13px;font-weight:700;color:var(--text)}
+.spotlight-game-meta{font-size:11px;color:var(--text3)}
+.guide-panel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(240px,.9fr);gap:18px}
+.guide-main p+p{margin-top:12px}
+.guide-side{display:flex;flex-direction:column;gap:12px}
+.guide-note{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.05);border-radius:12px;padding:14px}
+.guide-note strong{display:block;font-size:12px;color:var(--text);margin-bottom:8px}
+.guide-note ul{padding-left:18px}
+.guide-note li+li{margin-top:8px}
+
 /* Footer */
 .footer{background:rgba(255,255,255,0.02);border-top:1px solid var(--border);padding:32px 0 20px;margin-top:60px}
 .footer-inner{max-width:var(--max);margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--text3)}
 .footer-links{display:flex;gap:20px}.footer-links a{transition:color .2s}.footer-links a:hover{color:var(--brand2)}
 
 /* Responsive */
-@media(max-width:900px){.detail-layout,.play-layout{grid-template-columns:1fr}.detail-cover-wrap{width:100%}.bento-grid{grid-template-columns:1fr 1fr}.bento-card.big{grid-column:span 2;grid-row:span 1}.bento-card.big .bc-img{min-height:180px}}
+@media(max-width:900px){.detail-layout,.play-layout,.category-spotlight,.guide-panel{grid-template-columns:1fr}.detail-cover-wrap{width:100%}.bento-grid{grid-template-columns:1fr 1fr}.bento-card.big{grid-column:span 2;grid-row:span 1}.bento-card.big .bc-img{min-height:180px}.editorial-grid{grid-template-columns:1fr}}
 @media(max-width:640px){
   .cat-chip{padding:5px 10px;font-size:11px;gap:4px}.cat-chip svg{width:14px;height:14px}.cat-row{gap:6px}
   .nav-links{gap:12px}.nav-links a{font-size:12px}.nav-search input{width:120px}
@@ -233,7 +259,7 @@ body.is-game-fullscreen{overflow:hidden}
   .game-grid{grid-template-columns:repeat(2,1fr);gap:10px}.game-card-img{height:105px}.game-card-body h3{font-size:12px}.game-card-body{padding:10px}
   .new-list{grid-template-columns:1fr}.trend-row .game-card{min-width:140px;max-width:155px}
   .detail-header{flex-direction:column}.detail-cover-wrap{width:100%}
-  .section-title{font-size:16px}
+  .section-title{font-size:16px}.editorial-card,.category-spotlight,.guide-panel{padding:16px}
 }
 :focus-visible{outline:2px solid var(--brand2);outline-offset:2px;border-radius:2px}
 

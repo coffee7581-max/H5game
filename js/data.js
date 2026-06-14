@@ -14,12 +14,125 @@ for (const [n, ids] of Object.entries(GAME_TYPE_IDS)) for (const id of ids) TYPE
 const TYPE_META = {
   action:{l:'Action',e:'⚡',c:1},simulation:{l:'Simulation',e:'🏗️',c:0},battle:{l:'Battle',e:'⚔️',c:1},parkour:{l:'Parkour',e:'🏃',c:1},sports:{l:'Sports',e:'⚽',c:1},shooting:{l:'Shooting',e:'🔫',c:1},'dress up':{l:'Dress Up',e:'👗',c:0},'tower defense':{l:'Tower Defense',e:'🏰',c:1},synthesis:{l:'Synthesis',e:'✨',c:0},'break through':{l:'Break Through',e:'💥',c:1},'make up':{l:'Make Up',e:'💄',c:0},casino:{l:'Casino',e:'🎰',c:0},cardboard:{l:'Cardboard',e:'📦',c:0},education:{l:'Education',e:'📚',c:0},music:{l:'Music',e:'🎵',c:0},puzzle:{l:'Puzzle',e:'🧩',c:0},arcade:{l:'Arcade',e:'🕹️',c:1},io:{l:'IO',e:'🌐',c:1},racing:{l:'Racing',e:'🏎️',c:1},operate:{l:'Operate',e:'🎛️',c:0},casual:{l:'Casual',e:'🎮',c:0},adventure:{l:'Adventure',e:'🗺️',c:0},strategy:{l:'Strategy',e:'♟️',c:1},
 };
+const CATEGORY_EDITORIAL = {
+  all:{
+    title:'Explore the catalog with a little more intention',
+    intro:'WePlay works best when you treat it like a curated shelf instead of an endless scroll. Start with one mood, one session length, and one control style, then let the recommendations narrow the field for you.',
+    bestFor:'Players who want a quick path to something that fits the moment instead of bouncing between random thumbnails.',
+    session:'Best when you know whether you want a five-minute reset, a score chase, or a longer run.',
+    tips:['Use category filters first, then compare ratings and tags.', 'If a game clicks fast, open the detail page and keep exploring similar picks.', 'Rotate between short session games and slower progression games so the catalog keeps feeling fresh.']
+  },
+  action:{
+    title:'Action games here reward clean reactions, not just chaos',
+    intro:'The best action picks in this catalog start quickly and teach through pressure. They work well when you want fast feedback, visible progress, and controls that make sense on a phone.',
+    bestFor:'Short breaks, score chasing, and players who like quick retries.',
+    session:'Usually strongest in 3 to 10 minute bursts.',
+    tips:['Give the first two rounds to learning movement, not winning.', 'If a run feels messy, slow down and read enemy timing before forcing speed.', 'Look for games with one clear core action and master that first.']
+  },
+  simulation:{
+    title:'Simulation picks are strongest when the loop feels satisfying',
+    intro:'Good simulation games are about rhythm: place, organize, build, repeat. The strongest ones in this library feel readable on a small screen and reward steady attention instead of constant twitch input.',
+    bestFor:'Players who like management loops, visual order, and light progression.',
+    session:'Works well in 8 to 20 minute sessions when you want to settle into a flow.',
+    tips:['Start by understanding the main loop before optimizing.', 'If a system feels crowded, look for one bottleneck and solve that first.', 'The best simulation sessions come from small improvements, not rushing every task.']
+  },
+  puzzle:{
+    title:'Puzzle games do better when the rules stay readable',
+    intro:'The most replayable puzzle games here are the ones with one strong idea and clear escalation. They are good for players who want a quiet challenge without a long learning curve.',
+    bestFor:'Focused players, commuters, and anyone who likes neat problem solving.',
+    session:'Great in 5 to 15 minute windows.',
+    tips:['Treat early levels like a rules tutorial, even if they look easy.', 'When stuck, stop moving pieces for a second and map the board in your head.', 'Choose games with clean visuals first if you are playing on mobile.']
+  },
+  sports:{
+    title:'Sports games live or die on immediate control feel',
+    intro:'The strongest sports picks here are not trying to simulate everything. They usually succeed by making one mechanic, shot timing, lane choice, angle control, feel crisp enough to replay.',
+    bestFor:'Players who want quick competition and visible improvement.',
+    session:'Usually best in short repeated runs.',
+    tips:['Repeat one skill move until it becomes automatic.', 'Ignore score ceilings at first and focus on consistency.', 'Portrait sports games often read better one-handed on a phone.']
+  },
+  racing:{
+    title:'Racing picks should feel readable before they feel fast',
+    intro:'The good racing games in this catalog give you enough visual clarity to plan turns, avoid walls, and build momentum. The weaker ones feel random; the stronger ones let you learn the track logic quickly.',
+    bestFor:'Players who like speed, lane planning, and retry loops.',
+    session:'Best in 4 to 12 minute bursts.',
+    tips:['Learn the camera rhythm before chasing speed.', 'Protect clean lines through turns instead of over-correcting.', 'If a game feels too noisy, swap to one with simpler track reads.']
+  },
+  adventure:{
+    title:'Adventure works best when the game gives you a reason to keep moving',
+    intro:'Adventure games in a browser setting need momentum. The stronger ones give you clear hazards, a simple goal, and enough variety to make each run feel like a new route instead of the same hallway again.',
+    bestFor:'Players who like light exploration with a bit of tension.',
+    session:'Good for medium-length sessions when you want more than a score attack.',
+    tips:['Use the first minutes to learn the world rules and hazard language.', 'If a route punishes rushing, slow down and read the screen edges.', 'Adventure games pair well with similar-game browsing because the mood matters as much as the mechanic.']
+  },
+  strategy:{
+    title:'Strategy picks should create decisions, not just busywork',
+    intro:'A strong strategy game makes you choose between tempo, safety, and long-term reward. In the browser, the best ones keep those choices visible enough that you can still reason clearly on a smaller screen.',
+    bestFor:'Players who like planning, territory control, and gradual advantage.',
+    session:'Most rewarding in 10 to 20 minute sessions.',
+    tips:['Spend the opening minute reading win conditions.', 'Protect economy or territory first, then chase style points.', 'If the board gets noisy, look for one lane or zone you can fully control.']
+  },
+  casual:{
+    title:'Casual should still feel sharp, not disposable',
+    intro:'Casual games are where quick sessions either work beautifully or fall flat. The best ones start instantly, explain themselves fast, and leave you with one more reason to tap replay.',
+    bestFor:'Phone-first players and anyone browsing without a fixed goal.',
+    session:'Ideal for one-handed, low-friction sessions.',
+    tips:['Pick a game with one obvious hook and test it for two rounds.', 'Use ratings plus tags together, not either one alone.', 'If a casual game does not click quickly, move on fast and keep the catalog moving.']
+  },
+  arcade:{
+    title:'Arcade picks succeed when every second matters',
+    intro:'Arcade games earn repeat play with tight loops, clear failure states, and fast restarts. They are at their best when you can improve one tiny habit every run.',
+    bestFor:'Players who like rhythm, precision, and visible skill growth.',
+    session:'Strong in rapid repeat sessions.',
+    tips:['Restart often and treat each run like practice.', 'Track one mistake pattern instead of trying to fix everything at once.', 'Arcade games are best judged by how quickly they make you want another run.']
+  },
+  io:{
+    title:'IO games should be readable under pressure',
+    intro:'The good IO-style games in this library keep the rule set simple while letting the screen get busy. That balance matters on mobile, where clarity often matters more than complexity.',
+    bestFor:'Players who like chaotic arenas with simple controls.',
+    session:'Great for short sessions with high replay value.',
+    tips:['Understand the growth loop before picking fights.', 'Keep screen awareness wider than your character.', 'If the arena feels too crowded, choose one objective and play around it.']
+  }
+};
+const HOME_EDITORIAL_FEATURES = [
+  {
+    title:'Quick starts that actually hold up',
+    copy:'A strong browser game should explain itself within the first minute, feel good on a phone, and still have enough friction to stay interesting after the novelty wears off. Our picks lean toward fast onboarding and clean replay loops.',
+    cta:'Open casual picks',
+    cat:'casual'
+  },
+  {
+    title:'Builder games for longer sessions',
+    copy:'When you have more than a few minutes, simulation and strategy games tend to deliver the best value. They reward patience, system reading, and small improvements instead of pure reaction speed.',
+    cta:'Browse simulation',
+    cat:'simulation'
+  },
+  {
+    title:'Competitive games with clear controls',
+    copy:'For score chasing and direct competition, the most reliable wins usually come from action, racing, and sports games with tight input rules. We bias toward games that stay readable on mobile instead of cluttered spectacle.',
+    cta:'See action games',
+    cat:'action'
+  }
+];
 function m32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
 function hs(s){let h=0;for(let i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return Math.abs(h);}
 function formatCount(n){if(n>=1e8)return(n/1e8).toFixed(1)+'B';if(n>=1e6)return(n/1e6).toFixed(1)+'M';if(n>=1e3)return(n/1e3).toFixed(1)+'K';return n.toString();}
 function sh(a,r){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
 function buildEmbedUrl(slug){return slug?('https://' + [slug,'apps',REMOTE_BASE_DOMAIN].join('.') + '/minigame-index.html'):'';}
 function gv(a,b,d){return a!==undefined&&a!==null?a:b!==undefined&&b!==null?b:d;}
+function getCategoryEditorial(cat){return CATEGORY_EDITORIAL[cat]||CATEGORY_EDITORIAL.all;}
+function getHomeEditorialFeatures(){return HOME_EDITORIAL_FEATURES.slice();}
+function getGameEditorial(game){
+  const ed=getCategoryEditorial(game.category),tags=(game.tags||[]).slice(0,3);
+  const tagText=tags.length?tags.join(', '):game.catLabel;
+  return{
+    kicker:ed.title,
+    overview:game.title+' is one of the clearer '+game.catLabel.toLowerCase()+' picks in this catalog. It opens fast, reads well on a small screen, and suits players looking for '+tagText.toLowerCase()+' without a long setup.',
+    why:'We feature this game because its first minutes communicate the core loop quickly. You can tell what matters, what to avoid, and whether the session is heading toward speed, control, or deliberate planning.',
+    fit:'Best for players who want '+ed.bestFor.toLowerCase()+'. For mobile browsing, it is the kind of pick that makes sense after one or two exploratory runs.',
+    tips:ed.tips.map(function(t,i){return i===0?game.title+': '+t:t;}),
+    session:ed.session
+  };
+}
 
 const WORLD_NAMES = [
   'Akira Tanaka','Mei Lin','Sven Olsson','Fatima Al-Rashid','Diego Fernandez','Yuki Nakamura','Olga Petrova','Chen Wei','Priya Sharma','Ahmed Hassan','Lars Johansson','Maria Silva','Hiroshi Yamamoto','Chloe Martin','Bao Nguyen','Kwame Asante','Anastasia Popov','Ravi Patel','Ingrid Larsen','Thiago Costa','Sakura Ito','Dmitri Volkov','Aisha Mohammed','Liam O\'Brien','Yuna Park','Carlos Ruiz','Giulia Rossi','Jun Takahashi','Nadia Fedorova','Omar Khalid','Freya Andersen','Pedro Alvarez','Keiko Sato','Viktor Novak','Leila Benali','Erik Magnusson','Sofia Gonzalez','Takeshi Mori','Irina Sokolova','Malik Diallo','Emma Larsson','Daniel Kowalski','Amara Okafor','Hans Mueller','Lena Berg','Zara Khoury','Kenji Watanabe','Bella Rossi','Arjun Mehta',
