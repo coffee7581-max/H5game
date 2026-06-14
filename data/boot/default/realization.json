@@ -1,0 +1,42 @@
+{
+  "adType": {
+    "interstitial": {
+      "enabled": true,
+      "limitTime": 30,
+      "totalTimes": -1,
+      "strategy": {
+        "waterFall": [
+          {
+            "adsName": "adsense",
+            "showTimes": -1
+          }
+        ],
+        "keepBottom": [],
+        "substitute": []
+      }
+    },
+    "reward": {
+      "enabled": true,
+      "limitTime": 0,
+      "totalTimes": -1,
+      "strategy": {
+        "waterFall": [
+          {
+            "adsName": "adsense",
+            "showTimes": -1
+          }
+        ],
+        "keepBottom": [],
+        "substitute": []
+      }
+    },
+    "banner": {
+      "enabled": false,
+      "adsName": "adsense",
+      "totalTimes": -1
+    },
+    "preroll": {
+      "adsName": "adsense"
+    }
+  }
+}

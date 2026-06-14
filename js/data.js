@@ -19,6 +19,7 @@ function hs(s){let h=0;for(let i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);
 function formatCount(n){if(n>=1e8)return(n/1e8).toFixed(1)+'B';if(n>=1e6)return(n/1e6).toFixed(1)+'M';if(n>=1e3)return(n/1e3).toFixed(1)+'K';return n.toString();}
 function sh(a,r){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
 function buildEmbedUrl(slug){return slug?('https://' + [slug,'apps',REMOTE_BASE_DOMAIN].join('.') + '/minigame-index.html'):'';}
+function gv(a,b,d){return a!==undefined&&a!==null?a:b!==undefined&&b!==null?b:d;}
 
 const WORLD_NAMES = [
   'Akira Tanaka','Mei Lin','Sven Olsson','Fatima Al-Rashid','Diego Fernandez','Yuki Nakamura','Olga Petrova','Chen Wei','Priya Sharma','Ahmed Hassan','Lars Johansson','Maria Silva','Hiroshi Yamamoto','Chloe Martin','Bao Nguyen','Kwame Asante','Anastasia Popov','Ravi Patel','Ingrid Larsen','Thiago Costa','Sakura Ito','Dmitri Volkov','Aisha Mohammed','Liam O\'Brien','Yuna Park','Carlos Ruiz','Giulia Rossi','Jun Takahashi','Nadia Fedorova','Omar Khalid','Freya Andersen','Pedro Alvarez','Keiko Sato','Viktor Novak','Leila Benali','Erik Magnusson','Sofia Gonzalez','Takeshi Mori','Irina Sokolova','Malik Diallo','Emma Larsson','Daniel Kowalski','Amara Okafor','Hans Mueller','Lena Berg','Zara Khoury','Kenji Watanabe','Bella Rossi','Arjun Mehta',
@@ -71,20 +72,29 @@ function getCat(types){if(!types?.length)return'casual';for(const t of types){co
 function getTypeNames(types){if(!types?.length)return['casual'];const ns=[];for(const t of types){const n=TYPE_ID_TO_NAME[t];if(n&&!ns.includes(n))ns.push(n);}return ns.length?ns:['casual'];}
 
 function mapGame(raw){
-  const b=raw.base||{},m=raw.game_material||{},tns=getTypeNames(b.types||[]),cat=getCat(b.types||[]),mt=TYPE_META[cat]||TYPE_META['casual'];
+  const slug=gv(raw.s,raw.app_id,'');
+  const b=raw.b||raw.base||{},m=raw.m||raw.game_material||{},types=gv(b.y,b.types,[]),tns=getTypeNames(types),cat=getCat(types),mt=TYPE_META[cat]||TYPE_META['casual'];
   let tags=[...new Set(tns.map(n=>TYPE_META[n]?.l||n))];
-  const kw=b.keywords?.contentArray||[];if(kw.length)for(const t of kw.flatMap(x=>x.split(/[，,]/).map(s=>s.trim()).filter(Boolean))){if(!tags.includes(t))tags.push(t);}
+  const kw=gv(b.k?.a,b.keywords?.contentArray,[]);if(kw.length)for(const t of kw.flatMap(x=>x.split(/[，,]/).map(s=>s.trim()).filter(Boolean))){if(!tags.includes(t))tags.push(t);}
   tags=tags.slice(0,5);
-  const ip=m.icon||m.small_icon||'',fp=m.banner||m.big_icon||m.flash||'';
-  const hue=hs(raw.app_id||(b.display_name||''))%360;
+  const ip=gv(m.i,gv(m.icon,m.small_icon,''),''),fp=gv(m.b,gv(m.banner,gv(m.big_icon,m.flash,''),''),'');
+  const title=gv(b.n,b.display_name,'Unknown');
+  const tagLine=gv(b.g,b.tag_line,'');
+  const likes=gv(b.l,b.like_count,0);
+  const rating=gv(b.v,b.rating,0);
+  const mode=gv(b.o,b.mode,[]);
+  const desc=gv(b.d?.c,b.description?.content,'');
+  const recommends=gv(raw.r,raw.recommend_hot_games,[]);
+  const createdAt=gv(raw.t,raw.created_at,0);
+  const hue=hs(slug||title)%360;
   return{
-    id:raw.id,slug:raw.app_id||'',title:b.display_name||'Unknown',tagLine:b.tag_line||'',
+    id:raw.id,slug,title,tagLine,
     category:cat,catLabel:mt.l,catEmoji:mt.e,isComp:mt.c,
-    tags,rating:b.rating||0,players:formatCount(b.like_count||0),likeCount:b.like_count||0,
-    desc:b.description?.content||'',autoDesc:'',
+    tags,rating,players:formatCount(likes),likeCount:likes,
+    desc,autoDesc:'',
     coverColor:`hsl(${hue},50%,42%)`,coverColor2:`hsl(${hue},40%,22%)`,coverEmoji:mt.e,
-    embedUrl:buildEmbedUrl(raw.app_id||''),iconUrl:ip?ASSETS_BASE_URL+ip:'',bannerUrl:fp?ASSETS_BASE_URL+fp:'',
-    recommends:raw.recommend_hot_games||[],mode:b.mode||[],createdAt:raw.created_at||0,
+    embedUrl:buildEmbedUrl(slug),iconUrl:ip?ASSETS_BASE_URL+ip:'',bannerUrl:fp?ASSETS_BASE_URL+fp:'',
+    recommends,mode,createdAt,
     features:{featured:!1,new:!1,hot:!1},reviews:[],leaderboard:null,
   };
 }

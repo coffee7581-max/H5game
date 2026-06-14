@@ -35,6 +35,7 @@ function gc(g){return'<div class="game-card" data-game-id="'+g.id+'" onclick="lo
 function si(g){return'<div class="sidebar-item" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="sidebar-thumb" style="position:relative;">'+fl(g,'16px')+im(g,g.iconUrl)+'</div><div class="sidebar-info"><h4>'+g.title+'</h4><div class="sidebar-meta"><span class="s-stars">'+g.rating+' &star;</span><span>'+g.players+'</span></div></div></div>';}
 function gb(){return[['cool','game','spark'].join(''),'com'].join('.');}
 function gu(slug){return slug?('https://'+[slug,'apps',gb()].join('.')+'/minigame-index.html'):'';}
+function cf(){return['data','boot','default','config.json'].join('/');}
 
 function rm(){
   var g=game;
@@ -48,7 +49,7 @@ function loadFallbackGame(){var f=getPlayFrame();if(!f)return;if(game.embedUrl){
 function loadGamecenterSdkGame(){
   var t=game.slug||((game.embedUrl||'').match(/^https?:\/\/([^\.]+)/)||[])[1]||'';if(!t||typeof a==='undefined'||!a.getInstance)return!1;
   try{
-    var configUrl='mock/minigame.com/api/game/_default/config.json';
+    var configUrl=cf();
     var drt={id:t,app_id:t,created_at:game.createdAt||'',support_match:!1,IsTestGame:!1,base:{config:configUrl,app_url:game.embedUrl||gu(t)}};
     var drZ=a.getInstance(),fallbackTimer=setTimeout(function(){var f=getPlayFrame();if(f&&!f.getAttribute('src'))loadFallbackGame();},2500);
     if(drZ.setIframeFrameDivFunc)drZ.setIframeFrameDivFunc('playIframeDiv');
