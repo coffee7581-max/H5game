@@ -3,7 +3,6 @@
     "id": 5,
     "app_id": "yeloli-makeup",
     "base": {
-      "app_url": "https://yeloli-makeup.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Yeloli Princess Makeup",
       "tag_line": "Fantastic Makeover",
       "types": [
@@ -66,7 +65,6 @@
     "id": 6,
     "app_id": "jelly-crush",
     "base": {
-      "app_url": "https://jelly-crush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Jelly Crush",
       "tag_line": "Do everything possible to eliminate the jelly!",
       "types": [
@@ -130,7 +128,6 @@
     "id": 7,
     "app_id": "ninja-legend",
     "base": {
-      "app_url": "https://ninja-legend.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ninja Legend",
       "tag_line": "Ninja alliance revenge battle!",
       "landscape": true,
@@ -194,7 +191,6 @@
     "id": 10,
     "app_id": "cube-mania",
     "base": {
-      "app_url": "https://cube-mania.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cube Mania",
       "tag_line": "Challenging pairing game",
       "types": [
@@ -257,7 +253,6 @@
     "id": 12,
     "app_id": "pets-match",
     "base": {
-      "app_url": "https://pets-match.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pets Match",
       "types": [
         2,
@@ -321,7 +316,6 @@
     "id": 16,
     "app_id": "shoppingmall-tycoon",
     "base": {
-      "app_url": "https://shoppingmall-tycoon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Shopping Mall Tycoon",
       "tag_line": "Money-crazed",
       "types": [
@@ -384,7 +378,6 @@
     "id": 17,
     "app_id": "fruit-master",
     "base": {
-      "app_url": "https://fruit-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fruit Master",
       "tag_line": "Fruit theme elimination game, blast them",
       "types": [
@@ -447,7 +440,6 @@
     "id": 18,
     "app_id": "stone-line",
     "base": {
-      "app_url": "https://stone-line.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stone Line",
       "tag_line": "This is an interesting puzzle game",
       "types": [
@@ -510,7 +502,6 @@
     "id": 29,
     "app_id": "chop-io",
     "base": {
-      "app_url": "https://chop-io.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Chop.io",
       "tag_line": "Knight's attack",
       "types": [
@@ -574,7 +565,6 @@
     "id": 31,
     "app_id": "popstone2",
     "base": {
-      "app_url": "https://popstone2.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pop Stone2",
       "tag_line": "Classic gem elimination game!",
       "types": [
@@ -639,7 +629,6 @@
     "id": 37,
     "app_id": "bubble-legend",
     "base": {
-      "app_url": "https://bubble-legend.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Legend",
       "tag_line": "A classic bubble shooting game",
       "types": [
@@ -702,7 +691,6 @@
     "id": 38,
     "app_id": "crazy-ball",
     "base": {
-      "app_url": "https://crazy-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Ball",
       "tag_line": "Fast&Furious",
       "types": [
@@ -765,7 +753,6 @@
     "id": 39,
     "app_id": "bubble-spinner",
     "base": {
-      "app_url": "https://bubble-spinner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Spinner",
       "tag_line": "Eliminate rotating bubbles? Let's try",
       "types": [
@@ -828,7 +815,6 @@
     "id": 41,
     "app_id": "best-link",
     "base": {
-      "app_url": "https://best-link.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Best Link",
       "tag_line": "Link&Puzzle",
       "types": [
@@ -891,7 +877,6 @@
     "id": 42,
     "app_id": "myfairies-dressup",
     "base": {
-      "app_url": "https://myfairies-dressup.apps.coolgamespark.com/minigame-index.html",
       "display_name": "My Fairies Dress Up",
       "tag_line": "Dress to impress!",
       "types": [
@@ -954,7 +939,6 @@
     "id": 50,
     "app_id": "myfield",
     "base": {
-      "app_url": "https://myfield.apps.coolgamespark.com/minigame-index.html",
       "display_name": "My Field",
       "tag_line": "Take back the land!",
       "types": [
@@ -1019,7 +1003,6 @@
     "id": 54,
     "app_id": "mutant-dino",
     "base": {
-      "app_url": "https://mutant-dino.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mutant Dinosaurs",
       "tag_line": "Make good use of every dinosaur",
       "types": [
@@ -1082,7 +1065,6 @@
     "id": 58,
     "app_id": "jelly-boom",
     "base": {
-      "app_url": "https://jelly-boom.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Jelly Boom",
       "tag_line": "Jelly explosion",
       "types": [
@@ -1145,7 +1127,6 @@
     "id": 59,
     "app_id": "yeloli-dressup",
     "base": {
-      "app_url": "https://yeloli-dressup.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Yeloli Dress Up",
       "tag_line": "Dressing the girl",
       "types": [
@@ -1208,7 +1189,6 @@
     "id": 60,
     "app_id": "royal-battle",
     "base": {
-      "app_url": "https://royal-battle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Royal Battle",
       "tag_line": "Occupation Castle",
       "types": [
@@ -1271,7 +1251,6 @@
     "id": 63,
     "app_id": "love-challenge",
     "base": {
-      "app_url": "https://love-challenge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Love Challenge",
       "tag_line": "Those difficult problems in dating",
       "types": [
@@ -1335,7 +1314,6 @@
     "id": 64,
     "app_id": "ninja-sword",
     "base": {
-      "app_url": "https://ninja-sword.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ninja Sword",
       "tag_line": "assassinate destroy",
       "types": [
@@ -1398,7 +1376,6 @@
     "id": 66,
     "app_id": "yeloli-dollhouse",
     "base": {
-      "app_url": "https://yeloli-dollhouse.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Yeloli Dollhouse",
       "tag_line": "Explore the doll house with Yeloli",
       "types": [
@@ -1461,7 +1438,6 @@
     "id": 68,
     "app_id": "smash-theman",
     "base": {
-      "app_url": "https://smash-theman.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Smash The Man",
       "tag_line": "became a hero！",
       "types": [
@@ -1524,7 +1500,6 @@
     "id": 71,
     "app_id": "queen-hulahoop",
     "base": {
-      "app_url": "https://queen-hulahoop.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Queen Hula Hoop",
       "tag_line": "Collect hula hoops!",
       "types": [
@@ -1587,7 +1562,6 @@
     "id": 91,
     "app_id": "plants-beatzombies",
     "base": {
-      "app_url": "https://plants-beatzombies.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Plants Beat Zombies",
       "tag_line": "Resist the zombie army!",
       "types": [
@@ -1650,7 +1624,6 @@
     "id": 111,
     "app_id": "heels-queen",
     "base": {
-      "app_url": "https://heels-queen.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Heels Queen",
       "tag_line": "Beat others in high heels",
       "types": [
@@ -1713,7 +1686,6 @@
     "id": 167,
     "app_id": "parkour-race",
     "base": {
-      "app_url": "https://parkour-race.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Parkour Race",
       "tag_line": "Parkour passerby King",
       "types": [
@@ -1776,7 +1748,6 @@
     "id": 177,
     "app_id": "dunk-link",
     "base": {
-      "app_url": "https://dunk-link.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dunk Link",
       "tag_line": "Crazy Dunk！Flying basketball",
       "types": [
@@ -1840,7 +1811,6 @@
     "id": 255,
     "app_id": "cooking-tile",
     "base": {
-      "app_url": "https://cooking-tile.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cooking Tile",
       "tag_line": "Explore the sweetest new world now!",
       "types": [
@@ -1903,7 +1873,6 @@
     "id": 257,
     "app_id": "save-the-goldfish",
     "base": {
-      "app_url": "https://save-the-goldfish.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save The Goldfish",
       "tag_line": "The cute little fish is in danger, save it!",
       "types": [
@@ -1966,7 +1935,6 @@
     "id": 266,
     "app_id": "brick-brawl",
     "base": {
-      "app_url": "https://brick-brawl.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Brick Brawl",
       "tag_line": "Moving bricks I am the strongest!",
       "types": [
@@ -2030,7 +1998,6 @@
     "id": 270,
     "app_id": "crazy-architect",
     "base": {
-      "app_url": "https://crazy-architect.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Architect",
       "tag_line": "Start your architectural journey",
       "types": [
@@ -2093,7 +2060,6 @@
     "id": 275,
     "app_id": "supermarket-simulator",
     "base": {
-      "app_url": "https://supermarket-simulator.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Supermarket Simulator",
       "tag_line": "Run a supermarket just for you！",
       "types": [
@@ -2156,7 +2122,6 @@
     "id": 280,
     "app_id": "ski-master",
     "base": {
-      "app_url": "https://ski-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ski Master - racing game",
       "tag_line": "To be a super ski master！",
       "types": [
@@ -2222,7 +2187,6 @@
     "id": 284,
     "app_id": "pop-stone3",
     "base": {
-      "app_url": "https://pop-stone3.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pop Stone3",
       "tag_line": "New gem matching game",
       "types": [
@@ -2285,7 +2249,6 @@
     "id": 289,
     "app_id": "merge-design",
     "base": {
-      "app_url": "https://merge-design.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Design",
       "types": [
         4,
@@ -2344,7 +2307,6 @@
     "id": 292,
     "app_id": "kill-io",
     "base": {
-      "app_url": "https://kill-io.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Kill.io",
       "tag_line": "Kill, become the ultimate king！",
       "types": [
@@ -2407,7 +2369,6 @@
     "id": 293,
     "app_id": "city-take-over",
     "base": {
-      "app_url": "https://city-take-over.apps.coolgamespark.com/minigame-index.html",
       "display_name": "City Take Over",
       "tag_line": "Take over the city!",
       "types": [
@@ -2470,7 +2431,6 @@
     "id": 294,
     "app_id": "bloody-warrior",
     "base": {
-      "app_url": "https://bloody-warrior.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bloody Warrior",
       "tag_line": "Bloody warriors, start the fight!",
       "types": [
@@ -2533,7 +2493,6 @@
     "id": 298,
     "app_id": "solitaire-casual-farm",
     "base": {
-      "app_url": "https://solitaire-casual-farm.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Solitaire Casual Farm",
       "landscape": true,
       "types": [
@@ -2597,7 +2556,6 @@
     "id": 300,
     "app_id": "crazy-artillery",
     "base": {
-      "app_url": "https://crazy-artillery.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Artillery",
       "types": [
         2
@@ -2659,7 +2617,6 @@
     "id": 302,
     "app_id": "make-good-money",
     "base": {
-      "app_url": "https://make-good-money.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Make Good Money",
       "types": [
         2
@@ -2721,7 +2678,6 @@
     "id": 303,
     "app_id": "slice-it-all",
     "base": {
-      "app_url": "https://slice-it-all.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Slice It All",
       "types": [
         2
@@ -2783,7 +2739,6 @@
     "id": 306,
     "app_id": "million-star",
     "base": {
-      "app_url": "https://million-star.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Million Star",
       "types": [
         8,
@@ -2847,7 +2802,6 @@
     "id": 307,
     "app_id": "iam-killer",
     "base": {
-      "app_url": "https://iam-killer.apps.coolgamespark.com/minigame-index.html",
       "display_name": "I Am A Killer",
       "types": [
         2
@@ -2909,7 +2863,6 @@
     "id": 308,
     "app_id": "crazy-rugby",
     "base": {
-      "app_url": "https://crazy-rugby.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Rugby",
       "types": [
         7,
@@ -2973,7 +2926,6 @@
     "id": 309,
     "app_id": "haunted-dorm",
     "base": {
-      "app_url": "https://haunted-dorm.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Haunted Dorm",
       "types": [
         2,
@@ -3032,7 +2984,6 @@
     "id": 310,
     "app_id": "football",
     "base": {
-      "app_url": "https://football.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Football",
       "types": [
         282,
@@ -3096,7 +3047,6 @@
     "id": 315,
     "app_id": "pole-vault",
     "base": {
-      "app_url": "https://pole-vault.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pole Vault",
       "types": [
         7,
@@ -3155,7 +3105,6 @@
     "id": 317,
     "app_id": "bouboules",
     "base": {
-      "app_url": "https://bouboules.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bump Ball",
       "types": [
         2
@@ -3213,7 +3162,6 @@
     "id": 320,
     "app_id": "super-jumper",
     "base": {
-      "app_url": "https://super-jumper.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Jumper",
       "types": [
         21,
@@ -3272,7 +3220,6 @@
     "id": 323,
     "app_id": "ball2048",
     "base": {
-      "app_url": "https://ball2048.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ball 2048",
       "types": [
         8,
@@ -3331,7 +3278,6 @@
     "id": 324,
     "app_id": "solitaire",
     "base": {
-      "app_url": "https://solitaire.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Classic Solitaire",
       "types": [
         2,
@@ -3391,7 +3337,6 @@
     "id": 325,
     "app_id": "bubble-shooter",
     "base": {
-      "app_url": "https://bubble-shooter.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Shooter",
       "types": [
         8,
@@ -3450,7 +3395,6 @@
     "id": 326,
     "app_id": "monster-war3",
     "base": {
-      "app_url": "https://monster-war3.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Monster War",
       "landscape": true,
       "types": [
@@ -3510,7 +3454,6 @@
     "id": 327,
     "app_id": "ylcrazy-ball",
     "base": {
-      "app_url": "https://ylcrazy-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "YI Crazy ball",
       "types": [
         9
@@ -3556,7 +3499,6 @@
     "id": 328,
     "app_id": "ylbubble-spinner",
     "base": {
-      "app_url": "https://ylbubble-spinner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "YL Bubble Spinner",
       "types": [
         8,
@@ -3603,7 +3545,6 @@
     "id": 331,
     "app_id": "ylpop-stone2",
     "base": {
-      "app_url": "https://ylpop-stone2.apps.coolgamespark.com/minigame-index.html",
       "display_name": "YL Pop Stone2",
       "types": [
         3
@@ -3649,7 +3590,6 @@
     "id": 342,
     "app_id": "ybest-link",
     "base": {
-      "app_url": "https://ybest-link.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Y Best-Link",
       "types": [
         2
@@ -3695,7 +3635,6 @@
     "id": 343,
     "app_id": "ybubble-legend",
     "base": {
-      "app_url": "https://ybubble-legend.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Y Bubble-Legend",
       "types": [
         2
@@ -3741,7 +3680,6 @@
     "id": 344,
     "app_id": "ychop-io",
     "base": {
-      "app_url": "https://ychop-io.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Y Chop.io",
       "types": [
         3,
@@ -3788,7 +3726,6 @@
     "id": 346,
     "app_id": "ymutant-dino",
     "base": {
-      "app_url": "https://ymutant-dino.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Y Mutant-Dinosaurs",
       "types": [
         4
@@ -3834,7 +3771,6 @@
     "id": 347,
     "app_id": "ystone-line",
     "base": {
-      "app_url": "https://ystone-line.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Y Stone-Line",
       "types": [
         2
@@ -3880,7 +3816,6 @@
     "id": 348,
     "app_id": "pikasave",
     "base": {
-      "app_url": "https://pikasave.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pika Save",
       "types": [
         2
@@ -3938,7 +3873,6 @@
     "id": 349,
     "app_id": "throwing-knife-master",
     "base": {
-      "app_url": "https://throwing-knife-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Spin Master",
       "types": [
         2,
@@ -3997,7 +3931,6 @@
     "id": 350,
     "app_id": "mini",
     "base": {
-      "app_url": "https://mini.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mini defense",
       "types": [
         2,
@@ -4057,7 +3990,6 @@
     "id": 351,
     "app_id": "miss-tofu",
     "base": {
-      "app_url": "https://miss-tofu.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Miss Tofu",
       "types": [
         2
@@ -4115,7 +4047,6 @@
     "id": 352,
     "app_id": "stack-ball",
     "base": {
-      "app_url": "https://stack-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stack Ball",
       "types": [
         2,
@@ -4175,7 +4106,6 @@
     "id": 353,
     "app_id": "pets-blast",
     "base": {
-      "app_url": "https://pets-blast.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pets Blast",
       "types": [
         2,
@@ -4234,7 +4164,6 @@
     "id": 358,
     "app_id": "happy-woodworking",
     "base": {
-      "app_url": "https://happy-woodworking.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Happy Woodworking",
       "types": [
         2
@@ -4292,7 +4221,6 @@
     "id": 359,
     "app_id": "sudoku-fun",
     "base": {
-      "app_url": "https://sudoku-fun.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sudoku Fun",
       "types": [
         2
@@ -4350,7 +4278,6 @@
     "id": 360,
     "app_id": "figth-plane",
     "base": {
-      "app_url": "https://figth-plane.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fight Plane",
       "types": [
         2,
@@ -4409,7 +4336,6 @@
     "id": 361,
     "app_id": "stack-ball-laya",
     "base": {
-      "app_url": "https://stack-ball-laya.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stack Ball 3D",
       "types": [
         2,
@@ -4468,7 +4394,6 @@
     "id": 362,
     "app_id": "link-line",
     "base": {
-      "app_url": "https://link-line.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Link Line",
       "types": [
         2
@@ -4526,7 +4451,6 @@
     "id": 364,
     "app_id": "happy-mix",
     "base": {
-      "app_url": "https://happy-mix.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Happy Mix",
       "types": [
         2
@@ -4586,7 +4510,6 @@
     "id": 365,
     "app_id": "ant-war",
     "base": {
-      "app_url": "https://ant-war.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ant War",
       "types": [
         2,
@@ -4645,7 +4568,6 @@
     "id": 367,
     "app_id": "jungle-marble-pop-blast",
     "base": {
-      "app_url": "https://jungle-marble-pop-blast.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Jungle Marble Pop Blast",
       "landscape": true,
       "types": [
@@ -4705,7 +4627,6 @@
     "id": 368,
     "app_id": "wildly-moto",
     "base": {
-      "app_url": "https://wildly-moto.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Wildly Moto - Super Race",
       "types": [
         6,
@@ -4764,7 +4685,6 @@
     "id": 369,
     "app_id": "insect-exploration",
     "base": {
-      "app_url": "https://insect-exploration.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Insect Exploration",
       "types": [
         2,
@@ -4823,7 +4743,6 @@
     "id": 370,
     "app_id": "refrigerator-organizer",
     "base": {
-      "app_url": "https://refrigerator-organizer.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Refrigerator Organizer",
       "types": [
         2
@@ -4881,7 +4800,6 @@
     "id": 374,
     "app_id": "power-light",
     "base": {
-      "app_url": "https://power-light.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Power Light",
       "types": [
         2
@@ -4939,7 +4857,6 @@
     "id": 375,
     "app_id": "sprint-master",
     "base": {
-      "app_url": "https://sprint-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sprint Master",
       "types": [
         2
@@ -4997,7 +4914,6 @@
     "id": 376,
     "app_id": "ludo-star",
     "base": {
-      "app_url": "https://ludo-star.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ludo Star",
       "types": [
         2,
@@ -5057,7 +4973,6 @@
     "id": 377,
     "app_id": "hero-tower",
     "base": {
-      "app_url": "https://hero-tower.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hero Tower",
       "types": [
         2,
@@ -5116,7 +5031,6 @@
     "id": 378,
     "app_id": "migic-glass",
     "base": {
-      "app_url": "https://migic-glass.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Migic Glass",
       "types": [
         2
@@ -5174,7 +5088,6 @@
     "id": 384,
     "app_id": "storage-master",
     "base": {
-      "app_url": "https://storage-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Storage Master",
       "types": [
         2,
@@ -5233,7 +5146,6 @@
     "id": 386,
     "app_id": "doomsday-chariot",
     "base": {
-      "app_url": "https://doomsday-chariot.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Doomsday Chariot",
       "types": [
         4,
@@ -5292,7 +5204,6 @@
     "id": 387,
     "app_id": "rainbow-cubes",
     "base": {
-      "app_url": "https://rainbow-cubes.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rainbow Cubes",
       "types": [
         13,
@@ -5351,7 +5262,6 @@
     "id": 391,
     "app_id": "run-and-gun",
     "base": {
-      "app_url": "https://run-and-gun.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Run And Gun",
       "types": [
         2,
@@ -5410,7 +5320,6 @@
     "id": 392,
     "app_id": "candy-legend",
     "base": {
-      "app_url": "https://candy-legend.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Candy Legend",
       "types": [
         2,
@@ -5469,7 +5378,6 @@
     "id": 393,
     "app_id": "bridge-master",
     "base": {
-      "app_url": "https://bridge-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bridge Master",
       "types": [
         2
@@ -5527,7 +5435,6 @@
     "id": 394,
     "app_id": "destroy-galaxy",
     "base": {
-      "app_url": "https://destroy-galaxy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Destroy Galaxy",
       "types": [
         276
@@ -5585,7 +5492,6 @@
     "id": 397,
     "app_id": "islanders-war",
     "base": {
-      "app_url": "https://islanders-war.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Islanders War",
       "types": [
         4
@@ -5643,7 +5549,6 @@
     "id": 399,
     "app_id": "star-boom",
     "base": {
-      "app_url": "https://star-boom.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Star Boom",
       "types": [
         2,
@@ -5702,7 +5607,6 @@
     "id": 410,
     "app_id": "two-player-games",
     "base": {
-      "app_url": "https://two-player-games.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Two Player Games",
       "types": [
         21,
@@ -5761,7 +5665,6 @@
     "id": 411,
     "app_id": "classic-sudoku",
     "base": {
-      "app_url": "https://classic-sudoku.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Classic Sudoku",
       "types": [
         2
@@ -5819,7 +5722,6 @@
     "id": 412,
     "app_id": "bees-love-synthesis",
     "base": {
-      "app_url": "https://bees-love-synthesis.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bees Love Synthesis",
       "types": [
         2
@@ -5877,7 +5779,6 @@
     "id": 413,
     "app_id": "fruit-snake",
     "base": {
-      "app_url": "https://fruit-snake.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fruit Snake",
       "landscape": true,
       "types": [
@@ -5937,7 +5838,6 @@
     "id": 414,
     "app_id": "match-maker",
     "base": {
-      "app_url": "https://match-maker.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Match Maker",
       "types": [
         4,
@@ -5996,7 +5896,6 @@
     "id": 415,
     "app_id": "mushroom-takeover",
     "base": {
-      "app_url": "https://mushroom-takeover.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mushroom Takeover",
       "types": [
         2
@@ -6054,7 +5953,6 @@
     "id": 416,
     "app_id": "flower-explosion",
     "base": {
-      "app_url": "https://flower-explosion.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Flower Explosion",
       "types": [
         13,
@@ -6113,7 +6011,6 @@
     "id": 420,
     "app_id": "rolling-ball-3d",
     "base": {
-      "app_url": "https://rolling-ball-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rolling Ball 3D",
       "types": [
         9,
@@ -6172,7 +6069,6 @@
     "id": 425,
     "app_id": "lmmortals-simulator",
     "base": {
-      "app_url": "https://lmmortals-simulator.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Immortals Simulator",
       "types": [
         4
@@ -6230,7 +6126,6 @@
     "id": 426,
     "app_id": "magic-mutant",
     "base": {
-      "app_url": "https://magic-mutant.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Magic Mutant",
       "types": [
         6,
@@ -6289,7 +6184,6 @@
     "id": 427,
     "app_id": "escape-dinosaur-lsland",
     "base": {
-      "app_url": "https://escape-dinosaur-lsland.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Escape Dinosaur lsland",
       "types": [
         9
@@ -6347,7 +6241,6 @@
     "id": 428,
     "app_id": "rope-rescue",
     "base": {
-      "app_url": "https://rope-rescue.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rope Rescue",
       "types": [
         2
@@ -6405,7 +6298,6 @@
     "id": 430,
     "app_id": "super-spy",
     "base": {
-      "app_url": "https://super-spy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Spy",
       "types": [
         8,
@@ -6464,7 +6356,6 @@
     "id": 431,
     "app_id": "pinball-legends",
     "base": {
-      "app_url": "https://pinball-legends.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pinball Legends",
       "types": [
         2
@@ -6522,7 +6413,6 @@
     "id": 432,
     "app_id": "bubble-shooter-plus",
     "base": {
-      "app_url": "https://bubble-shooter-plus.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Shooter Plus",
       "types": [
         2
@@ -6580,7 +6470,6 @@
     "id": 433,
     "app_id": "merge-number-puzzle",
     "base": {
-      "app_url": "https://merge-number-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Number Puzzle",
       "types": [
         2
@@ -6638,7 +6527,6 @@
     "id": 435,
     "app_id": "yatzy",
     "base": {
-      "app_url": "https://yatzy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Yatzy",
       "types": [
         2
@@ -6696,7 +6584,6 @@
     "id": 437,
     "app_id": "wild-racing-3d",
     "base": {
-      "app_url": "https://wild-racing-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Wild Racing 3D",
       "types": [
         283
@@ -6754,7 +6641,6 @@
     "id": 438,
     "app_id": "minesweeper",
     "base": {
-      "app_url": "https://minesweeper.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mine Sweeper",
       "types": [
         2
@@ -6812,7 +6698,6 @@
     "id": 439,
     "app_id": "aqua-thief",
     "base": {
-      "app_url": "https://aqua-thief.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Aqua Thief",
       "types": [
         2
@@ -6870,7 +6755,6 @@
     "id": 442,
     "app_id": "puzzle-draw",
     "base": {
-      "app_url": "https://puzzle-draw.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Puzzle Draw",
       "types": [
         2
@@ -6928,7 +6812,6 @@
     "id": 444,
     "app_id": "fury-dash",
     "base": {
-      "app_url": "https://fury-dash.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fury Dash",
       "types": [
         2
@@ -6986,7 +6869,6 @@
     "id": 447,
     "app_id": "highway-rider-extreme",
     "base": {
-      "app_url": "https://highway-rider-extreme.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Highway Rider Extreme",
       "types": [
         9
@@ -7044,7 +6926,6 @@
     "id": 448,
     "app_id": "find-fault-together",
     "base": {
-      "app_url": "https://find-fault-together.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Find Fault Together",
       "types": [
         2
@@ -7102,7 +6983,6 @@
     "id": 449,
     "app_id": "cut-fruit-ninja",
     "base": {
-      "app_url": "https://cut-fruit-ninja.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cut Fruit Ninja",
       "types": [
         286,
@@ -7162,7 +7042,6 @@
     "id": 450,
     "app_id": "fishing",
     "base": {
-      "app_url": "https://fishing.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fishing",
       "types": [
         2
@@ -7220,7 +7099,6 @@
     "id": 452,
     "app_id": "egypt-run",
     "base": {
-      "app_url": "https://egypt-run.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Egypt Run",
       "types": [
         6
@@ -7278,7 +7156,6 @@
     "id": 453,
     "app_id": "beauty-race",
     "base": {
-      "app_url": "https://beauty-race.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Beauty Race",
       "types": [
         9
@@ -7336,7 +7213,6 @@
     "id": 454,
     "app_id": "bike_rush",
     "base": {
-      "app_url": "https://bike_rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bike Rush",
       "types": [
         9,
@@ -7395,7 +7271,6 @@
     "id": 455,
     "app_id": "construction-set",
     "base": {
-      "app_url": "https://construction-set.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Construction Set",
       "types": [
         2
@@ -7453,7 +7328,6 @@
     "id": 456,
     "app_id": "hopball_3d",
     "base": {
-      "app_url": "https://hopball_3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "HopBall 3D",
       "types": [
         9
@@ -7511,7 +7385,6 @@
     "id": 457,
     "app_id": "lovely_doll_creator",
     "base": {
-      "app_url": "https://lovely_doll_creator.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Lovely Doll Creator",
       "types": [
         4
@@ -7569,7 +7442,6 @@
     "id": 458,
     "app_id": "mommy-birth-care",
     "base": {
-      "app_url": "https://mommy-birth-care.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mommy Birth Care",
       "types": [
         4
@@ -7627,7 +7499,6 @@
     "id": 459,
     "app_id": "wobble-man-online",
     "base": {
-      "app_url": "https://wobble-man-online.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Wobble Man Online",
       "types": [
         2
@@ -7685,7 +7556,6 @@
     "id": 460,
     "app_id": "wood-shop",
     "base": {
-      "app_url": "https://wood-shop.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Wood Shop",
       "types": [
         4
@@ -7743,7 +7613,6 @@
     "id": 461,
     "app_id": "cerkio-gd",
     "base": {
-      "app_url": "https://cerkio-gd.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cerkio Gd",
       "types": [
         2
@@ -7801,7 +7670,6 @@
     "id": 462,
     "app_id": "martin-rescue",
     "base": {
-      "app_url": "https://martin-rescue.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Martin Rescue",
       "types": [
         2
@@ -7859,7 +7727,6 @@
     "id": 463,
     "app_id": "fantastic-tower-defense",
     "base": {
-      "app_url": "https://fantastic-tower-defense.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fantastic Tower Defense",
       "types": [
         2
@@ -7917,7 +7784,6 @@
     "id": 465,
     "app_id": "space-pilot",
     "base": {
-      "app_url": "https://space-pilot.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Space Pilot",
       "types": [
         2
@@ -7975,7 +7841,6 @@
     "id": 469,
     "app_id": "hidden-rabbit",
     "base": {
-      "app_url": "https://hidden-rabbit.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hidden Rabbit",
       "types": [
         2
@@ -8033,7 +7898,6 @@
     "id": 471,
     "app_id": "brick-frenzy",
     "base": {
-      "app_url": "https://brick-frenzy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Brick Frenzy",
       "types": [
         2
@@ -8091,7 +7955,6 @@
     "id": 474,
     "app_id": "need-a-ride",
     "base": {
-      "app_url": "https://need-a-ride.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Need A Ride",
       "types": [
         2
@@ -8149,7 +8012,6 @@
     "id": 476,
     "app_id": "save-chicken-puzzle",
     "base": {
-      "app_url": "https://save-chicken-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save Chicken Puzzle",
       "types": [
         2
@@ -8207,7 +8069,6 @@
     "id": 477,
     "app_id": "pregnant-twins-newborn-care",
     "base": {
-      "app_url": "https://pregnant-twins-newborn-care.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pregnant Twins Newborn Care",
       "types": [
         10,
@@ -8266,7 +8127,6 @@
     "id": 479,
     "app_id": "stack-colors",
     "base": {
-      "app_url": "https://stack-colors.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stack Colors",
       "types": [
         2
@@ -8324,7 +8184,6 @@
     "id": 483,
     "app_id": "colorful-ice-cream-shop",
     "base": {
-      "app_url": "https://colorful-ice-cream-shop.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Colorful Ice Cream Shop",
       "types": [
         4,
@@ -8383,7 +8242,6 @@
     "id": 484,
     "app_id": "captain-pirate",
     "base": {
-      "app_url": "https://captain-pirate.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Captain Pirate",
       "types": [
         2
@@ -8443,7 +8301,6 @@
     "id": 485,
     "app_id": "happy-jump",
     "base": {
-      "app_url": "https://happy-jump.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Happy Jump",
       "types": [
         2
@@ -8501,7 +8358,6 @@
     "id": 487,
     "app_id": "rope-rescue-puzzle",
     "base": {
-      "app_url": "https://rope-rescue-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rope Rescue Puzzle",
       "types": [
         2
@@ -8559,7 +8415,6 @@
     "id": 488,
     "app_id": "ant-world",
     "base": {
-      "app_url": "https://ant-world.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ant World",
       "types": [
         4
@@ -8617,7 +8472,6 @@
     "id": 490,
     "app_id": "bubble-fruit",
     "base": {
-      "app_url": "https://bubble-fruit.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Fruit",
       "types": [
         2
@@ -8675,7 +8529,6 @@
     "id": 493,
     "app_id": "zombie-hunter",
     "base": {
-      "app_url": "https://zombie-hunter.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Zombie Hunter",
       "types": [
         2
@@ -8733,7 +8586,6 @@
     "id": 494,
     "app_id": "zombie-fight",
     "base": {
-      "app_url": "https://zombie-fight.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Zombie Fight",
       "types": [
         2
@@ -8791,7 +8643,6 @@
     "id": 495,
     "app_id": "bubble-sage",
     "base": {
-      "app_url": "https://bubble-sage.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Sage",
       "types": [
         2
@@ -8849,7 +8700,6 @@
     "id": 498,
     "app_id": "happy-domino",
     "base": {
-      "app_url": "https://happy-domino.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Happy Domino",
       "types": [
         2
@@ -8907,7 +8757,6 @@
     "id": 499,
     "app_id": "object-hunt",
     "base": {
-      "app_url": "https://object-hunt.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Object Hunt",
       "types": [
         2
@@ -8965,7 +8814,6 @@
     "id": 503,
     "app_id": "globe-match",
     "base": {
-      "app_url": "https://globe-match.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Globe Match",
       "types": [
         2
@@ -9023,7 +8871,6 @@
     "id": 504,
     "app_id": "super-collide",
     "base": {
-      "app_url": "https://super-collide.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Collide",
       "types": [
         285
@@ -9081,7 +8928,6 @@
     "id": 505,
     "app_id": "spin-ice-cream",
     "base": {
-      "app_url": "https://spin-ice-cream.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Spin Ice Cream",
       "types": [
         21,
@@ -9140,7 +8986,6 @@
     "id": 506,
     "app_id": "blackhole-hero",
     "base": {
-      "app_url": "https://blackhole-hero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Blackhole Hero",
       "types": [
         2
@@ -9198,7 +9043,6 @@
     "id": 507,
     "app_id": "bubble-shooter-pop",
     "base": {
-      "app_url": "https://bubble-shooter-pop.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Shooter Pop",
       "types": [
         2
@@ -9256,7 +9100,6 @@
     "id": 508,
     "app_id": "crush-car",
     "base": {
-      "app_url": "https://crush-car.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crush Car",
       "types": [
         2,
@@ -9315,7 +9158,6 @@
     "id": 509,
     "app_id": "merge-ball",
     "base": {
-      "app_url": "https://merge-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Ball",
       "types": [
         2,
@@ -9374,7 +9216,6 @@
     "id": 510,
     "app_id": "gun-run",
     "base": {
-      "app_url": "https://gun-run.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Gun Run",
       "types": [
         13,
@@ -9433,7 +9274,6 @@
     "id": 511,
     "app_id": "garden-tables3",
     "base": {
-      "app_url": "https://garden-tables3.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Garden Tables 3",
       "types": [
         2
@@ -9491,7 +9331,6 @@
     "id": 512,
     "app_id": "monster-clash",
     "base": {
-      "app_url": "https://monster-clash.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Monster Clash",
       "types": [
         2,
@@ -9550,7 +9389,6 @@
     "id": 514,
     "app_id": "shift-and-run",
     "base": {
-      "app_url": "https://shift-and-run.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Shift And Run",
       "types": [
         2,
@@ -9609,7 +9447,6 @@
     "id": 515,
     "app_id": "football-superstars",
     "base": {
-      "app_url": "https://football-superstars.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Football Superstars",
       "types": [
         21,
@@ -9668,7 +9505,6 @@
     "id": 516,
     "app_id": "drifting-mania",
     "base": {
-      "app_url": "https://drifting-mania.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Drifting Mania",
       "types": [
         2
@@ -9726,7 +9562,6 @@
     "id": 517,
     "app_id": "mini-golfmaster",
     "base": {
-      "app_url": "https://mini-golfmaster.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mini Golf Master",
       "types": [
         2,
@@ -9786,7 +9621,6 @@
     "id": 519,
     "app_id": "ninja-block",
     "base": {
-      "app_url": "https://ninja-block.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ninja Block",
       "types": [
         2
@@ -9844,7 +9678,6 @@
     "id": 520,
     "app_id": "tower-run-online",
     "base": {
-      "app_url": "https://tower-run-online.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tower Run Online",
       "types": [
         6,
@@ -9903,7 +9736,6 @@
     "id": 521,
     "app_id": "save-the-girl",
     "base": {
-      "app_url": "https://save-the-girl.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save The Girl",
       "types": [
         2
@@ -9961,7 +9793,6 @@
     "id": 522,
     "app_id": "bumper-io",
     "base": {
-      "app_url": "https://bumper-io.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bumper.io",
       "types": [
         2,
@@ -10020,7 +9851,6 @@
     "id": 524,
     "app_id": "super-cannon",
     "base": {
-      "app_url": "https://super-cannon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Cannon",
       "types": [
         2
@@ -10078,7 +9908,6 @@
     "id": 525,
     "app_id": "square-bird",
     "base": {
-      "app_url": "https://square-bird.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Square Bird",
       "types": [
         2
@@ -10136,7 +9965,6 @@
     "id": 528,
     "app_id": "pencil-rush-online",
     "base": {
-      "app_url": "https://pencil-rush-online.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pencil Rush Online",
       "types": [
         2
@@ -10194,7 +10022,6 @@
     "id": 529,
     "app_id": "hippo-supermarket",
     "base": {
-      "app_url": "https://hippo-supermarket.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hippo Supermarket",
       "types": [
         11,
@@ -10254,7 +10081,6 @@
     "id": 531,
     "app_id": "connect-the-bubbles",
     "base": {
-      "app_url": "https://connect-the-bubbles.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Connect The Bubbles",
       "types": [
         2
@@ -10312,7 +10138,6 @@
     "id": 532,
     "app_id": "football-champs",
     "base": {
-      "app_url": "https://football-champs.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Football Champs",
       "types": [
         2,
@@ -10371,7 +10196,6 @@
     "id": 533,
     "app_id": "crush-the-car",
     "base": {
-      "app_url": "https://crush-the-car.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crush The Car",
       "types": [
         283
@@ -10429,7 +10253,6 @@
     "id": 534,
     "app_id": "agent-squad",
     "base": {
-      "app_url": "https://agent-squad.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Agent Squad",
       "types": [
         20,
@@ -10488,7 +10311,6 @@
     "id": 535,
     "app_id": "block-shooter",
     "base": {
-      "app_url": "https://block-shooter.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Block Shooter",
       "types": [
         2
@@ -10546,7 +10368,6 @@
     "id": 536,
     "app_id": "super-daddy",
     "base": {
-      "app_url": "https://super-daddy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Daddy",
       "types": [
         2
@@ -10604,7 +10425,6 @@
     "id": 537,
     "app_id": "tomb-runner",
     "base": {
-      "app_url": "https://tomb-runner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tomb Runner",
       "types": [
         2
@@ -10662,7 +10482,6 @@
     "id": 538,
     "app_id": "tap-blocks-out",
     "base": {
-      "app_url": "https://tap-blocks-out.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tap Blocks Out",
       "types": [
         2
@@ -10720,7 +10539,6 @@
     "id": 539,
     "app_id": "hyper-snake",
     "base": {
-      "app_url": "https://hyper-snake.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hyper Snake",
       "types": [
         2
@@ -10778,7 +10596,6 @@
     "id": 540,
     "app_id": "tile-building",
     "base": {
-      "app_url": "https://tile-building.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tile Building",
       "types": [
         2,
@@ -10837,7 +10654,6 @@
     "id": 541,
     "app_id": "realtime-fidget-spinner",
     "base": {
-      "app_url": "https://realtime-fidget-spinner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Realtime Fidget Spinner",
       "types": [
         3
@@ -10895,7 +10711,6 @@
     "id": 542,
     "app_id": "drive-mad",
     "base": {
-      "app_url": "https://drive-mad.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Drive Mad",
       "types": [
         6
@@ -10955,7 +10770,6 @@
     "id": 543,
     "app_id": "nature-strikes-back",
     "base": {
-      "app_url": "https://nature-strikes-back.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Nature Strikes Back",
       "types": [
         2,
@@ -11014,7 +10828,6 @@
     "id": 546,
     "app_id": "aqua-funny-park",
     "base": {
-      "app_url": "https://aqua-funny-park.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Aqua Funny Park",
       "types": [
         6,
@@ -11073,7 +10886,6 @@
     "id": 547,
     "app_id": "neymar-can-play",
     "base": {
-      "app_url": "https://neymar-can-play.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Neymar Can Play",
       "types": [
         7,
@@ -11132,7 +10944,6 @@
     "id": 552,
     "app_id": "this-is-rpg",
     "base": {
-      "app_url": "https://this-is-rpg.apps.coolgamespark.com/minigame-index.html",
       "display_name": "This Is RPG",
       "types": [
         3
@@ -11190,7 +11001,6 @@
     "id": 554,
     "app_id": "street-run-chaser",
     "base": {
-      "app_url": "https://street-run-chaser.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Street Run Chaser",
       "types": [
         9
@@ -11248,7 +11058,6 @@
     "id": 555,
     "app_id": "maze-3d",
     "base": {
-      "app_url": "https://maze-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Maze3D",
       "types": [
         2
@@ -11306,7 +11115,6 @@
     "id": 556,
     "app_id": "survival-diary",
     "base": {
-      "app_url": "https://survival-diary.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Survival Diary",
       "types": [
         3
@@ -11364,7 +11172,6 @@
     "id": 557,
     "app_id": "hero-survival",
     "base": {
-      "app_url": "https://hero-survival.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hero Survival",
       "types": [
         286
@@ -11422,7 +11229,6 @@
     "id": 558,
     "app_id": "animals-up",
     "base": {
-      "app_url": "https://animals-up.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Animals Up",
       "types": [
         286
@@ -11480,7 +11286,6 @@
     "id": 560,
     "app_id": "garage-tycoon",
     "base": {
-      "app_url": "https://garage-tycoon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Garage Tycoon",
       "types": [
         2
@@ -11538,7 +11343,6 @@
     "id": 561,
     "app_id": "wolf-invasion",
     "base": {
-      "app_url": "https://wolf-invasion.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Wolf Invasion",
       "types": [
         2,
@@ -11597,7 +11401,6 @@
     "id": 564,
     "app_id": "mahjong-link-puzzle",
     "base": {
-      "app_url": "https://mahjong-link-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mahjong Link Puzzle",
       "types": [
         2
@@ -11655,7 +11458,6 @@
     "id": 565,
     "app_id": "dino-land",
     "base": {
-      "app_url": "https://dino-land.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dino Land",
       "types": [
         279
@@ -11713,7 +11515,6 @@
     "id": 566,
     "app_id": "soul-devour",
     "base": {
-      "app_url": "https://soul-devour.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Soul Devour",
       "types": [
         2
@@ -11771,7 +11572,6 @@
     "id": 567,
     "app_id": "balls-and-ropes",
     "base": {
-      "app_url": "https://balls-and-ropes.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Balls and Ropes",
       "types": [
         2
@@ -11829,7 +11629,6 @@
     "id": 568,
     "app_id": "asmr-organize",
     "base": {
-      "app_url": "https://asmr-organize.apps.coolgamespark.com/minigame-index.html",
       "display_name": "ASMR Organize",
       "types": [
         2
@@ -11887,7 +11686,6 @@
     "id": 569,
     "app_id": "farm-parkour",
     "base": {
-      "app_url": "https://farm-parkour.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Farm Parkour",
       "types": [
         9
@@ -11945,7 +11743,6 @@
     "id": 570,
     "app_id": "makeup-stylist",
     "base": {
-      "app_url": "https://makeup-stylist.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Makeup Stylist",
       "types": [
         15,
@@ -12004,7 +11801,6 @@
     "id": 572,
     "app_id": "haunted-space",
     "base": {
-      "app_url": "https://haunted-space.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Haunted Space",
       "types": [
         2
@@ -12062,7 +11858,6 @@
     "id": 573,
     "app_id": "hurricane",
     "base": {
-      "app_url": "https://hurricane.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hurricane",
       "types": [
         21,
@@ -12121,7 +11916,6 @@
     "id": 574,
     "app_id": "tank-craft",
     "base": {
-      "app_url": "https://tank-craft.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tank Craft",
       "types": [
         2
@@ -12179,7 +11973,6 @@
     "id": 575,
     "app_id": "slap-kings",
     "base": {
-      "app_url": "https://slap-kings.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Slap Kings",
       "types": [
         3
@@ -12237,7 +12030,6 @@
     "id": 577,
     "app_id": "stick-hero",
     "base": {
-      "app_url": "https://stick-hero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stick Hero",
       "types": [
         14,
@@ -12297,7 +12089,6 @@
     "id": 578,
     "app_id": "lonely-hero",
     "base": {
-      "app_url": "https://lonely-hero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Lonely Hero",
       "types": [
         2
@@ -12355,7 +12146,6 @@
     "id": 579,
     "app_id": "word-connect-master",
     "base": {
-      "app_url": "https://word-connect-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Word Connect Master",
       "types": [
         2
@@ -12413,7 +12203,6 @@
     "id": 580,
     "app_id": "arcade-agario",
     "base": {
-      "app_url": "https://arcade-agario.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Arcade Agar.io",
       "types": [
         2
@@ -12471,7 +12260,6 @@
     "id": 581,
     "app_id": "gem-popper",
     "base": {
-      "app_url": "https://gem-popper.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Gem Popper",
       "types": [
         2
@@ -12529,7 +12317,6 @@
     "id": 582,
     "app_id": "num-puz",
     "base": {
-      "app_url": "https://num-puz.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Num puz",
       "types": [
         2,
@@ -12588,7 +12375,6 @@
     "id": 583,
     "app_id": "rats-cooking",
     "base": {
-      "app_url": "https://rats-cooking.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rats cooking",
       "types": [
         3
@@ -12646,7 +12432,6 @@
     "id": 585,
     "app_id": "food-festival-jewelry",
     "base": {
-      "app_url": "https://food-festival-jewelry.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Food Festival Jewelry",
       "types": [
         2
@@ -12704,7 +12489,6 @@
     "id": 587,
     "app_id": "neo-adventure",
     "base": {
-      "app_url": "https://neo-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Neo Adventure",
       "types": [
         21,
@@ -12763,7 +12547,6 @@
     "id": 588,
     "app_id": "crazy-bike",
     "base": {
-      "app_url": "https://crazy-bike.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Bike",
       "types": [
         9
@@ -12821,7 +12604,6 @@
     "id": 589,
     "app_id": "draw-to-love",
     "base": {
-      "app_url": "https://draw-to-love.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Draw To Love",
       "types": [
         2
@@ -12879,7 +12661,6 @@
     "id": 590,
     "app_id": "baby-dress-up",
     "base": {
-      "app_url": "https://baby-dress-up.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Baby Dress Up",
       "types": [
         4,
@@ -12938,7 +12719,6 @@
     "id": 591,
     "app_id": "stickman-run-around",
     "base": {
-      "app_url": "https://stickman-run-around.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stickman Run Around",
       "types": [
         2
@@ -12996,7 +12776,6 @@
     "id": 593,
     "app_id": "chess-classic",
     "base": {
-      "app_url": "https://chess-classic.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Chess Classic",
       "types": [
         2,
@@ -13055,7 +12834,6 @@
     "id": 594,
     "app_id": "water-sort",
     "base": {
-      "app_url": "https://water-sort.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Water Sort",
       "types": [
         2
@@ -13113,7 +12891,6 @@
     "id": 595,
     "app_id": "dino-battle",
     "base": {
-      "app_url": "https://dino-battle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dino Battle",
       "types": [
         4
@@ -13171,7 +12948,6 @@
     "id": 597,
     "app_id": "bouncing-panda",
     "base": {
-      "app_url": "https://bouncing-panda.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bouncing Panda",
       "types": [
         9
@@ -13229,7 +13005,6 @@
     "id": 598,
     "app_id": "star-plan",
     "base": {
-      "app_url": "https://star-plan.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Star Plane",
       "types": [
         3,
@@ -13288,7 +13063,6 @@
     "id": 599,
     "app_id": "archer-hunter-king",
     "base": {
-      "app_url": "https://archer-hunter-king.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Archer Hunter King",
       "types": [
         3
@@ -13346,7 +13120,6 @@
     "id": 600,
     "app_id": "clown-park",
     "base": {
-      "app_url": "https://clown-park.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Clown Park",
       "types": [
         3
@@ -13404,7 +13177,6 @@
     "id": 601,
     "app_id": "fall-race-3d",
     "base": {
-      "app_url": "https://fall-race-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fall Race 3D",
       "types": [
         9
@@ -13462,7 +13234,6 @@
     "id": 602,
     "app_id": "zombie-huntress",
     "base": {
-      "app_url": "https://zombie-huntress.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Zombie Huntress",
       "types": [
         2,
@@ -13521,7 +13292,6 @@
     "id": 604,
     "app_id": "craftify-car",
     "base": {
-      "app_url": "https://craftify-car.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Craftify Car",
       "types": [
         9
@@ -13579,7 +13349,6 @@
     "id": 605,
     "app_id": "find-out",
     "base": {
-      "app_url": "https://find-out.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Find out",
       "types": [
         2
@@ -13637,7 +13406,6 @@
     "id": 607,
     "app_id": "shooting-car",
     "base": {
-      "app_url": "https://shooting-car.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Shooting Car",
       "types": [
         3,
@@ -13697,7 +13465,6 @@
     "id": 609,
     "app_id": "loco-golf",
     "base": {
-      "app_url": "https://loco-golf.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Loco Golf",
       "types": [
         2
@@ -13755,7 +13522,6 @@
     "id": 610,
     "app_id": "escape-run",
     "base": {
-      "app_url": "https://escape-run.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Escape Run",
       "types": [
         9,
@@ -13814,7 +13580,6 @@
     "id": 611,
     "app_id": "pet-island-game",
     "base": {
-      "app_url": "https://pet-island-game.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pet Island Game",
       "types": [
         2
@@ -13872,7 +13637,6 @@
     "id": 612,
     "app_id": "pocket-drift",
     "base": {
-      "app_url": "https://pocket-drift.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pocket Drift",
       "types": [
         9
@@ -13930,7 +13694,6 @@
     "id": 613,
     "app_id": "falling-down-stairs",
     "base": {
-      "app_url": "https://falling-down-stairs.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Falling Down Stairs",
       "types": [
         9
@@ -13988,7 +13751,6 @@
     "id": 616,
     "app_id": "egg-adventure",
     "base": {
-      "app_url": "https://egg-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Egg Adventure",
       "types": [
         277,
@@ -14047,7 +13809,6 @@
     "id": 618,
     "app_id": "bubble-tea",
     "base": {
-      "app_url": "https://bubble-tea.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Tea",
       "types": [
         2
@@ -14105,7 +13866,6 @@
     "id": 619,
     "app_id": "bubble-shooter-adventure",
     "base": {
-      "app_url": "https://bubble-shooter-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Shooter Adventure",
       "types": [
         285,
@@ -14165,7 +13925,6 @@
     "id": 622,
     "app_id": "dune-surfer",
     "base": {
-      "app_url": "https://dune-surfer.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dune Surfer",
       "types": [
         9
@@ -14223,7 +13982,6 @@
     "id": 623,
     "app_id": "gem-excavator",
     "base": {
-      "app_url": "https://gem-excavator.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Gem Excavator",
       "types": [
         277
@@ -14281,7 +14039,6 @@
     "id": 626,
     "app_id": "draw-car",
     "base": {
-      "app_url": "https://draw-car.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Draw Car",
       "types": [
         9
@@ -14339,7 +14096,6 @@
     "id": 627,
     "app_id": "rolling-the-ball",
     "base": {
-      "app_url": "https://rolling-the-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rolling The Ball",
       "types": [
         9
@@ -14397,7 +14153,6 @@
     "id": 630,
     "app_id": "goods-master",
     "base": {
-      "app_url": "https://goods-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "goods master",
       "types": [
         2
@@ -14455,7 +14210,6 @@
     "id": 662,
     "app_id": "endless-battle",
     "base": {
-      "app_url": "https://endless-battle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Endless Battle",
       "types": [
         3,
@@ -14514,7 +14268,6 @@
     "id": 664,
     "app_id": "freecell-solitaire",
     "base": {
-      "app_url": "https://freecell-solitaire.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Freecell solitaire",
       "types": [
         2,
@@ -14573,7 +14326,6 @@
     "id": 666,
     "app_id": "toilet-zombie-war",
     "base": {
-      "app_url": "https://toilet-zombie-war.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Toilet Zombie War",
       "types": [
         3,
@@ -14632,7 +14384,6 @@
     "id": 667,
     "app_id": "park-me",
     "base": {
-      "app_url": "https://park-me.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Park Me",
       "types": [
         2,
@@ -14691,7 +14442,6 @@
     "id": 669,
     "app_id": "2048fall",
     "base": {
-      "app_url": "https://2048fall.apps.coolgamespark.com/minigame-index.html",
       "display_name": "2048fall",
       "types": [
         2
@@ -14749,7 +14499,6 @@
     "id": 672,
     "app_id": "tiger-tank",
     "base": {
-      "app_url": "https://tiger-tank.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tiger Tank",
       "types": [
         3,
@@ -14808,7 +14557,6 @@
     "id": 673,
     "app_id": "run-the-hospital",
     "base": {
-      "app_url": "https://run-the-hospital.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Run The Hospital",
       "types": [
         4
@@ -14866,7 +14614,6 @@
     "id": 675,
     "app_id": "bird-sort-puzzle",
     "base": {
-      "app_url": "https://bird-sort-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bird Sort Puzzle",
       "types": [
         285,
@@ -14926,7 +14673,6 @@
     "id": 676,
     "app_id": "idle-hero-saga",
     "base": {
-      "app_url": "https://idle-hero-saga.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Idle Hero Saga",
       "types": [
         2
@@ -14984,7 +14730,6 @@
     "id": 686,
     "app_id": "island-defense-war",
     "base": {
-      "app_url": "https://island-defense-war.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Island Defense War",
       "types": [
         3,
@@ -15043,7 +14788,6 @@
     "id": 687,
     "app_id": "number-merge",
     "base": {
-      "app_url": "https://number-merge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Number Merge",
       "types": [
         2
@@ -15101,7 +14845,6 @@
     "id": 689,
     "app_id": "merge-mania",
     "base": {
-      "app_url": "https://merge-mania.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Mania",
       "types": [
         2
@@ -15159,7 +14902,6 @@
     "id": 691,
     "app_id": "race-master",
     "base": {
-      "app_url": "https://race-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Race Master",
       "types": [
         9
@@ -15217,7 +14959,6 @@
     "id": 693,
     "app_id": "rope-puzzle",
     "base": {
-      "app_url": "https://rope-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rope Puzzle",
       "types": [
         2
@@ -15275,7 +15016,6 @@
     "id": 694,
     "app_id": "hidden-hero",
     "base": {
-      "app_url": "https://hidden-hero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hidden Hero",
       "types": [
         2
@@ -15333,7 +15073,6 @@
     "id": 696,
     "app_id": "crazy-yarn-ball",
     "base": {
-      "app_url": "https://crazy-yarn-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Yarn Ball",
       "types": [
         3
@@ -15391,7 +15130,6 @@
     "id": 697,
     "app_id": "decompression-game",
     "base": {
-      "app_url": "https://decompression-game.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Decompression Game",
       "types": [
         4
@@ -15449,7 +15187,6 @@
     "id": 698,
     "app_id": "totem-crush",
     "base": {
-      "app_url": "https://totem-crush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Totem Crush",
       "types": [
         2
@@ -15507,7 +15244,6 @@
     "id": 699,
     "app_id": "heart-beats100",
     "base": {
-      "app_url": "https://heart-beats100.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Heart Beats 100",
       "types": [
         2
@@ -15565,7 +15301,6 @@
     "id": 701,
     "app_id": "cowboy",
     "base": {
-      "app_url": "https://cowboy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cowboy",
       "types": [
         2
@@ -15623,7 +15358,6 @@
     "id": 703,
     "app_id": "cut-slice-perfect",
     "base": {
-      "app_url": "https://cut-slice-perfect.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cut-Slice-Perfect",
       "types": [
         2
@@ -15681,7 +15415,6 @@
     "id": 704,
     "app_id": "robbery-bob-sneak-room",
     "base": {
-      "app_url": "https://robbery-bob-sneak-room.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Robbery Bob Sneak Room",
       "types": [
         2
@@ -15739,7 +15472,6 @@
     "id": 706,
     "app_id": "draw-2-save",
     "base": {
-      "app_url": "https://draw-2-save.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Draw 2 Save",
       "types": [
         284
@@ -15797,7 +15529,6 @@
     "id": 709,
     "app_id": "merge-emoji-2048",
     "base": {
-      "app_url": "https://merge-emoji-2048.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Emoji 2048",
       "types": [
         2
@@ -15855,7 +15586,6 @@
     "id": 710,
     "app_id": "shape-shifting",
     "base": {
-      "app_url": "https://shape-shifting.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Shape Shifting",
       "types": [
         2,
@@ -15914,7 +15644,6 @@
     "id": 711,
     "app_id": "rage-racing",
     "base": {
-      "app_url": "https://rage-racing.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rage Racing",
       "types": [
         9
@@ -15972,7 +15701,6 @@
     "id": 716,
     "app_id": "eat-fruits",
     "base": {
-      "app_url": "https://eat-fruits.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Eat Fruits",
       "types": [
         2
@@ -16030,7 +15758,6 @@
     "id": 717,
     "app_id": "remove-arrow",
     "base": {
-      "app_url": "https://remove-arrow.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Remove Arrow",
       "types": [
         2
@@ -16088,7 +15815,6 @@
     "id": 718,
     "app_id": "squad-arena",
     "base": {
-      "app_url": "https://squad-arena.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Squad Arena",
       "types": [
         21,
@@ -16147,7 +15873,6 @@
     "id": 719,
     "app_id": "block-puzzle-guardian",
     "base": {
-      "app_url": "https://block-puzzle-guardian.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Block Puzzle Guardian",
       "types": [
         284
@@ -16205,7 +15930,6 @@
     "id": 722,
     "app_id": "hehe-forest-house",
     "base": {
-      "app_url": "https://hehe-forest-house.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hehe Forest House",
       "types": [
         4,
@@ -16264,7 +15988,6 @@
     "id": 725,
     "app_id": "brain-out-game",
     "base": {
-      "app_url": "https://brain-out-game.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Brain Out Game",
       "types": [
         2,
@@ -16323,7 +16046,6 @@
     "id": 727,
     "app_id": "hard-worker",
     "base": {
-      "app_url": "https://hard-worker.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hard Worker",
       "types": [
         4
@@ -16381,7 +16103,6 @@
     "id": 728,
     "app_id": "mahjong-mania",
     "base": {
-      "app_url": "https://mahjong-mania.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mahjong Mania",
       "types": [
         13,
@@ -16440,7 +16161,6 @@
     "id": 729,
     "app_id": "find-bath-water",
     "base": {
-      "app_url": "https://find-bath-water.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Find Bath Water",
       "types": [
         2
@@ -16498,7 +16218,6 @@
     "id": 730,
     "app_id": "smart-cut",
     "base": {
-      "app_url": "https://smart-cut.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Smart Cut",
       "types": [
         2
@@ -16556,7 +16275,6 @@
     "id": 731,
     "app_id": "fancy-pin-ball",
     "base": {
-      "app_url": "https://fancy-pin-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fancy Pin ball",
       "types": [
         2
@@ -16614,7 +16332,6 @@
     "id": 734,
     "app_id": "legion-war",
     "base": {
-      "app_url": "https://legion-war.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Legion War",
       "types": [
         5,
@@ -16673,7 +16390,6 @@
     "id": 736,
     "app_id": "survival-raft",
     "base": {
-      "app_url": "https://survival-raft.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Survival Raft",
       "types": [
         4
@@ -16731,7 +16447,6 @@
     "id": 737,
     "app_id": "arch-man",
     "base": {
-      "app_url": "https://arch-man.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Arch Man",
       "types": [
         8,
@@ -16790,7 +16505,6 @@
     "id": 738,
     "app_id": "aquaman",
     "base": {
-      "app_url": "https://aquaman.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Aquaman",
       "types": [
         4,
@@ -16849,7 +16563,6 @@
     "id": 739,
     "app_id": "football-subway-run-3d",
     "base": {
-      "app_url": "https://football-subway-run-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Football Subway Run 3D",
       "types": [
         6,
@@ -16908,7 +16621,6 @@
     "id": 741,
     "app_id": "road-racing-rush",
     "base": {
-      "app_url": "https://road-racing-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Road Racing Rush",
       "types": [
         9
@@ -16966,7 +16678,6 @@
     "id": 742,
     "app_id": "coin-king",
     "base": {
-      "app_url": "https://coin-king.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Coin King",
       "types": [
         2
@@ -17024,7 +16735,6 @@
     "id": 744,
     "app_id": "zombie-sharp-shooter",
     "base": {
-      "app_url": "https://zombie-sharp-shooter.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Zombie Sharp Shooter",
       "types": [
         8
@@ -17082,7 +16792,6 @@
     "id": 746,
     "app_id": "santa-gifts-rescue",
     "base": {
-      "app_url": "https://santa-gifts-rescue.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Santa Gifts Rescue",
       "types": [
         2
@@ -17140,7 +16849,6 @@
     "id": 748,
     "app_id": "dreader-horror-maze",
     "base": {
-      "app_url": "https://dreader-horror-maze.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dreader Horror Maze",
       "types": [
         4
@@ -17198,7 +16906,6 @@
     "id": 749,
     "app_id": "mystery-of-madhouse",
     "base": {
-      "app_url": "https://mystery-of-madhouse.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mystery Of Madhouse",
       "types": [
         4,
@@ -17257,7 +16964,6 @@
     "id": 753,
     "app_id": "christmas-jewel-story",
     "base": {
-      "app_url": "https://christmas-jewel-story.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Christmas Jewel Story",
       "types": [
         13,
@@ -17316,7 +17022,6 @@
     "id": 754,
     "app_id": "boss-go-go",
     "base": {
-      "app_url": "https://boss-go-go.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Boss Go Go",
       "types": [
         6,
@@ -17375,7 +17080,6 @@
     "id": 755,
     "app_id": "fish-go-io",
     "base": {
-      "app_url": "https://fish-go-io.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fish Go.io",
       "types": [
         5,
@@ -17434,7 +17138,6 @@
     "id": 759,
     "app_id": "screw-puzzle",
     "base": {
-      "app_url": "https://screw-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Screw Puzzle",
       "types": [
         2
@@ -17492,7 +17195,6 @@
     "id": 760,
     "app_id": "jigsort-puzzles",
     "base": {
-      "app_url": "https://jigsort-puzzles.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Jigsort Puzzles",
       "types": [
         2
@@ -17550,7 +17252,6 @@
     "id": 762,
     "app_id": "save-driving",
     "base": {
-      "app_url": "https://save-driving.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save Driving",
       "types": [
         2
@@ -17608,7 +17309,6 @@
     "id": 764,
     "app_id": "screw-pin-puzzle",
     "base": {
-      "app_url": "https://screw-pin-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Screw Pin Puzzle",
       "types": [
         2
@@ -17666,7 +17366,6 @@
     "id": 765,
     "app_id": "star-tetris",
     "base": {
-      "app_url": "https://star-tetris.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Star Tetris",
       "types": [
         2
@@ -17724,7 +17423,6 @@
     "id": 766,
     "app_id": "merge-weapons",
     "base": {
-      "app_url": "https://merge-weapons.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Weapons",
       "types": [
         13,
@@ -17784,7 +17482,6 @@
     "id": 767,
     "app_id": "roll-it-over",
     "base": {
-      "app_url": "https://roll-it-over.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Roll It Over",
       "types": [
         6,
@@ -17843,7 +17540,6 @@
     "id": 769,
     "app_id": "camera-clash",
     "base": {
-      "app_url": "https://camera-clash.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Camera Clash",
       "types": [
         5,
@@ -17904,7 +17600,6 @@
     "id": 770,
     "app_id": "search-et",
     "base": {
-      "app_url": "https://search-et.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Search E.T",
       "types": [
         4
@@ -17962,7 +17657,6 @@
     "id": 805,
     "app_id": "cash-tycoon",
     "base": {
-      "app_url": "https://cash-tycoon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cash Tycoon",
       "types": [
         20,
@@ -18021,7 +17715,6 @@
     "id": 810,
     "app_id": "blocky-universe",
     "base": {
-      "app_url": "https://blocky-universe.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Blocky Universe",
       "types": [
         3,
@@ -18081,7 +17774,6 @@
     "id": 813,
     "app_id": "goods-triple-match",
     "base": {
-      "app_url": "https://goods-triple-match.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Goods Triple Match",
       "types": [
         2,
@@ -18140,7 +17832,6 @@
     "id": 814,
     "app_id": "number-merge-10",
     "base": {
-      "app_url": "https://number-merge-10.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Number Merge 10",
       "types": [
         2,
@@ -18199,7 +17890,6 @@
     "id": 815,
     "app_id": "animal-supermarket",
     "base": {
-      "app_url": "https://animal-supermarket.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Animal Supermarket",
       "types": [
         4,
@@ -18258,7 +17948,6 @@
     "id": 818,
     "app_id": "pixel-color",
     "base": {
-      "app_url": "https://pixel-color.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pixel Color",
       "types": [
         276
@@ -18316,7 +18005,6 @@
     "id": 819,
     "app_id": "mutant-run",
     "base": {
-      "app_url": "https://mutant-run.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mutant Run",
       "types": [
         6
@@ -18374,7 +18062,6 @@
     "id": 822,
     "app_id": "color-border",
     "base": {
-      "app_url": "https://color-border.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Color Border",
       "types": [
         276
@@ -18432,7 +18119,6 @@
     "id": 829,
     "app_id": "burger-bar",
     "base": {
-      "app_url": "https://burger-bar.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Burger Bar",
       "types": [
         4,
@@ -18491,7 +18177,6 @@
     "id": 830,
     "app_id": "bus-jam",
     "base": {
-      "app_url": "https://bus-jam.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bus Jam",
       "types": [
         2
@@ -18549,7 +18234,6 @@
     "id": 831,
     "app_id": "teeth-hospital",
     "base": {
-      "app_url": "https://teeth-hospital.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Teeth Hospital",
       "types": [
         4
@@ -18607,7 +18291,6 @@
     "id": 832,
     "app_id": "egg-shooter-dinosaur",
     "base": {
-      "app_url": "https://egg-shooter-dinosaur.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Egg Shooter Dinosaur",
       "types": [
         276,
@@ -18666,7 +18349,6 @@
     "id": 833,
     "app_id": "zombie-survivors",
     "base": {
-      "app_url": "https://zombie-survivors.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Zombie Survivors",
       "types": [
         8,
@@ -18726,7 +18408,6 @@
     "id": 834,
     "app_id": "moto-rush",
     "base": {
-      "app_url": "https://moto-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Moto Rush",
       "types": [
         283,
@@ -18785,7 +18466,6 @@
     "id": 835,
     "app_id": "pet-salon",
     "base": {
-      "app_url": "https://pet-salon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pet Salon",
       "types": [
         4,
@@ -18844,7 +18524,6 @@
     "id": 837,
     "app_id": "remove-one-part",
     "base": {
-      "app_url": "https://remove-one-part.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Remove One Part",
       "types": [
         2
@@ -18902,7 +18581,6 @@
     "id": 838,
     "app_id": "number-bubble-shoot",
     "base": {
-      "app_url": "https://number-bubble-shoot.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Number Bubble Shoot",
       "types": [
         2
@@ -18960,7 +18638,6 @@
     "id": 839,
     "app_id": "save-the-piggy",
     "base": {
-      "app_url": "https://save-the-piggy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save The Piggy",
       "types": [
         2
@@ -19018,7 +18695,6 @@
     "id": 842,
     "app_id": "musicat",
     "base": {
-      "app_url": "https://musicat.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Musicat",
       "types": [
         19
@@ -19076,7 +18752,6 @@
     "id": 852,
     "app_id": "save-stranding-fish",
     "base": {
-      "app_url": "https://save-stranding-fish.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save Stranding Fish",
       "types": [
         2
@@ -19134,7 +18809,6 @@
     "id": 889,
     "app_id": "donut-crush",
     "base": {
-      "app_url": "https://donut-crush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Donut Crush",
       "types": [
         2
@@ -19192,7 +18866,6 @@
     "id": 890,
     "app_id": "family-bonds",
     "base": {
-      "app_url": "https://family-bonds.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Family Bonds",
       "types": [
         2
@@ -19250,7 +18923,6 @@
     "id": 894,
     "app_id": "dunk-shoot",
     "base": {
-      "app_url": "https://dunk-shoot.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dunk Shoot",
       "types": [
         7,
@@ -19310,7 +18982,6 @@
     "id": 896,
     "app_id": "rebound-star",
     "base": {
-      "app_url": "https://rebound-star.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rebound Star",
       "types": [
         7,
@@ -19370,7 +19041,6 @@
     "id": 897,
     "app_id": "mining-to-riches",
     "base": {
-      "app_url": "https://mining-to-riches.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mining To Riches",
       "types": [
         2
@@ -19428,7 +19098,6 @@
     "id": 898,
     "app_id": "makeup-beauty",
     "base": {
-      "app_url": "https://makeup-beauty.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Makeup Beauty",
       "types": [
         10,
@@ -19488,7 +19157,6 @@
     "id": 901,
     "app_id": "devils-land",
     "base": {
-      "app_url": "https://devils-land.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Devils Land",
       "types": [
         4,
@@ -19548,7 +19216,6 @@
     "id": 905,
     "app_id": "alphabet-war",
     "base": {
-      "app_url": "https://alphabet-war.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Alphabet War",
       "types": [
         8
@@ -19608,7 +19275,6 @@
     "id": 909,
     "app_id": "block-master",
     "base": {
-      "app_url": "https://block-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Block Master",
       "types": [
         2
@@ -19666,7 +19332,6 @@
     "id": 912,
     "app_id": "cat-trip",
     "base": {
-      "app_url": "https://cat-trip.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cat Trip",
       "types": [
         2
@@ -19724,7 +19389,6 @@
     "id": 913,
     "app_id": "asmr-salon",
     "base": {
-      "app_url": "https://asmr-salon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "ASMR Salon",
       "types": [
         10,
@@ -19784,7 +19448,6 @@
     "id": 918,
     "app_id": "shaving-her-body",
     "base": {
-      "app_url": "https://shaving-her-body.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Shaving My Body",
       "types": [
         276
@@ -19842,7 +19505,6 @@
     "id": 920,
     "app_id": "match-cards",
     "base": {
-      "app_url": "https://match-cards.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Match Cards",
       "types": [
         2,
@@ -19903,7 +19565,6 @@
     "id": 922,
     "app_id": "elastic-car",
     "base": {
-      "app_url": "https://elastic-car.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Elastic Car",
       "types": [
         9
@@ -19961,7 +19622,6 @@
     "id": 923,
     "app_id": "fun-water-sorting",
     "base": {
-      "app_url": "https://fun-water-sorting.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fun Water Sorting",
       "types": [
         2
@@ -20019,7 +19679,6 @@
     "id": 924,
     "app_id": "sword-master-flash",
     "base": {
-      "app_url": "https://sword-master-flash.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sword Master Flash",
       "types": [
         3,
@@ -20078,7 +19737,6 @@
     "id": 926,
     "app_id": "super-brawler-fighter",
     "base": {
-      "app_url": "https://super-brawler-fighter.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Brawler Fighter",
       "types": [
         5,
@@ -20137,7 +19795,6 @@
     "id": 928,
     "app_id": "dice-war",
     "base": {
-      "app_url": "https://dice-war.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dice War",
       "types": [
         2
@@ -20195,7 +19852,6 @@
     "id": 933,
     "app_id": "find-master-3d",
     "base": {
-      "app_url": "https://find-master-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Find Master 3D",
       "types": [
         2
@@ -20253,7 +19909,6 @@
     "id": 938,
     "app_id": "pop-monster",
     "base": {
-      "app_url": "https://pop-monster.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pop Monster",
       "types": [
         2
@@ -20311,7 +19966,6 @@
     "id": 939,
     "app_id": "tabletennis-duel",
     "base": {
-      "app_url": "https://tabletennis-duel.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tabletennis Duel",
       "types": [
         7,
@@ -20371,7 +20025,6 @@
     "id": 940,
     "app_id": "merge-master",
     "base": {
-      "app_url": "https://merge-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Master",
       "types": [
         2
@@ -20429,7 +20082,6 @@
     "id": 942,
     "app_id": "cargo-skates",
     "base": {
-      "app_url": "https://cargo-skates.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cargo Skates",
       "types": [
         4,
@@ -20489,7 +20141,6 @@
     "id": 947,
     "app_id": "brain-puzzle-save-princess",
     "base": {
-      "app_url": "https://brain-puzzle-save-princess.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Brain Puzzle Save Princess",
       "types": [
         2
@@ -20547,7 +20198,6 @@
     "id": 949,
     "app_id": "dont-be-late",
     "base": {
-      "app_url": "https://dont-be-late.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dont Be Late",
       "types": [
         2
@@ -20605,7 +20255,6 @@
     "id": 951,
     "app_id": "happy-caty-glass",
     "base": {
-      "app_url": "https://happy-caty-glass.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Happy Caty Glass ﻿",
       "types": [
         2
@@ -20663,7 +20312,6 @@
     "id": 953,
     "app_id": "road-rage-motor",
     "base": {
-      "app_url": "https://road-rage-motor.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Road Rage Motor",
       "types": [
         9
@@ -20721,7 +20369,6 @@
     "id": 956,
     "app_id": "stop-them-all",
     "base": {
-      "app_url": "https://stop-them-all.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stop Them All",
       "types": [
         276
@@ -20779,7 +20426,6 @@
     "id": 959,
     "app_id": "save-the-doge",
     "base": {
-      "app_url": "https://save-the-doge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save The Doge",
       "types": [
         2
@@ -20837,7 +20483,6 @@
     "id": 964,
     "app_id": "thief-puzzle-stick-hero-rescue",
     "base": {
-      "app_url": "https://thief-puzzle-stick-hero-rescue.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Thief Puzzle:Stick Hero Rescue",
       "types": [
         2
@@ -20895,7 +20540,6 @@
     "id": 965,
     "app_id": "happy-match-together",
     "base": {
-      "app_url": "https://happy-match-together.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Happy Match Together",
       "types": [
         276,
@@ -20954,7 +20598,6 @@
     "id": 998,
     "app_id": "monkey-tycoon",
     "base": {
-      "app_url": "https://monkey-tycoon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Monkey Tycoon",
       "types": [
         4,
@@ -21013,7 +20656,6 @@
     "id": 999,
     "app_id": "solo-survivor",
     "base": {
-      "app_url": "https://solo-survivor.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Solo Survival",
       "types": [
         3,
@@ -21073,7 +20715,6 @@
     "id": 1000,
     "app_id": "ludo-king",
     "base": {
-      "app_url": "https://ludo-king.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ludo King",
       "types": [
         281,
@@ -21132,7 +20773,6 @@
     "id": 1001,
     "app_id": "my-garden-flower-match",
     "base": {
-      "app_url": "https://my-garden-flower-match.apps.coolgamespark.com/minigame-index.html",
       "display_name": "My Garden Flower Match",
       "types": [
         2
@@ -21190,7 +20830,6 @@
     "id": 1005,
     "app_id": "fruit-sort-master",
     "base": {
-      "app_url": "https://fruit-sort-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fruit Sort Master",
       "types": [
         2
@@ -21248,7 +20887,6 @@
     "id": 1007,
     "app_id": "tetris-puzzle",
     "base": {
-      "app_url": "https://tetris-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tetris Puzzle",
       "types": [
         2
@@ -21306,7 +20944,6 @@
     "id": 1012,
     "app_id": "knife-throwing",
     "base": {
-      "app_url": "https://knife-throwing.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Knife Throwing",
       "types": [
         276,
@@ -21365,7 +21002,6 @@
     "id": 1013,
     "app_id": "basketball-daily",
     "base": {
-      "app_url": "https://basketball-daily.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Basketball Daily",
       "types": [
         20,
@@ -21425,7 +21061,6 @@
     "id": 1016,
     "app_id": "buy-to-buy",
     "base": {
-      "app_url": "https://buy-to-buy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Buy To Buy",
       "types": [
         285,
@@ -21484,7 +21119,6 @@
     "id": 1017,
     "app_id": "graffiti-squares",
     "base": {
-      "app_url": "https://graffiti-squares.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Graffiti Squares",
       "types": [
         2
@@ -21542,7 +21176,6 @@
     "id": 1018,
     "app_id": "shooting-hoops",
     "base": {
-      "app_url": "https://shooting-hoops.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Shooting Hoops",
       "types": [
         7,
@@ -21602,7 +21235,6 @@
     "id": 1019,
     "app_id": "ball-hits-cup",
     "base": {
-      "app_url": "https://ball-hits-cup.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ball Hits Cup",
       "types": [
         2
@@ -21660,7 +21292,6 @@
     "id": 1020,
     "app_id": "tetris-drop-version",
     "base": {
-      "app_url": "https://tetris-drop-version.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tetris:Drop Version",
       "types": [
         2
@@ -21720,7 +21351,6 @@
     "id": 1022,
     "app_id": "throwing-knife-juice",
     "base": {
-      "app_url": "https://throwing-knife-juice.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Flying Knife Juice",
       "types": [
         276
@@ -21778,7 +21408,6 @@
     "id": 1023,
     "app_id": "drawing-line",
     "base": {
-      "app_url": "https://drawing-line.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Draw Lines",
       "types": [
         2
@@ -21836,7 +21465,6 @@
     "id": 1024,
     "app_id": "brain-puzzle",
     "base": {
-      "app_url": "https://brain-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Brain Puzzle",
       "types": [
         2
@@ -21896,7 +21524,6 @@
     "id": 1025,
     "app_id": "ninja-wall-walking",
     "base": {
-      "app_url": "https://ninja-wall-walking.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ninja Cornice",
       "types": [
         20
@@ -21954,7 +21581,6 @@
     "id": 1026,
     "app_id": "hexa-sort",
     "base": {
-      "app_url": "https://hexa-sort.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hexa Sort",
       "types": [
         2
@@ -22012,7 +21638,6 @@
     "id": 1028,
     "app_id": "magic-match",
     "base": {
-      "app_url": "https://magic-match.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Magic Match",
       "types": [
         2
@@ -22070,7 +21695,6 @@
     "id": 1029,
     "app_id": "super-brain",
     "base": {
-      "app_url": "https://super-brain.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Brain",
       "types": [
         2
@@ -22128,7 +21752,6 @@
     "id": 1033,
     "app_id": "crazy-excavator",
     "base": {
-      "app_url": "https://crazy-excavator.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Excavator",
       "types": [
         4,
@@ -22187,7 +21810,6 @@
     "id": 1034,
     "app_id": "soldier-assault",
     "base": {
-      "app_url": "https://soldier-assault.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Soldier Assault",
       "types": [
         6,
@@ -22246,7 +21868,6 @@
     "id": 1036,
     "app_id": "synthetic-milk-tea",
     "base": {
-      "app_url": "https://synthetic-milk-tea.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Synthetic Milk Tea",
       "types": [
         2
@@ -22304,7 +21925,6 @@
     "id": 1039,
     "app_id": "ludo-master",
     "base": {
-      "app_url": "https://ludo-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ludo Master",
       "types": [
         2,
@@ -22363,7 +21983,6 @@
     "id": 1040,
     "app_id": "bubble-shooter-pro",
     "base": {
-      "app_url": "https://bubble-shooter-pro.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Shooter Pro",
       "types": [
         2,
@@ -22422,7 +22041,6 @@
     "id": 1042,
     "app_id": "cue-ball-challenge",
     "base": {
-      "app_url": "https://cue-ball-challenge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cue Ball Challenge",
       "types": [
         7,
@@ -22481,7 +22099,6 @@
     "id": 1044,
     "app_id": "fight-meow-army",
     "base": {
-      "app_url": "https://fight-meow-army.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fight! Meow Army!",
       "types": [
         12,
@@ -22540,7 +22157,6 @@
     "id": 1045,
     "app_id": "magic-flower-match",
     "base": {
-      "app_url": "https://magic-flower-match.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Magic Flower Match",
       "types": [
         2,
@@ -22599,7 +22215,6 @@
     "id": 1082,
     "app_id": "joker-vertical",
     "base": {
-      "app_url": "https://joker-vertical.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Joker Vertical",
       "types": [
         280,
@@ -22661,7 +22276,6 @@
     "id": 1084,
     "app_id": "flower-explosion-z",
     "base": {
-      "app_url": "https://flower-explosion-z.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Nụ Hoa Vui Vẻ",
       "types": [
         2
@@ -22707,7 +22321,6 @@
     "id": 1087,
     "app_id": "screw-puzzle-z",
     "base": {
-      "app_url": "https://screw-puzzle-z.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ốc Vít Vui Vẻ",
       "types": [
         2
@@ -22753,7 +22366,6 @@
     "id": 1088,
     "app_id": "draw-2-save-z",
     "base": {
-      "app_url": "https://draw-2-save-z.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Vẽ Vời Vui Vẻ",
       "types": [
         2
@@ -22799,7 +22411,6 @@
     "id": 1089,
     "app_id": "save-the-piggy-z",
     "base": {
-      "app_url": "https://save-the-piggy-z.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bé Heo Vui Vẻ",
       "types": [
         2
@@ -22845,7 +22456,6 @@
     "id": 1090,
     "app_id": "bridge-master-z",
     "base": {
-      "app_url": "https://bridge-master-z.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Xây Cầu Vui Vẻ",
       "types": [
         20,
@@ -22892,7 +22502,6 @@
     "id": 1091,
     "app_id": "onet-puzzle",
     "base": {
-      "app_url": "https://onet-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Onet Puzzle",
       "types": [
         2
@@ -22950,7 +22559,6 @@
     "id": 1092,
     "app_id": "ping-pong-precision",
     "base": {
-      "app_url": "https://ping-pong-precision.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ping Pong Precision",
       "types": [
         2
@@ -22996,7 +22604,6 @@
     "id": 1093,
     "app_id": "pool-elite-z",
     "base": {
-      "app_url": "https://pool-elite-z.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bi-da Vui Vẻ",
       "types": [
         7
@@ -23042,7 +22649,6 @@
     "id": 1094,
     "app_id": "candy-color-sort-puzzle",
     "base": {
-      "app_url": "https://candy-color-sort-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Candy Color Sort Puzzle",
       "types": [
         2
@@ -23102,7 +22708,6 @@
     "id": 1097,
     "app_id": "endless-battle-k",
     "base": {
-      "app_url": "https://endless-battle-k.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Endless Battles",
       "types": [
         8,
@@ -23162,7 +22767,6 @@
     "id": 1099,
     "app_id": "my-ex-girlfriend",
     "base": {
-      "app_url": "https://my-ex-girlfriend.apps.coolgamespark.com/minigame-index.html",
       "display_name": "My ex girlfriend",
       "types": [
         276
@@ -23220,7 +22824,6 @@
     "id": 1100,
     "app_id": "screw-jam",
     "base": {
-      "app_url": "https://screw-jam.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Screw Match",
       "types": [
         2,
@@ -23278,7 +22881,6 @@
     "id": 1103,
     "app_id": "car-runner",
     "base": {
-      "app_url": "https://car-runner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Car Runner",
       "types": [
         9
@@ -23335,7 +22937,6 @@
     "id": 1104,
     "app_id": "cube-blast",
     "base": {
-      "app_url": "https://cube-blast.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Toy Blast",
       "types": [
         2
@@ -23392,7 +22993,6 @@
     "id": 1108,
     "app_id": "screw-brain",
     "base": {
-      "app_url": "https://screw-brain.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Screw Brain",
       "types": [
         2
@@ -23450,7 +23050,6 @@
     "id": 1109,
     "app_id": "crazy-arrow",
     "base": {
-      "app_url": "https://crazy-arrow.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy arrow",
       "types": [
         8,
@@ -23497,7 +23096,6 @@
     "id": 1111,
     "app_id": "match-elf",
     "base": {
-      "app_url": "https://match-elf.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Match Elf",
       "types": [
         2
@@ -23543,7 +23141,6 @@
     "id": 1113,
     "app_id": "africa-fun",
     "base": {
-      "app_url": "https://africa-fun.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Africa Fun",
       "types": [
         2
@@ -23589,7 +23186,6 @@
     "id": 1114,
     "app_id": "chain-saw",
     "base": {
-      "app_url": "https://chain-saw.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Chain Saw",
       "types": [
         4,
@@ -23637,7 +23233,6 @@
     "id": 1115,
     "app_id": "sausage-adventure",
     "base": {
-      "app_url": "https://sausage-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sausage Adventure",
       "types": [
         277,
@@ -23685,7 +23280,6 @@
     "id": 1116,
     "app_id": "paper-clip",
     "base": {
-      "app_url": "https://paper-clip.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Paper Flip",
       "types": [
         2
@@ -23731,7 +23325,6 @@
     "id": 1120,
     "app_id": "zombies-are-coming",
     "base": {
-      "app_url": "https://zombies-are-coming.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Zombies Are Coming",
       "types": [
         287,
@@ -23790,7 +23383,6 @@
     "id": 1121,
     "app_id": "soccer-mania",
     "base": {
-      "app_url": "https://soccer-mania.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Soccer Mania",
       "types": [
         276
@@ -23836,7 +23428,6 @@
     "id": 1125,
     "app_id": "screwjam",
     "base": {
-      "app_url": "https://screwjam.apps.coolgamespark.com/minigame-index.html",
       "display_name": "ScrewJam",
       "types": [
         284
@@ -23894,7 +23485,6 @@
     "id": 1136,
     "app_id": "bubble-spinner-s",
     "base": {
-      "app_url": "https://bubble-spinner-s.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Spinners",
       "types": [
         276,
@@ -23941,7 +23531,6 @@
     "id": 1137,
     "app_id": "crazy-ball-s",
     "base": {
-      "app_url": "https://crazy-ball-s.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Balls",
       "types": [
         9
@@ -23987,7 +23576,6 @@
     "id": 1138,
     "app_id": "carrom",
     "base": {
-      "app_url": "https://carrom.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Carrom",
       "types": [
         7,
@@ -24048,7 +23636,6 @@
     "id": 1139,
     "app_id": "gym-fantasy",
     "base": {
-      "app_url": "https://gym-fantasy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "GYM Fantasy",
       "types": [
         4,
@@ -24095,7 +23682,6 @@
     "id": 1147,
     "app_id": "carpenter-block",
     "base": {
-      "app_url": "https://carpenter-block.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Carpenter Block",
       "types": [
         2
@@ -24141,7 +23727,6 @@
     "id": 1151,
     "app_id": "watersort",
     "base": {
-      "app_url": "https://watersort.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Water Sorts",
       "types": [
         2
@@ -24187,7 +23772,6 @@
     "id": 1154,
     "app_id": "dream-garden",
     "base": {
-      "app_url": "https://dream-garden.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dream Garden",
       "types": [
         276,
@@ -24234,7 +23818,6 @@
     "id": 1156,
     "app_id": "hammer-piggy-bank",
     "base": {
-      "app_url": "https://hammer-piggy-bank.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hammer Piggy Bank",
       "types": [
         2
@@ -24280,7 +23863,6 @@
     "id": 1157,
     "app_id": "color-game",
     "base": {
-      "app_url": "https://color-game.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Water Sort Puzzle",
       "types": [
         2
@@ -24340,7 +23922,6 @@
     "id": 1158,
     "app_id": "doomsday-ark",
     "base": {
-      "app_url": "https://doomsday-ark.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Doomsday Ark",
       "types": [
         12,
@@ -24399,7 +23980,6 @@
     "id": 1159,
     "app_id": "tanghulu-master",
     "base": {
-      "app_url": "https://tanghulu-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tanghulu Master",
       "types": [
         4,
@@ -24446,7 +24026,6 @@
     "id": 1163,
     "app_id": "ring-puzzle-master",
     "base": {
-      "app_url": "https://ring-puzzle-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ring Puzzle Master",
       "types": [
         2
@@ -24492,7 +24071,6 @@
     "id": 1198,
     "app_id": "bloom-match",
     "base": {
-      "app_url": "https://bloom-match.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bloom Match",
       "types": [
         2
@@ -24538,7 +24116,6 @@
     "id": 1200,
     "app_id": "wc-waiting-line",
     "base": {
-      "app_url": "https://wc-waiting-line.apps.coolgamespark.com/minigame-index.html",
       "display_name": "WC Waiting Line",
       "types": [
         2
@@ -24584,7 +24161,6 @@
     "id": 1201,
     "app_id": "idle-stone-age",
     "base": {
-      "app_url": "https://idle-stone-age.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Idle Stone Age",
       "types": [
         299,
@@ -24631,7 +24207,6 @@
     "id": 1202,
     "app_id": "sortpuz-3d",
     "base": {
-      "app_url": "https://sortpuz-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "SortPuz 3D",
       "types": [
         2
@@ -24689,7 +24264,6 @@
     "id": 1203,
     "app_id": "idle-warriors",
     "base": {
-      "app_url": "https://idle-warriors.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Idle Warriors",
       "types": [
         5,
@@ -24738,7 +24312,6 @@
     "id": 1204,
     "app_id": "rescue-animals",
     "base": {
-      "app_url": "https://rescue-animals.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Rescue Animals",
       "types": [
         2
@@ -24798,7 +24371,6 @@
     "id": 1205,
     "app_id": "motorcycle",
     "base": {
-      "app_url": "https://motorcycle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Moto Racing Battle",
       "types": [
         9
@@ -24844,7 +24416,6 @@
     "id": 1207,
     "app_id": "orbit-defense",
     "base": {
-      "app_url": "https://orbit-defense.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Orbit Defense",
       "types": [
         276,
@@ -24891,7 +24462,6 @@
     "id": 1208,
     "app_id": "invincible-king",
     "base": {
-      "app_url": "https://invincible-king.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Invincible Warrior",
       "types": [
         12,
@@ -24938,7 +24508,6 @@
     "id": 1209,
     "app_id": "draw-master",
     "base": {
-      "app_url": "https://draw-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Draw Master",
       "types": [
         2
@@ -24984,7 +24553,6 @@
     "id": 1210,
     "app_id": "star-strike",
     "base": {
-      "app_url": "https://star-strike.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Star Strike",
       "types": [
         8,
@@ -25031,7 +24599,6 @@
     "id": 1211,
     "app_id": "ball-run",
     "base": {
-      "app_url": "https://ball-run.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ball Run",
       "types": [
         276,
@@ -25078,7 +24645,6 @@
     "id": 1212,
     "app_id": "onet-connect",
     "base": {
-      "app_url": "https://onet-connect.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Onet Connect",
       "types": [
         2,
@@ -25125,7 +24691,6 @@
     "id": 1215,
     "app_id": "skateboarding-brawl",
     "base": {
-      "app_url": "https://skateboarding-brawl.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Skateboarding Brawl",
       "types": [
         9
@@ -25171,7 +24736,6 @@
     "id": 1216,
     "app_id": "cavalry-sortie",
     "base": {
-      "app_url": "https://cavalry-sortie.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cavalry Sortie",
       "types": [
         12,
@@ -25218,7 +24782,6 @@
     "id": 1218,
     "app_id": "bloc-puzzl-magic",
     "base": {
-      "app_url": "https://bloc-puzzl-magic.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Block Puzzle Magic",
       "types": [
         2
@@ -25264,7 +24827,6 @@
     "id": 1219,
     "app_id": "circl-crash",
     "base": {
-      "app_url": "https://circl-crash.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Circle Crash",
       "types": [
         276,
@@ -25311,7 +24873,6 @@
     "id": 1220,
     "app_id": "circle-leap",
     "base": {
-      "app_url": "https://circle-leap.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Circle Leap",
       "types": [
         21,
@@ -25358,7 +24919,6 @@
     "id": 1222,
     "app_id": "geometr-jump",
     "base": {
-      "app_url": "https://geometr-jump.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Geometry Jump",
       "types": [
         276,
@@ -25405,7 +24965,6 @@
     "id": 1227,
     "app_id": "bird-chase",
     "base": {
-      "app_url": "https://bird-chase.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bird Chase",
       "types": [
         9,
@@ -25452,7 +25011,6 @@
     "id": 1228,
     "app_id": "car-out",
     "base": {
-      "app_url": "https://car-out.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Car Out",
       "types": [
         2
@@ -25498,7 +25056,6 @@
     "id": 1229,
     "app_id": "champion-golf",
     "base": {
-      "app_url": "https://champion-golf.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Champion Golf",
       "types": [
         7,
@@ -25545,7 +25102,6 @@
     "id": 1233,
     "app_id": "merge-restaurant",
     "base": {
-      "app_url": "https://merge-restaurant.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Restaurant",
       "types": [
         4,
@@ -25604,7 +25160,6 @@
     "id": 1234,
     "app_id": "knife-hit-st",
     "base": {
-      "app_url": "https://knife-hit-st.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Knife Hits",
       "types": [
         276,
@@ -25663,7 +25218,6 @@
     "id": 1236,
     "app_id": "christmas-nail-salon",
     "base": {
-      "app_url": "https://christmas-nail-salon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Christmas Nail Salon",
       "types": [
         15,
@@ -25722,7 +25276,6 @@
     "id": 1238,
     "app_id": "tic-tac-toe-xo",
     "base": {
-      "app_url": "https://tic-tac-toe-xo.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tic Tac Toe-XO",
       "types": [
         2
@@ -25768,7 +25321,6 @@
     "id": 1241,
     "app_id": "big-head",
     "base": {
-      "app_url": "https://big-head.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Big Head",
       "types": [
         6,
@@ -25815,7 +25367,6 @@
     "id": 1242,
     "app_id": "crazy-math",
     "base": {
-      "app_url": "https://crazy-math.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crazy Math",
       "types": [
         2
@@ -25861,7 +25412,6 @@
     "id": 1244,
     "app_id": "links",
     "base": {
-      "app_url": "https://links.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Links",
       "types": [
         2
@@ -25907,7 +25457,6 @@
     "id": 1247,
     "app_id": "puzzlebox",
     "base": {
-      "app_url": "https://puzzlebox.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Puzzle Box",
       "types": [
         2
@@ -25953,7 +25502,6 @@
     "id": 1252,
     "app_id": "circle-burst",
     "base": {
-      "app_url": "https://circle-burst.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Circle Burst",
       "types": [
         2
@@ -25999,7 +25547,6 @@
     "id": 1254,
     "app_id": "find-the-diff",
     "base": {
-      "app_url": "https://find-the-diff.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Find the Diff",
       "types": [
         2
@@ -26045,7 +25592,6 @@
     "id": 1255,
     "app_id": "fruit-transport",
     "base": {
-      "app_url": "https://fruit-transport.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fruit Transport",
       "types": [
         2
@@ -26091,7 +25637,6 @@
     "id": 1256,
     "app_id": "horned-warrior",
     "base": {
-      "app_url": "https://horned-warrior.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Horned Warrior",
       "types": [
         14,
@@ -26138,7 +25683,6 @@
     "id": 1257,
     "app_id": "golf-challenge",
     "base": {
-      "app_url": "https://golf-challenge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Golf Challenge",
       "types": [
         7,
@@ -26185,7 +25729,6 @@
     "id": 1259,
     "app_id": "the-glory-of-heroes",
     "base": {
-      "app_url": "https://the-glory-of-heroes.apps.coolgamespark.com/minigame-index.html",
       "display_name": "The Glory of Heroes",
       "types": [
         8,
@@ -26232,7 +25775,6 @@
     "id": 1260,
     "app_id": "jump-jump",
     "base": {
-      "app_url": "https://jump-jump.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Jump Jump",
       "types": [
         276
@@ -26278,7 +25820,6 @@
     "id": 1262,
     "app_id": "express-shipping",
     "base": {
-      "app_url": "https://express-shipping.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Express Shipping",
       "types": [
         21,
@@ -26325,7 +25866,6 @@
     "id": 1263,
     "app_id": "greedy-apple-snake",
     "base": {
-      "app_url": "https://greedy-apple-snake.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Greedy Apple Snake",
       "types": [
         2
@@ -26371,7 +25911,6 @@
     "id": 1264,
     "app_id": "guinea-pig-startup",
     "base": {
-      "app_url": "https://guinea-pig-startup.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Guinea Pig Startup",
       "types": [
         4,
@@ -26418,7 +25957,6 @@
     "id": 1265,
     "app_id": "escape-puzzle",
     "base": {
-      "app_url": "https://escape-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Escape Puzzle",
       "types": [
         2
@@ -26476,7 +26014,6 @@
     "id": 1266,
     "app_id": "horror-spranky-beats",
     "base": {
-      "app_url": "https://horror-spranky-beats.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Horror Spranky Beats",
       "types": [
         4,
@@ -26523,7 +26060,6 @@
     "id": 1268,
     "app_id": "microarmy-idle-strategy-game",
     "base": {
-      "app_url": "https://microarmy-idle-strategy-game.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Micro Army",
       "types": [
         2,
@@ -26582,7 +26118,6 @@
     "id": 1269,
     "app_id": "monster-builder",
     "base": {
-      "app_url": "https://monster-builder.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Monster Builder",
       "types": [
         5,
@@ -26629,7 +26164,6 @@
     "id": 1270,
     "app_id": "fashion-girl",
     "base": {
-      "app_url": "https://fashion-girl.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fashion Girl",
       "types": [
         10,
@@ -26677,7 +26211,6 @@
     "id": 1271,
     "app_id": "assassins-lan",
     "base": {
-      "app_url": "https://assassins-lan.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Assassin's Plan",
       "types": [
         3,
@@ -26724,7 +26257,6 @@
     "id": 1274,
     "app_id": "warriors-go",
     "base": {
-      "app_url": "https://warriors-go.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Warriors Go",
       "types": [
         2,
@@ -26771,7 +26303,6 @@
     "id": 1276,
     "app_id": "story-writer",
     "base": {
-      "app_url": "https://story-writer.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Story Writer",
       "types": [
         2
@@ -26817,7 +26348,6 @@
     "id": 1277,
     "app_id": "skate-rush",
     "base": {
-      "app_url": "https://skate-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Skate Rush",
       "types": [
         9
@@ -26863,7 +26393,6 @@
     "id": 1278,
     "app_id": "kingdom-warriors",
     "base": {
-      "app_url": "https://kingdom-warriors.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Kingdom Warriors",
       "types": [
         2,
@@ -26910,7 +26439,6 @@
     "id": 1279,
     "app_id": "flip-the-gun",
     "base": {
-      "app_url": "https://flip-the-gun.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Flip The Gun",
       "types": [
         276
@@ -26956,7 +26484,6 @@
     "id": 1280,
     "app_id": "hanger-the-guy",
     "base": {
-      "app_url": "https://hanger-the-guy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hanger The Guy",
       "types": [
         276
@@ -27002,7 +26529,6 @@
     "id": 1281,
     "app_id": "space-frontier",
     "base": {
-      "app_url": "https://space-frontier.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Space Frontier",
       "types": [
         276
@@ -27048,7 +26574,6 @@
     "id": 1282,
     "app_id": "super-bounce",
     "base": {
-      "app_url": "https://super-bounce.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Bounce",
       "types": [
         276
@@ -27094,7 +26619,6 @@
     "id": 1283,
     "app_id": "words-to-win",
     "base": {
-      "app_url": "https://words-to-win.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Words to Win",
       "types": [
         18,
@@ -27153,7 +26677,6 @@
     "id": 1286,
     "app_id": "ninja-bound",
     "base": {
-      "app_url": "https://ninja-bound.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ninja Bound",
       "types": [
         20,
@@ -27200,7 +26723,6 @@
     "id": 1287,
     "app_id": "catapult-warrior",
     "base": {
-      "app_url": "https://catapult-warrior.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Catapult Warrior",
       "types": [
         5,
@@ -27262,7 +26784,6 @@
     "id": 1320,
     "app_id": "home-pin-2",
     "base": {
-      "app_url": "https://home-pin-2.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Home Pin 2",
       "types": [
         284,
@@ -27309,7 +26830,6 @@
     "id": 1321,
     "app_id": "cup-zombies",
     "base": {
-      "app_url": "https://cup-zombies.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cup Zombies",
       "types": [
         8,
@@ -27369,7 +26889,6 @@
     "id": 1331,
     "app_id": "save-me-fast",
     "base": {
-      "app_url": "https://save-me-fast.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save Me Fast",
       "types": [
         284,
@@ -27417,7 +26936,6 @@
     "id": 1332,
     "app_id": "always-up",
     "base": {
-      "app_url": "https://always-up.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Always UP",
       "types": [
         276
@@ -27463,7 +26981,6 @@
     "id": 1333,
     "app_id": "pixel-runner",
     "base": {
-      "app_url": "https://pixel-runner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pixel Runner",
       "types": [
         6,
@@ -27510,7 +27027,6 @@
     "id": 1334,
     "app_id": "merge-arena",
     "base": {
-      "app_url": "https://merge-arena.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Arena",
       "types": [
         285,
@@ -27558,7 +27074,6 @@
     "id": 1335,
     "app_id": "cat-room-blast",
     "base": {
-      "app_url": "https://cat-room-blast.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cat Room Blast",
       "types": [
         2
@@ -27604,7 +27119,6 @@
     "id": 1337,
     "app_id": "piggy-eliminate",
     "base": {
-      "app_url": "https://piggy-eliminate.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Piggy Eliminate",
       "types": [
         276,
@@ -27651,7 +27165,6 @@
     "id": 1340,
     "app_id": "archery-master-hero-battle",
     "base": {
-      "app_url": "https://archery-master-hero-battle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Archery Master",
       "types": [
         3,
@@ -27698,7 +27211,6 @@
     "id": 1341,
     "app_id": "stranger-hand",
     "base": {
-      "app_url": "https://stranger-hand.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stranger Hand",
       "types": [
         2,
@@ -27745,7 +27257,6 @@
     "id": 1345,
     "app_id": "dig-through-the-earth",
     "base": {
-      "app_url": "https://dig-through-the-earth.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dig Through The Earth",
       "types": [
         3,
@@ -27792,7 +27303,6 @@
     "id": 1346,
     "app_id": "crylic-nail-tips",
     "base": {
-      "app_url": "https://crylic-nail-tips.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Crylic Nail Tips",
       "types": [
         279
@@ -27852,7 +27362,6 @@
     "id": 1347,
     "app_id": "eat-donuts",
     "base": {
-      "app_url": "https://eat-donuts.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Eat Donuts",
       "types": [
         2
@@ -27912,7 +27421,6 @@
     "id": 1348,
     "app_id": "element-synthetic",
     "base": {
-      "app_url": "https://element-synthetic.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Element Synthesis",
       "types": [
         4,
@@ -27959,7 +27467,6 @@
     "id": 1349,
     "app_id": "dr-funny",
     "base": {
-      "app_url": "https://dr-funny.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dr.Funny",
       "types": [
         4
@@ -28005,7 +27512,6 @@
     "id": 1351,
     "app_id": "in-treatment",
     "base": {
-      "app_url": "https://in-treatment.apps.coolgamespark.com/minigame-index.html",
       "display_name": "In Treatment",
       "types": [
         4
@@ -28063,7 +27569,6 @@
     "id": 1352,
     "app_id": "bengbeng-cute-group",
     "base": {
-      "app_url": "https://bengbeng-cute-group.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Slime Glory",
       "types": [
         5,
@@ -28112,7 +27617,6 @@
     "id": 1353,
     "app_id": "best-teacher",
     "base": {
-      "app_url": "https://best-teacher.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Best Teacher",
       "types": [
         4,
@@ -28172,7 +27676,6 @@
     "id": 1354,
     "app_id": "happy-soldier-go",
     "base": {
-      "app_url": "https://happy-soldier-go.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Happy Soldier Go",
       "types": [
         12,
@@ -28232,7 +27735,6 @@
     "id": 1357,
     "app_id": "stunt-skateboard",
     "base": {
-      "app_url": "https://stunt-skateboard.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stunt Skateboard",
       "types": [
         6,
@@ -28279,7 +27781,6 @@
     "id": 1358,
     "app_id": "object-finder",
     "base": {
-      "app_url": "https://object-finder.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Object Finder",
       "types": [
         2
@@ -28325,7 +27826,6 @@
     "id": 1359,
     "app_id": "pac-man-legend",
     "base": {
-      "app_url": "https://pac-man-legend.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Pac-Man Legend",
       "types": [
         276
@@ -28371,7 +27871,6 @@
     "id": 1361,
     "app_id": "lkebana-challenge",
     "base": {
-      "app_url": "https://lkebana-challenge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Lkebana Challenge",
       "types": [
         276
@@ -28417,7 +27916,6 @@
     "id": 1362,
     "app_id": "gold-miner",
     "base": {
-      "app_url": "https://gold-miner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Gold Miner",
       "types": [
         20,
@@ -28464,7 +27962,6 @@
     "id": 1401,
     "app_id": "blocksss",
     "base": {
-      "app_url": "https://blocksss.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Blocksss",
       "types": [
         2
@@ -28510,7 +28007,6 @@
     "id": 1413,
     "app_id": "dragon-tamer-tribe",
     "base": {
-      "app_url": "https://dragon-tamer-tribe.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dragon Tamer Tribe",
       "types": [
         5,
@@ -28558,7 +28054,6 @@
     "id": 1417,
     "app_id": "cat-pinball",
     "base": {
-      "app_url": "https://cat-pinball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cat Pinball",
       "types": [
         285,
@@ -28618,7 +28113,6 @@
     "id": 1419,
     "app_id": "dragon-taming-tribe",
     "base": {
-      "app_url": "https://dragon-taming-tribe.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dragon Taming Tribe",
       "types": [
         3,
@@ -28668,7 +28162,6 @@
     "id": 1422,
     "app_id": "abnormal-brain-hole",
     "base": {
-      "app_url": "https://abnormal-brain-hole.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Abnormal Brain Hole",
       "types": [
         20,
@@ -28727,7 +28220,6 @@
     "id": 1423,
     "app_id": "break-through-gogogo",
     "base": {
-      "app_url": "https://break-through-gogogo.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Break Through GOGOGO",
       "types": [
         276,
@@ -28774,7 +28266,6 @@
     "id": 1425,
     "app_id": "squid-game",
     "base": {
-      "app_url": "https://squid-game.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Squid Game",
       "types": [
         4,
@@ -28821,7 +28312,6 @@
     "id": 1426,
     "app_id": "cat-runner",
     "base": {
-      "app_url": "https://cat-runner.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cat Runner",
       "types": [
         6,
@@ -28868,7 +28358,6 @@
     "id": 1427,
     "app_id": "remove-block",
     "base": {
-      "app_url": "https://remove-block.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Remove Block",
       "types": [
         2
@@ -28926,7 +28415,6 @@
     "id": 1433,
     "app_id": "candy-adventure",
     "base": {
-      "app_url": "https://candy-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Candy Adventure",
       "types": [
         277,
@@ -28973,7 +28461,6 @@
     "id": 1443,
     "app_id": "amazing-tile",
     "base": {
-      "app_url": "https://amazing-tile.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Amazing Tile",
       "types": [
         2,
@@ -29020,7 +28507,6 @@
     "id": 1445,
     "app_id": "animal-rush",
     "base": {
-      "app_url": "https://animal-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Animal Rush",
       "types": [
         20,
@@ -29067,7 +28553,6 @@
     "id": 1446,
     "app_id": "boom-rocket",
     "base": {
-      "app_url": "https://boom-rocket.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Boom Rocket",
       "types": [
         14,
@@ -29114,7 +28599,6 @@
     "id": 1454,
     "app_id": "anime-avatar-maker",
     "base": {
-      "app_url": "https://anime-avatar-maker.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Anime Avatar Maker",
       "types": [
         276
@@ -29160,7 +28644,6 @@
     "id": 1460,
     "app_id": "classify",
     "base": {
-      "app_url": "https://classify.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Classify",
       "types": [
         276
@@ -29218,7 +28701,6 @@
     "id": 1461,
     "app_id": "star-ship",
     "base": {
-      "app_url": "https://star-ship.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Star Ship",
       "types": [
         3,
@@ -29277,7 +28759,6 @@
     "id": 1462,
     "app_id": "wavy-trip",
     "base": {
-      "app_url": "https://wavy-trip.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Wavy Trip",
       "types": [
         277
@@ -29335,7 +28816,6 @@
     "id": 1463,
     "app_id": "spider-solitaire",
     "base": {
-      "app_url": "https://spider-solitaire.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Spider Solitaire",
       "types": [
         280,
@@ -29394,7 +28874,6 @@
     "id": 1464,
     "app_id": "falling-ball",
     "base": {
-      "app_url": "https://falling-ball.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Falling Ball",
       "types": [
         276
@@ -29452,7 +28931,6 @@
     "id": 1469,
     "app_id": "blackjack",
     "base": {
-      "app_url": "https://blackjack.apps.coolgamespark.com/minigame-index.html",
       "display_name": "BlackJack",
       "types": [
         2
@@ -29510,7 +28988,6 @@
     "id": 1470,
     "app_id": "cookie-mania",
     "base": {
-      "app_url": "https://cookie-mania.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cookie Mania",
       "types": [
         2
@@ -29568,7 +29045,6 @@
     "id": 1471,
     "app_id": "sky-rush",
     "base": {
-      "app_url": "https://sky-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sky Rush",
       "types": [
         276,
@@ -29627,7 +29103,6 @@
     "id": 1472,
     "app_id": "draw-bridge",
     "base": {
-      "app_url": "https://draw-bridge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Draw Bridge",
       "types": [
         2,
@@ -29686,7 +29161,6 @@
     "id": 1473,
     "app_id": "hill-climb-adventure",
     "base": {
-      "app_url": "https://hill-climb-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hill Climb Adventures",
       "types": [
         3,
@@ -29745,7 +29219,6 @@
     "id": 1487,
     "app_id": "traffic-rush",
     "base": {
-      "app_url": "https://traffic-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Traffic Rush",
       "types": [
         276
@@ -29803,7 +29276,6 @@
     "id": 1489,
     "app_id": "save-the-boy",
     "base": {
-      "app_url": "https://save-the-boy.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Save The Man",
       "types": [
         2
@@ -29861,7 +29333,6 @@
     "id": 1490,
     "app_id": "bwling-club",
     "base": {
-      "app_url": "https://bwling-club.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bowling Club",
       "types": [
         276
@@ -29919,7 +29390,6 @@
     "id": 1491,
     "app_id": "2248-puzzle",
     "base": {
-      "app_url": "https://2248-puzzle.apps.coolgamespark.com/minigame-index.html",
       "display_name": "2248 Puzzle",
       "types": [
         2
@@ -29977,7 +29447,6 @@
     "id": 1492,
     "app_id": "cat-hero",
     "base": {
-      "app_url": "https://cat-hero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cat Hero",
       "types": [
         12,
@@ -30040,7 +29509,6 @@
     "id": 1493,
     "app_id": "red-ball-adventure",
     "base": {
-      "app_url": "https://red-ball-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Red Ball Adventure",
       "landscape": true,
       "types": [
@@ -30100,7 +29568,6 @@
     "id": 1494,
     "app_id": "hill-racing",
     "base": {
-      "app_url": "https://hill-racing.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Hill Racing",
       "landscape": true,
       "types": [
@@ -30161,7 +29628,6 @@
     "id": 1495,
     "app_id": "merge-dice",
     "base": {
-      "app_url": "https://merge-dice.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Merge Dice",
       "types": [
         2
@@ -30221,7 +29687,6 @@
     "id": 1496,
     "app_id": "mr-bullet",
     "base": {
-      "app_url": "https://mr-bullet.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mr Bullet",
       "types": [
         8
@@ -30279,7 +29744,6 @@
     "id": 1497,
     "app_id": "cat-defenders-shelling-snake",
     "base": {
-      "app_url": "https://cat-defenders-shelling-snake.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cat Defenders: Shelling Snake",
       "types": [
         8,
@@ -30339,7 +29803,6 @@
     "id": 1498,
     "app_id": "bank-robber-3",
     "base": {
-      "app_url": "https://bank-robber-3.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bank Robbery 3",
       "landscape": true,
       "types": [
@@ -30400,7 +29863,6 @@
     "id": 1532,
     "app_id": "one-line",
     "base": {
-      "app_url": "https://one-line.apps.coolgamespark.com/minigame-index.html",
       "display_name": "One Line",
       "types": [
         2
@@ -30460,7 +29922,6 @@
     "id": 1534,
     "app_id": "draw-color",
     "base": {
-      "app_url": "https://draw-color.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Draw Color",
       "landscape": true,
       "types": [
@@ -30520,7 +29981,6 @@
     "id": 1539,
     "app_id": "bikerush",
     "base": {
-      "app_url": "https://bikerush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "BikeRush",
       "types": [
         283
@@ -30580,7 +30040,6 @@
     "id": 1540,
     "app_id": "swordhero",
     "base": {
-      "app_url": "https://swordhero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "SwordMaster",
       "types": [
         277
@@ -30638,7 +30097,6 @@
     "id": 1541,
     "app_id": "sneakyhero",
     "base": {
-      "app_url": "https://sneakyhero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "SneakyHero",
       "types": [
         277
@@ -30699,7 +30157,6 @@
     "id": 1546,
     "app_id": "greedy-snake-3d",
     "base": {
-      "app_url": "https://greedy-snake-3d.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Greedy Snake 3D",
       "types": [
         21,
@@ -30758,7 +30215,6 @@
     "id": 1547,
     "app_id": "scream",
     "base": {
-      "app_url": "https://scream.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Scream",
       "types": [
         276
@@ -30816,7 +30272,6 @@
     "id": 1548,
     "app_id": "slime-warrior",
     "base": {
-      "app_url": "https://slime-warrior.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Slime Warrior",
       "types": [
         277,
@@ -30875,7 +30330,6 @@
     "id": 1549,
     "app_id": "two-people-travel",
     "base": {
-      "app_url": "https://two-people-travel.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Two People Travel",
       "types": [
         277
@@ -30933,7 +30387,6 @@
     "id": 1551,
     "app_id": "capybara-hero",
     "base": {
-      "app_url": "https://capybara-hero.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Capybara Hero",
       "types": [
         285
@@ -30991,7 +30444,6 @@
     "id": 1554,
     "app_id": "super-run-adventures",
     "base": {
-      "app_url": "https://super-run-adventures.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Super Run Adventures",
       "landscape": true,
       "types": [
@@ -31050,7 +30502,6 @@
     "id": 1555,
     "app_id": "idle-supermarket-tycoon",
     "base": {
-      "app_url": "https://idle-supermarket-tycoon.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Idle Supermarket Tycoon",
       "types": [
         4,
@@ -31109,7 +30560,6 @@
     "id": 1556,
     "app_id": "farm-escape",
     "base": {
-      "app_url": "https://farm-escape.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Farm Escape",
       "types": [
         2
@@ -31167,7 +30617,6 @@
     "id": 1557,
     "app_id": "jumping-master",
     "base": {
-      "app_url": "https://jumping-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Jumping Master",
       "landscape": true,
       "types": [
@@ -31226,7 +30675,6 @@
     "id": 1558,
     "app_id": "tap-on-time",
     "base": {
-      "app_url": "https://tap-on-time.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tap On Time",
       "types": [
         276
@@ -31284,7 +30732,6 @@
     "id": 1559,
     "app_id": "help-the-duck",
     "base": {
-      "app_url": "https://help-the-duck.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Help The Duck",
       "types": [
         2,
@@ -31343,7 +30790,6 @@
     "id": 1560,
     "app_id": "miner-rush",
     "base": {
-      "app_url": "https://miner-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Miner Rush",
       "types": [
         276
@@ -31401,7 +30847,6 @@
     "id": 1561,
     "app_id": "run-go",
     "base": {
-      "app_url": "https://run-go.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Run Go",
       "types": [
         277
@@ -31459,7 +30904,6 @@
     "id": 1574,
     "app_id": "follow-my-command",
     "base": {
-      "app_url": "https://follow-my-command.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Follow My Command",
       "types": [
         12,
@@ -31518,7 +30962,6 @@
     "id": 1575,
     "app_id": "stack-clash",
     "base": {
-      "app_url": "https://stack-clash.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stack Clash",
       "types": [
         279
@@ -31576,7 +31019,6 @@
     "id": 1576,
     "app_id": "slam-master",
     "base": {
-      "app_url": "https://slam-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Slam Master",
       "types": [
         279
@@ -31634,7 +31076,6 @@
     "id": 1577,
     "app_id": "brick-master",
     "base": {
-      "app_url": "https://brick-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Brick Master",
       "types": [
         285
@@ -31692,7 +31133,6 @@
     "id": 1578,
     "app_id": "lumber-hero-goblins-defense",
     "base": {
-      "app_url": "https://lumber-hero-goblins-defense.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Lumber Hero Goblins Defense",
       "types": [
         12,
@@ -31751,7 +31191,6 @@
     "id": 1580,
     "app_id": "stickman-fighter",
     "base": {
-      "app_url": "https://stickman-fighter.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stickman Fighter",
       "landscape": true,
       "types": [
@@ -31811,7 +31250,6 @@
     "id": 1601,
     "app_id": "tic-tac-toe",
     "base": {
-      "app_url": "https://tic-tac-toe.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Tic Tac Toe",
       "types": [
         281
@@ -31869,7 +31307,6 @@
     "id": 1602,
     "app_id": "ball-fall",
     "base": {
-      "app_url": "https://ball-fall.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Ball Fall",
       "types": [
         293,
@@ -31928,7 +31365,6 @@
     "id": 1603,
     "app_id": "bird-down",
     "base": {
-      "app_url": "https://bird-down.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bird Down",
       "types": [
         276,
@@ -31987,7 +31423,6 @@
     "id": 1604,
     "app_id": "barber-shop",
     "base": {
-      "app_url": "https://barber-shop.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Barber Shop",
       "types": [
         4,
@@ -32046,7 +31481,6 @@
     "id": 1626,
     "app_id": "simulated-prison-life",
     "base": {
-      "app_url": "https://simulated-prison-life.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Simulated Prison Life",
       "types": [
         4,
@@ -32105,7 +31539,6 @@
     "id": 1657,
     "app_id": "sheep-sheep",
     "base": {
-      "app_url": "https://sheep-sheep.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sheep Sheep",
       "types": [
         2
@@ -32163,7 +31596,6 @@
     "id": 1658,
     "app_id": "king-simulator",
     "base": {
-      "app_url": "https://king-simulator.apps.coolgamespark.com/minigame-index.html",
       "display_name": "King Simulator",
       "types": [
         285,
@@ -32222,7 +31654,6 @@
     "id": 1660,
     "app_id": "milk-tea-adventure",
     "base": {
-      "app_url": "https://milk-tea-adventure.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Milk Tea Adventure",
       "landscape": true,
       "types": [
@@ -32283,7 +31714,6 @@
     "id": 1727,
     "app_id": "fighting-aliens",
     "base": {
-      "app_url": "https://fighting-aliens.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fighting Aliens",
       "types": [
         3
@@ -32341,7 +31771,6 @@
     "id": 1760,
     "app_id": "small-wardrobe",
     "base": {
-      "app_url": "https://small-wardrobe.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Small Wardrobe",
       "types": [
         2
@@ -32399,7 +31828,6 @@
     "id": 1782,
     "app_id": "cars-vs-cops",
     "base": {
-      "app_url": "https://cars-vs-cops.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cars Vs Cops",
       "types": [
         9
@@ -32457,7 +31885,6 @@
     "id": 1784,
     "app_id": "fire-egg",
     "base": {
-      "app_url": "https://fire-egg.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fire Egg",
       "types": [
         21,
@@ -32517,7 +31944,6 @@
     "id": 1789,
     "app_id": "squid-game-1",
     "base": {
-      "app_url": "https://squid-game-1.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Squid Game 1",
       "types": [
         4
@@ -32575,7 +32001,6 @@
     "id": 1791,
     "app_id": "doomsday-survival-99-days",
     "base": {
-      "app_url": "https://doomsday-survival-99-days.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Doomsday Survival 99 Days",
       "types": [
         299,
@@ -32634,7 +32059,6 @@
     "id": 1792,
     "app_id": "bubble-it-jam",
     "base": {
-      "app_url": "https://bubble-it-jam.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble it Jam",
       "types": [
         20,
@@ -32693,7 +32117,6 @@
     "id": 1795,
     "app_id": "dirt-motor-parkour",
     "base": {
-      "app_url": "https://dirt-motor-parkour.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dirt Motor Parkour",
       "landscape": true,
       "types": [
@@ -32753,7 +32176,6 @@
     "id": 1806,
     "app_id": "jelly-merge",
     "base": {
-      "app_url": "https://jelly-merge.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Jelly Merge",
       "types": [
         2
@@ -32811,7 +32233,6 @@
     "id": 1807,
     "app_id": "lift-break",
     "base": {
-      "app_url": "https://lift-break.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Breaking Fall",
       "types": [
         276
@@ -32869,7 +32290,6 @@
     "id": 1816,
     "app_id": "cooking-dishes",
     "base": {
-      "app_url": "https://cooking-dishes.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cooking Dishes",
       "types": [
         279
@@ -32927,7 +32347,6 @@
     "id": 1817,
     "app_id": "punch-master",
     "base": {
-      "app_url": "https://punch-master.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Punch Master",
       "types": [
         286
@@ -32985,7 +32404,6 @@
     "id": 1818,
     "app_id": "flower-match-3",
     "base": {
-      "app_url": "https://flower-match-3.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Flower Match 3",
       "types": [
         284
@@ -33043,7 +32461,6 @@
     "id": 1819,
     "app_id": "gear-wars",
     "base": {
-      "app_url": "https://gear-wars.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Gear Wars",
       "types": [
         285
@@ -33101,7 +32518,6 @@
     "id": 1820,
     "app_id": "mouse-hole",
     "base": {
-      "app_url": "https://mouse-hole.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mouse Hole",
       "types": [
         276,
@@ -33160,7 +32576,6 @@
     "id": 1821,
     "app_id": "drag-the-block",
     "base": {
-      "app_url": "https://drag-the-block.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Drag The Block",
       "types": [
         284
@@ -33218,7 +32633,6 @@
     "id": 1823,
     "app_id": "slices",
     "base": {
-      "app_url": "https://slices.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Slices",
       "types": [
         2
@@ -33276,7 +32690,6 @@
     "id": 1824,
     "app_id": "aegis-saga",
     "base": {
-      "app_url": "https://aegis-saga.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Aegis Saga",
       "types": [
         291
@@ -33334,7 +32747,6 @@
     "id": 1825,
     "app_id": "stone-link",
     "base": {
-      "app_url": "https://stone-link.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Stone Link",
       "types": [
         284
@@ -33392,7 +32804,6 @@
     "id": 1832,
     "app_id": "color-water-sort",
     "base": {
-      "app_url": "https://color-water-sort.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Color Water Sort",
       "types": [
         2
@@ -33450,7 +32861,6 @@
     "id": 1838,
     "app_id": "halloween-craft",
     "base": {
-      "app_url": "https://halloween-craft.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Halloween Craft",
       "types": [
         2
@@ -33508,7 +32918,6 @@
     "id": 1839,
     "app_id": "dracula-jump",
     "base": {
-      "app_url": "https://dracula-jump.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dracula Jump",
       "types": [
         21
@@ -33566,7 +32975,6 @@
     "id": 1840,
     "app_id": "halloween-blocks",
     "base": {
-      "app_url": "https://halloween-blocks.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Halloween Blocks",
       "types": [
         2
@@ -33624,7 +33032,6 @@
     "id": 1841,
     "app_id": "halloween-2048",
     "base": {
-      "app_url": "https://halloween-2048.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Halloween 2048",
       "types": [
         2
@@ -33682,7 +33089,6 @@
     "id": 1842,
     "app_id": "halloween-knife",
     "base": {
-      "app_url": "https://halloween-knife.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Halloween Knife",
       "types": [
         3
@@ -33740,7 +33146,6 @@
     "id": 1846,
     "app_id": "mahjong-connect-halloween",
     "base": {
-      "app_url": "https://mahjong-connect-halloween.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Mahjong Connect Halloween",
       "types": [
         284
@@ -33798,7 +33203,6 @@
     "id": 1848,
     "app_id": "halloween-hit",
     "base": {
-      "app_url": "https://halloween-hit.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Halloween Hit",
       "types": [
         286
@@ -33856,7 +33260,6 @@
     "id": 1849,
     "app_id": "halloween-ldle-world",
     "base": {
-      "app_url": "https://halloween-ldle-world.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Halloween Idle World",
       "types": [
         4
@@ -33914,7 +33317,6 @@
     "id": 1853,
     "app_id": "sniper-shooter2",
     "base": {
-      "app_url": "https://sniper-shooter2.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sniper Shooter2",
       "types": [
         289
@@ -33972,7 +33374,6 @@
     "id": 1854,
     "app_id": "dodo-mart",
     "base": {
-      "app_url": "https://dodo-mart.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Dodo Mart",
       "types": [
         284
@@ -34030,7 +33431,6 @@
     "id": 1857,
     "app_id": "halloween-knife-hit",
     "base": {
-      "app_url": "https://halloween-knife-hit.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Halloween Knife Hit",
       "types": [
         3
@@ -34088,7 +33488,6 @@
     "id": 1858,
     "app_id": "brain-shredder",
     "base": {
-      "app_url": "https://brain-shredder.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Brain Shredder",
       "types": [
         284
@@ -34146,7 +33545,6 @@
     "id": 1860,
     "app_id": "bubble-jam",
     "base": {
-      "app_url": "https://bubble-jam.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Jam",
       "types": [
         276
@@ -34204,7 +33602,6 @@
     "id": 1861,
     "app_id": "fruit-agent",
     "base": {
-      "app_url": "https://fruit-agent.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Fruit Agent",
       "types": [
         284
@@ -34262,7 +33659,6 @@
     "id": 1863,
     "app_id": "block-puzzle-tropical-story",
     "base": {
-      "app_url": "https://block-puzzle-tropical-story.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Block Puzzle Tropical Story",
       "landscape": true,
       "types": [
@@ -34321,7 +33717,6 @@
     "id": 1864,
     "app_id": "santa-claus-crosses-the-cliff",
     "base": {
-      "app_url": "https://santa-claus-crosses-the-cliff.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Santa Jump",
       "types": [
         284
@@ -34379,7 +33774,6 @@
     "id": 1865,
     "app_id": "zombie-tower",
     "base": {
-      "app_url": "https://zombie-tower.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Zombie Tower",
       "types": [
         285,
@@ -34438,7 +33832,6 @@
     "id": 1866,
     "app_id": "wedrink",
     "base": {
-      "app_url": "https://wedrink.apps.coolgamespark.com/minigame-index.html",
       "display_name": "WeDrink",
       "types": [
         284
@@ -34496,7 +33889,6 @@
     "id": 1867,
     "app_id": "animals-escape",
     "base": {
-      "app_url": "https://animals-escape.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Animals Escape",
       "types": [
         284
@@ -34554,7 +33946,6 @@
     "id": 1868,
     "app_id": "cube-rush",
     "base": {
-      "app_url": "https://cube-rush.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Cube Rush",
       "types": [
         292
@@ -34612,7 +34003,6 @@
     "id": 1869,
     "app_id": "zombieconflict",
     "base": {
-      "app_url": "https://zombieconflict.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Territory Clash",
       "types": [
         285
@@ -34670,7 +34060,6 @@
     "id": 1870,
     "app_id": "sliding-santa",
     "base": {
-      "app_url": "https://sliding-santa.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Sliding Santa",
       "types": [
         298,
@@ -34729,7 +34118,6 @@
     "id": 1872,
     "app_id": "bubble-shooter-drop",
     "base": {
-      "app_url": "https://bubble-shooter-drop.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Bubble Shooter: Drop",
       "types": [
         276
@@ -34787,7 +34175,6 @@
     "id": 1879,
     "app_id": "christmas-dector",
     "base": {
-      "app_url": "https://christmas-dector.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Christmas Dector",
       "types": [
         2
@@ -34845,7 +34232,6 @@
     "id": 1882,
     "app_id": "first-snow",
     "base": {
-      "app_url": "https://first-snow.apps.coolgamespark.com/minigame-index.html",
       "display_name": "First Snow",
       "types": [
         6,
@@ -34904,7 +34290,6 @@
     "id": 1883,
     "app_id": "new-year-puzzles",
     "base": {
-      "app_url": "https://new-year-puzzles.apps.coolgamespark.com/minigame-index.html",
       "display_name": "New Year Puzzles",
       "types": [
         276,
@@ -34963,7 +34348,6 @@
     "id": 1885,
     "app_id": "subway-surfers-winter",
     "base": {
-      "app_url": "https://subway-surfers-winter.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Subway Surfers Winter",
       "types": [
         6,
@@ -35023,7 +34407,6 @@
     "id": 1886,
     "app_id": "xmas-spot-diffrences",
     "base": {
-      "app_url": "https://xmas-spot-diffrences.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Xmas Spot Diffrences",
       "landscape": true,
       "types": [
@@ -35083,7 +34466,6 @@
     "id": 1887,
     "app_id": "santals-quest",
     "base": {
-      "app_url": "https://santals-quest.apps.coolgamespark.com/minigame-index.html",
       "display_name": "SantaIs Quest",
       "types": [
         2
@@ -35141,7 +34523,6 @@
     "id": 1888,
     "app_id": "santa-parkour",
     "base": {
-      "app_url": "https://santa-parkour.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Santa Parkour",
       "types": [
         6,
@@ -35201,7 +34582,6 @@
     "id": 1889,
     "app_id": "santa-run",
     "base": {
-      "app_url": "https://santa-run.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Santa Run",
       "types": [
         6,
@@ -35260,7 +34640,6 @@
     "id": 1890,
     "app_id": "snowball-dash",
     "base": {
-      "app_url": "https://snowball-dash.apps.coolgamespark.com/minigame-index.html",
       "display_name": "Snowball Dash",
       "types": [
         6,

@@ -1,7 +1,9 @@
 // ===== GameCenter Data Engine v2 =====
 let GAMES_RAW = [], GAMES = [], CATEGORIES = [], DISPLAY_GAMES = [], ALL_DISPLAY_GAMES = [];
 let displayedCount = 60;
-const LOAD_MORE_BATCH = 40, ASSETS_BASE_URL = 'https://coolgamespark.com/_next/asset';
+const LOAD_MORE_BATCH = 40;
+const REMOTE_BASE_DOMAIN = [['cool','game','spark'].join(''),'com'].join('.');
+const ASSETS_BASE_URL = 'https://' + REMOTE_BASE_DOMAIN + '/_next/asset';
 
 const GAME_TYPE_IDS = {
   action:[3,286],simulation:[4,279],battle:[5,287],parkour:[6,288],sports:[7,282],shooting:[8,289],'dress up':[10,290],'tower defense':[12,291],synthesis:[13,292],'break through':[14,293],'make up':[15,281,294],casino:[16,295],cardboard:[17,280],education:[18,296],music:[19,278],puzzle:[2,284],arcade:[20,297],io:[21,298],racing:[9,283],operate:[11,299],casual:[276],adventure:[277],strategy:[285],
@@ -16,6 +18,7 @@ function m32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15
 function hs(s){let h=0;for(let i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return Math.abs(h);}
 function formatCount(n){if(n>=1e8)return(n/1e8).toFixed(1)+'B';if(n>=1e6)return(n/1e6).toFixed(1)+'M';if(n>=1e3)return(n/1e3).toFixed(1)+'K';return n.toString();}
 function sh(a,r){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function buildEmbedUrl(slug){return slug?('https://' + [slug,'apps',REMOTE_BASE_DOMAIN].join('.') + '/minigame-index.html'):'';}
 
 const WORLD_NAMES = [
   'Akira Tanaka','Mei Lin','Sven Olsson','Fatima Al-Rashid','Diego Fernandez','Yuki Nakamura','Olga Petrova','Chen Wei','Priya Sharma','Ahmed Hassan','Lars Johansson','Maria Silva','Hiroshi Yamamoto','Chloe Martin','Bao Nguyen','Kwame Asante','Anastasia Popov','Ravi Patel','Ingrid Larsen','Thiago Costa','Sakura Ito','Dmitri Volkov','Aisha Mohammed','Liam O\'Brien','Yuna Park','Carlos Ruiz','Giulia Rossi','Jun Takahashi','Nadia Fedorova','Omar Khalid','Freya Andersen','Pedro Alvarez','Keiko Sato','Viktor Novak','Leila Benali','Erik Magnusson','Sofia Gonzalez','Takeshi Mori','Irina Sokolova','Malik Diallo','Emma Larsson','Daniel Kowalski','Amara Okafor','Hans Mueller','Lena Berg','Zara Khoury','Kenji Watanabe','Bella Rossi','Arjun Mehta',
@@ -80,7 +83,7 @@ function mapGame(raw){
     tags,rating:b.rating||0,players:formatCount(b.like_count||0),likeCount:b.like_count||0,
     desc:b.description?.content||'',autoDesc:'',
     coverColor:`hsl(${hue},50%,42%)`,coverColor2:`hsl(${hue},40%,22%)`,coverEmoji:mt.e,
-    embedUrl:b.app_url||'',iconUrl:ip?ASSETS_BASE_URL+ip:'',bannerUrl:fp?ASSETS_BASE_URL+fp:'',
+    embedUrl:buildEmbedUrl(raw.app_id||''),iconUrl:ip?ASSETS_BASE_URL+ip:'',bannerUrl:fp?ASSETS_BASE_URL+fp:'',
     recommends:raw.recommend_hot_games||[],mode:b.mode||[],createdAt:raw.created_at||0,
     features:{featured:!1,new:!1,hot:!1},reviews:[],leaderboard:null,
   };

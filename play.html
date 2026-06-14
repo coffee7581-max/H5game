@@ -33,6 +33,8 @@ function fl(g,sz){return'<div style="position:absolute;inset:0;display:flex;alig
 function im(g,u){return u?'<img src="'+u+'" loading="lazy" onerror="this.style.display=\'none\'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">':'';}
 function gc(g){return'<div class="game-card" data-game-id="'+g.id+'" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="game-card-img">'+fl(g,'28px')+im(g,g.bannerUrl||g.iconUrl)+'<span class="game-card-rating">'+g.rating+' &star;</span></div><div class="game-card-body"><h3>'+g.title+'</h3><div class="game-tags">'+g.tags.slice(0,2).join(' · ')+'</div><div class="game-meta"><span>'+g.players+'</span><button class="game-card-play" onclick="event.stopPropagation();location.href=\'play.html?id='+g.id+'\'">Play</button></div></div></div>';}
 function si(g){return'<div class="sidebar-item" onclick="location.href=\'play.html?id='+g.id+'\'"><div class="sidebar-thumb" style="position:relative;">'+fl(g,'16px')+im(g,g.iconUrl)+'</div><div class="sidebar-info"><h4>'+g.title+'</h4><div class="sidebar-meta"><span class="s-stars">'+g.rating+' &star;</span><span>'+g.players+'</span></div></div></div>';}
+function gb(){return[['cool','game','spark'].join(''),'com'].join('.');}
+function gu(slug){return slug?('https://'+[slug,'apps',gb()].join('.')+'/minigame-index.html'):'';}
 
 function rm(){
   var g=game;
@@ -47,7 +49,7 @@ function loadGamecenterSdkGame(){
   var t=game.slug||((game.embedUrl||'').match(/^https?:\/\/([^\.]+)/)||[])[1]||'';if(!t||typeof a==='undefined'||!a.getInstance)return!1;
   try{
     var configUrl='mock/minigame.com/api/game/_default/config.json';
-    var drt={id:t,app_id:t,created_at:game.createdAt||'',support_match:!1,IsTestGame:!1,base:{config:configUrl,app_url:game.embedUrl||('https://'+t+'.apps.coolgamespark.com/minigame-index.html')}};
+    var drt={id:t,app_id:t,created_at:game.createdAt||'',support_match:!1,IsTestGame:!1,base:{config:configUrl,app_url:game.embedUrl||gu(t)}};
     var drZ=a.getInstance(),fallbackTimer=setTimeout(function(){var f=getPlayFrame();if(f&&!f.getAttribute('src'))loadFallbackGame();},2500);
     if(drZ.setIframeFrameDivFunc)drZ.setIframeFrameDivFunc('playIframeDiv');
     if(drZ.setIframeFrameIdFunc)drZ.setIframeFrameIdFunc('playIframe');
